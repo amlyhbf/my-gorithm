@@ -1,0 +1,19 @@
+{
+  "name": "mamgorithm",
+  "version": "1.0.0",
+  "description": "내맘대로 알고리즘 (맘고리즘) - 반응형 웹 프로젝트",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "firebase": "^13.1.0"
+  }
+}
