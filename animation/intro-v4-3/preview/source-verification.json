@@ -1,0 +1,244 @@
+{
+  "source_rml_sha256": "f8866ec5c4a38d83d5e9ffc60ac780180387c3bb2dcb0e3bf5bdee597b266055",
+  "protected_files": {
+    "script.js": true,
+    "style.css": true,
+    "data.js": true,
+    "index.html": true,
+    "firebase.js": true,
+    "firebase.json": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "tools/create-rive-v41.py": true,
+    "tools/motion_v41.py": true,
+    "animation/intro-v4-1/scene.rml": true,
+    "animation/intro-v4-1/preview/intro-v4-1-dark.mp4": true,
+    "animation/intro-v4-1/preview/intro-v4-1-light.mp4": true,
+    "animation/intro-v4-1/build/intro-v4-1.riv": true,
+    "animation/intro-v4-2/FONT-LICENSE.txt": true,
+    "animation/intro-v4-2/AGENTS.md": true,
+    "animation/intro-v4-2/final-media-verification.json": true,
+    "animation/intro-v4-2/feed-preview-snapshots.json": true,
+    "animation/intro-v4-2/motion-curves.json": true,
+    "animation/intro-v4-2/PRODUCTION_NOTES.md": true,
+    "animation/intro-v4-2/.gitignore": true,
+    "animation/intro-v4-2/Pretendard-600.ttf": true,
+    "animation/intro-v4-2/rive.yaml": true,
+    "animation/intro-v4-2/design-tokens.json": true,
+    "animation/intro-v4-2/README.md": true,
+    "animation/intro-v4-2/protected-baseline.json": true,
+    "animation/intro-v4-2/github-download-verification.json": true,
+    "animation/intro-v4-2/WORK_LOG.md": true,
+    "animation/intro-v4-2/logic-snapshots.json": true,
+    "animation/intro-v4-2/resume-completion.json": true,
+    "animation/intro-v4-2/VALIDATION.md": true,
+    "animation/intro-v4-2/Pretendard-800.ttf": true,
+    "animation/intro-v4-2/scene.rml": true,
+    "animation/intro-v4-2/resume-inventory.json": true,
+    "animation/intro-v4-2/CLAUDE.md": true,
+    "animation/intro-v4-2/preview/phone-light-feed-390x844.png": true,
+    "animation/intro-v4-2/preview/native-verify.json": true,
+    "animation/intro-v4-2/preview/frame-audit.json": true,
+    "animation/intro-v4-2/preview/test-compare-morph-6-10.mp4.json": true,
+    "animation/intro-v4-2/preview/storyboard-dark.png": true,
+    "animation/intro-v4-2/preview/phone-dark-feed-430x932.png": true,
+    "animation/intro-v4-2/preview/storyboard-light.png": true,
+    "animation/intro-v4-2/preview/phone-light-morph-360x640.png": true,
+    "animation/intro-v4-2/preview/capture-plan.json": true,
+    "animation/intro-v4-2/preview/poster-light.png": true,
+    "animation/intro-v4-2/preview/intro-v4-2-light.mp4": true,
+    "animation/intro-v4-2/preview/phone-dark-feed-360x640.png": true,
+    "animation/intro-v4-2/preview/phone-light-morph-390x844.png": true,
+    "animation/intro-v4-2/preview/scene-light-01.png": true,
+    "animation/intro-v4-2/preview/intro-v4-2-dark.mp4.json": true,
+    "animation/intro-v4-2/preview/native-runtime-verification.json": true,
+    "animation/intro-v4-2/preview/unchanged-intervals.json": true,
+    "animation/intro-v4-2/preview/test-compare-feed-9-6-13-2.mp4.json": true,
+    "animation/intro-v4-2/preview/scene-dark-04.png": true,
+    "animation/intro-v4-2/preview/scene-light-04.png": true,
+    "animation/intro-v4-2/preview/scene-light-06.png": true,
+    "animation/intro-v4-2/preview/phone-light-feed-360x640.png": true,
+    "animation/intro-v4-2/preview/storyboard-morph-before-after.png": true,
+    "animation/intro-v4-2/preview/compare-feed-9-6-13-2.mp4": true,
+    "animation/intro-v4-2/preview/test-morph-6-10.mp4": true,
+    "animation/intro-v4-2/preview/phone-dark-feed-390x844.png": true,
+    "animation/intro-v4-2/preview/phone-light-morph-430x932.png": true,
+    "animation/intro-v4-2/preview/scene-light-02.png": true,
+    "animation/intro-v4-2/preview/compare-morph-6-10.mp4": true,
+    "animation/intro-v4-2/preview/test-review-morph.png": true,
+    "animation/intro-v4-2/preview/poster-dark.png": true,
+    "animation/intro-v4-2/preview/phone-dark-morph-430x932.png": true,
+    "animation/intro-v4-2/preview/compare-feed-9-6-13-2.mp4.json": true,
+    "animation/intro-v4-2/preview/source-verification.json": true,
+    "animation/intro-v4-2/preview/phone-dark-morph-360x640.png": true,
+    "animation/intro-v4-2/preview/phone-dark-morph-390x844.png": true,
+    "animation/intro-v4-2/preview/scene-dark-01.png": true,
+    "animation/intro-v4-2/preview/scene-light-03.png": true,
+    "animation/intro-v4-2/preview/scene-light-05.png": true,
+    "animation/intro-v4-2/preview/scene-dark-02.png": true,
+    "animation/intro-v4-2/preview/native-inspect.json": true,
+    "animation/intro-v4-2/preview/phone-light-feed-430x932.png": true,
+    "animation/intro-v4-2/preview/scene-dark-06.png": true,
+    "animation/intro-v4-2/preview/storyboard-feed-before-after.png": true,
+    "animation/intro-v4-2/preview/test-review-feed.png": true,
+    "animation/intro-v4-2/preview/mobile-layout-check.json": true,
+    "animation/intro-v4-2/preview/test-compare-morph-6-10.mp4": true,
+    "animation/intro-v4-2/preview/intro-v4-2-dark.mp4": true,
+    "animation/intro-v4-2/preview/scene-dark-05.png": true,
+    "animation/intro-v4-2/preview/test-feed-9-6-13-2.mp4": true,
+    "animation/intro-v4-2/preview/test-compare-feed-9-6-13-2.mp4": true,
+    "animation/intro-v4-2/preview/scene-dark-03.png": true,
+    "animation/intro-v4-2/preview/intro-v4-2-light.mp4.json": true,
+    "animation/intro-v4-2/preview/compare-morph-6-10.mp4.json": true,
+    "animation/intro-v4-2/preview/morph-phase-curves.png": true,
+    "animation/intro-v4-2/preview/test-morph-6-10.mp4.json": true,
+    "animation/intro-v4-2/preview/test-review.json": true,
+    "animation/intro-v4-2/preview/test-feed-9-6-13-2.mp4.json": true,
+    "animation/intro-v4-2/build/intro-v4-2.riv": true
+  },
+  "recommendation": {
+    "states_verified": 21,
+    "service_feed_size_unchanged": 12,
+    "illustrated_representative_capacity": 6,
+    "all_preview_lists_are_actual_feed_subsequences": true,
+    "initial_weights": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "final_weights": [
+      100,
+      30,
+      20,
+      50
+    ],
+    "final_real_card_counts": {
+      "study": 6,
+      "tech": 2,
+      "culture": 1,
+      "hobby": 3
+    },
+    "response_delays_seconds": [
+      0.5666666666666667,
+      1.1
+    ],
+    "slider_stabilization_seconds": [
+      0.25,
+      0.25
+    ]
+  },
+  "geometry": {
+    "sampled_poses": 2644,
+    "self_intersection_poses": 0,
+    "first_failures": [],
+    "bounds": [
+      162.95657478809747,
+      394.15351999116626,
+      934.4631337286384,
+      1302.3291228991764
+    ],
+    "old_morph_local_vertex_max_difference": 0.0,
+    "first_two_seconds_max_numeric_difference": 2.2509993868879974e-11,
+    "joins": {
+      "120": {
+        "max_value_delta_over_0_0002frame": 0.002172999621507188,
+        "max_velocity_delta_over_0_0002frame": 0.00598152873607205
+      },
+      "210": {
+        "max_value_delta_over_0_0002frame": 0.001106751676161366,
+        "max_velocity_delta_over_0_0002frame": 0.012658077000082812
+      },
+      "450": {
+        "max_value_delta_over_0_0002frame": 1.1823431123048067e-11,
+        "max_velocity_delta_over_0_0002frame": 1.4166225581419282e-05
+      }
+    }
+  },
+  "ui_spacing": {
+    "card_height": 160,
+    "card_pitch": 176,
+    "inter_card_gap": 16,
+    "track_center_relative_row": 16,
+    "tick_text_center_relative_row": 62,
+    "card_bottom_relative_row": 92,
+    "nominal_tick_box_bottom_clearance": 15.5,
+    "font_size_unchanged": 29,
+    "final_stage_scale": 0.82,
+    "future_button_safe_rectangle": [
+      204,
+      1570,
+      876,
+      1770
+    ]
+  },
+  "attention": {
+    "cycles": [
+      {
+        "slider_frames": [
+          468,
+          522
+        ],
+        "feed_frames": [
+          537,
+          579
+        ],
+        "slider_to_feed_gap_seconds": 0.25,
+        "card_max_delta_during_slider": 0.0004062821035841768,
+        "control_max_delta_during_feed": 3.410605131648481e-13
+      },
+      {
+        "slider_frames": [
+          609,
+          675
+        ],
+        "feed_frames": [
+          690,
+          759
+        ],
+        "slider_to_feed_gap_seconds": 0.25,
+        "card_max_delta_during_slider": 0.0010558421138284757,
+        "control_max_delta_during_feed": 3.410605131648481e-13
+      }
+    ],
+    "settled_states": [
+      {
+        "frame": 465,
+        "actual_representative_ids": [
+          "study-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "hobby-1#1",
+          "study-2#1",
+          "tech-1#1"
+        ]
+      },
+      {
+        "frame": 600,
+        "actual_representative_ids": [
+          "study-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "hobby-1#1",
+          "study-2#1",
+          "study-5#1"
+        ]
+      },
+      {
+        "frame": 780,
+        "actual_representative_ids": [
+          "study-1#1",
+          "hobby-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "study-2#1",
+          "study-5#1"
+        ]
+      }
+    ],
+    "visible_cards_peak": 6,
+    "content_strings_and_colors_immutable": true,
+    "display_delay_note": "The feed intentionally holds the previous settled valid result while controls change, then displays the newly calculated endpoint result."
+  },
+  "passed": true
+}
