@@ -4299,7 +4299,7 @@
       ],
       "segments": 43,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.06172999228726894
+      "measured_33point_error": 0.06244387356025527
     },
     {
       "object": "0:89361",
@@ -4309,9 +4309,9 @@
         0,
         960
       ],
-      "segments": 47,
+      "segments": 49,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.07824505315511487
+      "measured_33point_error": 0.07782362586203817
     },
     {
       "object": "0:89361",
@@ -4335,7 +4335,7 @@
       ],
       "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006604989962397667
+      "measured_33point_error": 0.000595035406597999
     },
     {
       "object": "0:89361",
@@ -4347,70 +4347,10 @@
       ],
       "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006604989962397667
+      "measured_33point_error": 0.000595035406597999
     },
     {
-      "object": "0:89816",
-      "name": "Feed card study-5#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
-      "nominal_target": 0.08,
-      "measured_33point_error": 2.2737367544323206e-13
-    },
-    {
-      "object": "0:89816",
-      "name": "Feed card study-5#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 51,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0738708907470027
-    },
-    {
-      "object": "0:89816",
-      "name": "Feed card study-5#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.00036393866771522454
-    },
-    {
-      "object": "0:89816",
-      "name": "Feed card study-5#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006716916890302516
-    },
-    {
-      "object": "0:89816",
-      "name": "Feed card study-5#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006716916890302516
-    },
-    {
-      "object": "0:90285",
+      "object": "0:89820",
       "name": "Feed card culture-3#1",
       "property": "x",
       "frames": [
@@ -4419,22 +4359,22 @@
       ],
       "segments": 44,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.07286265461391395
+      "measured_33point_error": 0.07616765871136977
     },
     {
-      "object": "0:90285",
+      "object": "0:89820",
       "name": "Feed card culture-3#1",
       "property": "y",
       "frames": [
         0,
         960
       ],
-      "segments": 51,
+      "segments": 46,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.05454767707351493
+      "measured_33point_error": 0.07828580063369373
     },
     {
-      "object": "0:90285",
+      "object": "0:89820",
       "name": "Feed card culture-3#1",
       "property": "opacity",
       "frames": [
@@ -4446,235 +4386,55 @@
       "measured_33point_error": 0.0006428915467615592
     },
     {
-      "object": "0:90285",
+      "object": "0:89820",
       "name": "Feed card culture-3#1",
       "property": "scaleX",
       "frames": [
         0,
         960
       ],
-      "segments": 38,
+      "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007310068490815613
+      "measured_33point_error": 0.0006310362925433521
     },
     {
-      "object": "0:90285",
+      "object": "0:89820",
       "name": "Feed card culture-3#1",
       "property": "scaleY",
       "frames": [
         0,
         960
       ],
-      "segments": 38,
+      "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007310068490815613
+      "measured_33point_error": 0.0006310362925433521
     },
     {
-      "object": "0:90754",
-      "name": "Feed card study-1#1",
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
       "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
-      "nominal_target": 0.08,
-      "measured_33point_error": 1.1368683772161603e-13
-    },
-    {
-      "object": "0:90754",
-      "name": "Feed card study-1#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 44,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.05651455482507117
-    },
-    {
-      "object": "0:90754",
-      "name": "Feed card study-1#1",
-      "property": "opacity",
       "frames": [
         0,
         960
       ],
       "segments": 41,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.00025949020320919364
-    },
-    {
-      "object": "0:90754",
-      "name": "Feed card study-1#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 36,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:90754",
-      "name": "Feed card study-1#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 36,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:91177",
-      "name": "Feed card study-2#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
       "nominal_target": 0.08,
-      "measured_33point_error": 1.1368683772161603e-13
+      "measured_33point_error": 0.07497595784718669
     },
     {
-      "object": "0:91177",
-      "name": "Feed card study-2#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 42,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0696394241199414
-    },
-    {
-      "object": "0:91177",
-      "name": "Feed card study-2#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 38,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006512223442038945
-    },
-    {
-      "object": "0:91177",
-      "name": "Feed card study-2#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 35,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:91177",
-      "name": "Feed card study-2#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 35,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:91586",
-      "name": "Feed card tech-1#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 39,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0765652393995424
-    },
-    {
-      "object": "0:91586",
-      "name": "Feed card tech-1#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 44,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.05638418120906863
-    },
-    {
-      "object": "0:91586",
-      "name": "Feed card tech-1#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 50,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007186295758485617
-    },
-    {
-      "object": "0:91586",
-      "name": "Feed card tech-1#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 37,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006804572025492783
-    },
-    {
-      "object": "0:91586",
-      "name": "Feed card tech-1#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 37,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006804572025492783
-    },
-    {
-      "object": "0:92045",
-      "name": "Feed card tech-2#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 42,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.06171121646093525
-    },
-    {
-      "object": "0:92045",
+      "object": "0:90275",
       "name": "Feed card tech-2#1",
       "property": "y",
       "frames": [
         0,
         960
       ],
-      "segments": 46,
+      "segments": 43,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.06505165295811821
+      "measured_33point_error": 0.06318078799972682
     },
     {
-      "object": "0:92045",
+      "object": "0:90275",
       "name": "Feed card tech-2#1",
       "property": "opacity",
       "frames": [
@@ -4686,28 +4446,268 @@
       "measured_33point_error": 0.0004674548131003986
     },
     {
-      "object": "0:92045",
+      "object": "0:90275",
       "name": "Feed card tech-2#1",
       "property": "scaleX",
       "frames": [
         0,
         960
       ],
-      "segments": 39,
+      "segments": 36,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.00040532265327175576
+      "measured_33point_error": 0.0004381054694004849
     },
     {
-      "object": "0:92045",
+      "object": "0:90275",
       "name": "Feed card tech-2#1",
       "property": "scaleY",
       "frames": [
         0,
         960
       ],
-      "segments": 39,
+      "segments": 36,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.00040532265327175576
+      "measured_33point_error": 0.0004381054694004849
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 1.1368683772161603e-13
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 44,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.05651455482507117
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 41,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.00025949020320919364
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 36,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 36,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 1.1368683772161603e-13
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 42,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0696394241199414
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 38,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006512223442038945
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 35,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 35,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 51,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0738708907470027
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.00036393866771522454
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006716916890302516
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006716916890302516
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 39,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0765652393995424
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 44,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.05638418120906863
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 50,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007186295758485617
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 37,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006804572025492783
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 37,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006804572025492783
     },
     {
       "object": "0:5071",
@@ -8922,7 +8922,7 @@
       "measured_33point_error": 0.01606473493188787
     },
     {
-      "object": "0:99865",
+      "object": "0:99835",
       "name": "Feed card hobby-1#1",
       "property": "x",
       "frames": [
@@ -8931,22 +8931,22 @@
       ],
       "segments": 43,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.06172999228726894
+      "measured_33point_error": 0.06244387356025527
     },
     {
-      "object": "0:99865",
+      "object": "0:99835",
       "name": "Feed card hobby-1#1",
       "property": "y",
       "frames": [
         0,
         960
       ],
-      "segments": 47,
+      "segments": 49,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.07824505315511487
+      "measured_33point_error": 0.07782362586203817
     },
     {
-      "object": "0:99865",
+      "object": "0:99835",
       "name": "Feed card hobby-1#1",
       "property": "opacity",
       "frames": [
@@ -8958,7 +8958,7 @@
       "measured_33point_error": 0.00036826077953899805
     },
     {
-      "object": "0:99865",
+      "object": "0:99835",
       "name": "Feed card hobby-1#1",
       "property": "scaleX",
       "frames": [
@@ -8967,10 +8967,10 @@
       ],
       "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006604989962397667
+      "measured_33point_error": 0.000595035406597999
     },
     {
-      "object": "0:99865",
+      "object": "0:99835",
       "name": "Feed card hobby-1#1",
       "property": "scaleY",
       "frames": [
@@ -8979,70 +8979,10 @@
       ],
       "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006604989962397667
+      "measured_33point_error": 0.000595035406597999
     },
     {
-      "object": "0:100320",
-      "name": "Feed card study-5#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
-      "nominal_target": 0.08,
-      "measured_33point_error": 2.2737367544323206e-13
-    },
-    {
-      "object": "0:100320",
-      "name": "Feed card study-5#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 51,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0738708907470027
-    },
-    {
-      "object": "0:100320",
-      "name": "Feed card study-5#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.00036393866771522454
-    },
-    {
-      "object": "0:100320",
-      "name": "Feed card study-5#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006716916890302516
-    },
-    {
-      "object": "0:100320",
-      "name": "Feed card study-5#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 43,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006716916890302516
-    },
-    {
-      "object": "0:100789",
+      "object": "0:100294",
       "name": "Feed card culture-3#1",
       "property": "x",
       "frames": [
@@ -9051,22 +8991,22 @@
       ],
       "segments": 44,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.07286265461391395
+      "measured_33point_error": 0.07616765871136977
     },
     {
-      "object": "0:100789",
+      "object": "0:100294",
       "name": "Feed card culture-3#1",
       "property": "y",
       "frames": [
         0,
         960
       ],
-      "segments": 51,
+      "segments": 46,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.05454767707351493
+      "measured_33point_error": 0.07828580063369373
     },
     {
-      "object": "0:100789",
+      "object": "0:100294",
       "name": "Feed card culture-3#1",
       "property": "opacity",
       "frames": [
@@ -9078,235 +9018,55 @@
       "measured_33point_error": 0.0006428915467615592
     },
     {
-      "object": "0:100789",
+      "object": "0:100294",
       "name": "Feed card culture-3#1",
       "property": "scaleX",
       "frames": [
         0,
         960
       ],
-      "segments": 38,
+      "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007310068490815613
+      "measured_33point_error": 0.0006310362925433521
     },
     {
-      "object": "0:100789",
+      "object": "0:100294",
       "name": "Feed card culture-3#1",
       "property": "scaleY",
       "frames": [
         0,
         960
       ],
-      "segments": 38,
+      "segments": 37,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007310068490815613
+      "measured_33point_error": 0.0006310362925433521
     },
     {
-      "object": "0:101258",
-      "name": "Feed card study-1#1",
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
       "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
-      "nominal_target": 0.08,
-      "measured_33point_error": 1.1368683772161603e-13
-    },
-    {
-      "object": "0:101258",
-      "name": "Feed card study-1#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 44,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.05651455482507117
-    },
-    {
-      "object": "0:101258",
-      "name": "Feed card study-1#1",
-      "property": "opacity",
       "frames": [
         0,
         960
       ],
       "segments": 41,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.00025949020320919364
-    },
-    {
-      "object": "0:101258",
-      "name": "Feed card study-1#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 36,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:101258",
-      "name": "Feed card study-1#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 36,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:101681",
-      "name": "Feed card study-2#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 32,
       "nominal_target": 0.08,
-      "measured_33point_error": 1.1368683772161603e-13
+      "measured_33point_error": 0.07497595784718669
     },
     {
-      "object": "0:101681",
-      "name": "Feed card study-2#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 42,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0696394241199414
-    },
-    {
-      "object": "0:101681",
-      "name": "Feed card study-2#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 38,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006512223442038945
-    },
-    {
-      "object": "0:101681",
-      "name": "Feed card study-2#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 35,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:101681",
-      "name": "Feed card study-2#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 35,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007191100970918018
-    },
-    {
-      "object": "0:102090",
-      "name": "Feed card tech-1#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 39,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.0765652393995424
-    },
-    {
-      "object": "0:102090",
-      "name": "Feed card tech-1#1",
-      "property": "y",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 44,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.05638418120906863
-    },
-    {
-      "object": "0:102090",
-      "name": "Feed card tech-1#1",
-      "property": "opacity",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 50,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0007186295758485617
-    },
-    {
-      "object": "0:102090",
-      "name": "Feed card tech-1#1",
-      "property": "scaleX",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 37,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006804572025492783
-    },
-    {
-      "object": "0:102090",
-      "name": "Feed card tech-1#1",
-      "property": "scaleY",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 37,
-      "nominal_target": 0.0008,
-      "measured_33point_error": 0.0006804572025492783
-    },
-    {
-      "object": "0:102549",
-      "name": "Feed card tech-2#1",
-      "property": "x",
-      "frames": [
-        0,
-        960
-      ],
-      "segments": 42,
-      "nominal_target": 0.08,
-      "measured_33point_error": 0.06171121646093525
-    },
-    {
-      "object": "0:102549",
+      "object": "0:100749",
       "name": "Feed card tech-2#1",
       "property": "y",
       "frames": [
         0,
         960
       ],
-      "segments": 46,
+      "segments": 43,
       "nominal_target": 0.08,
-      "measured_33point_error": 0.06505165295811821
+      "measured_33point_error": 0.06318078799972682
     },
     {
-      "object": "0:102549",
+      "object": "0:100749",
       "name": "Feed card tech-2#1",
       "property": "opacity",
       "frames": [
@@ -9318,28 +9078,268 @@
       "measured_33point_error": 0.0004674548131003986
     },
     {
-      "object": "0:102549",
+      "object": "0:100749",
       "name": "Feed card tech-2#1",
       "property": "scaleX",
       "frames": [
         0,
         960
       ],
-      "segments": 39,
+      "segments": 36,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.00040532265327175576
+      "measured_33point_error": 0.0004381054694004849
     },
     {
-      "object": "0:102549",
+      "object": "0:100749",
       "name": "Feed card tech-2#1",
       "property": "scaleY",
       "frames": [
         0,
         960
       ],
-      "segments": 39,
+      "segments": 36,
       "nominal_target": 0.0008,
-      "measured_33point_error": 0.00040532265327175576
+      "measured_33point_error": 0.0004381054694004849
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 1.1368683772161603e-13
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 44,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.05651455482507117
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 41,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.00025949020320919364
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 36,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 36,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 1.1368683772161603e-13
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 42,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0696394241199414
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 38,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006512223442038945
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 35,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 35,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007191100970918018
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 32,
+      "nominal_target": 0.08,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 51,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0738708907470027
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.00036393866771522454
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006716916890302516
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 43,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006716916890302516
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 39,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.0765652393995424
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 44,
+      "nominal_target": 0.08,
+      "measured_33point_error": 0.05638418120906863
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 50,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0007186295758485617
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 37,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006804572025492783
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        0,
+        960
+      ],
+      "segments": 37,
+      "nominal_target": 0.0008,
+      "measured_33point_error": 0.0006804572025492783
     }
   ]
 }

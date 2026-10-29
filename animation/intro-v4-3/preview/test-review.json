@@ -1,0 +1,29 @@
+{
+  "final_ready": true,
+  "assets_sha256": {
+    "scene.rml": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
+    "rive.yaml": "0476f9fdbc65b185a48ae84c3981f5a6316aeca199cbb4187f43e844bcf02cd7",
+    "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+    "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+  },
+  "source_rml_sha256": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
+  "reviewed_test_mp4s": [
+    "test-01-intro-morph.mp4",
+    "test-02-sliders-feed.mp4",
+    "test-03-brand-ui.mp4"
+  ],
+  "test_fps": 20,
+  "test_size": [
+    360,
+    640
+  ],
+  "native_test_frames": 320,
+  "review_method": "Native still sequences/contact sheets, geometric and temporal checks; no interactive media player available in this environment.",
+  "self_revisions": [
+    "Early local handle overshoot removed; 2644 half-frame contours have no crossings.",
+    "Card routes, delays and painter order revised; text-box coverage proxy reduced from .437 to .086.",
+    "Card height and pitch enlarged; actual native final still reviewed at 540x960. Final MP4 extraction review pending."
+  ],
+  "attention": "Both cycles have 15 frames = .25 seconds between authored slider end and feed start; no large movements overlap.",
+  "remaining_limitation": "Short card-edge overlap remains during the reorder; settled text is fully visible."
+}

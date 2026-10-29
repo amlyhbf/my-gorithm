@@ -19,6 +19,10 @@ def capture(theme,part,frames,folder,scale):
   if n.tag!='Artboard' or n.get('name')==theme:out.append(copy.deepcopy(n))
  E.ElementTree(out).write(d/'scene.rml',encoding='unicode');(d/'rive.yaml').write_text(f'name: v43-{theme}-{part}\n')
  for f in P.glob('*.ttf'):shutil.copyfile(f,d/f.name)
+ channels=[]
+ for kp in out.findall('.//KeyedProperty'):
+  if kp.find('KeyFrameDouble') is None:continue
+  keys=list(kp);channels.append((kp,keys,[int(k.get('frame','0')) for k in keys]))
  dest=V/folder;dest.mkdir(exist_ok=True)
  stamp=dest/'source.json'
  signature={'assets':assets,'scale':scale,'theme':theme}
@@ -28,6 +32,11 @@ def capture(theme,part,frames,folder,scale):
  with (d/'capture.log').open('w') as log:
   for j,f in enumerate(frames):
    if (dest/f'{f:04d}.png').exists():continue
+   if os.environ.get('RIVE_V43_FRAME_WINDOW','1')=='1':
+    from bisect import bisect_right
+    for kp,keys,clock in channels:
+     j0=max(0,bisect_right(clock,f)-1);kp[:]=keys[j0:j0+2]
+    E.ElementTree(out).write(d/'scene.rml',encoding='unicode')
    run([str(R/'tools/rive'),str(d),f'--screenshot={dest/f"{f:04d}.png"}',f'--advance={f+1}',f'--scale={scale}'],stdout=log,stderr=log)
    if (j+1)%30==0:print(f'{mode}/{theme}/{part}: {j+1}/{len(frames)}',flush=True)
 def encode(folder,frames,fps,name):

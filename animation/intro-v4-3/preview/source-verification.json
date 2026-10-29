@@ -1,5 +1,5 @@
 {
-  "source_rml_sha256": "f8866ec5c4a38d83d5e9ffc60ac780180387c3bb2dcb0e3bf5bdee597b266055",
+  "source_rml_sha256": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
   "protected_files": {
     "script.js": true,
     "style.css": true,
@@ -140,18 +140,19 @@
     ],
     "old_morph_local_vertex_max_difference": 0.0,
     "first_two_seconds_max_numeric_difference": 2.2509993868879974e-11,
+    "max_g1_tangent_mismatch_degrees": 0.00015204074602547738,
     "joins": {
       "120": {
-        "max_value_delta_over_0_0002frame": 0.002172999621507188,
-        "max_velocity_delta_over_0_0002frame": 0.00598152873607205
+        "max_position_or_shape_value_jump": 3.410605131648481e-13,
+        "max_velocity_jump": 5.246789669399732e-10
       },
       "210": {
-        "max_value_delta_over_0_0002frame": 0.001106751676161366,
-        "max_velocity_delta_over_0_0002frame": 0.012658077000082812
+        "max_position_or_shape_value_jump": 4.547473508864641e-13,
+        "max_velocity_jump": 1.2820855488371308e-10
       },
       "450": {
-        "max_value_delta_over_0_0002frame": 1.1823431123048067e-11,
-        "max_velocity_delta_over_0_0002frame": 1.4166225581419282e-05
+        "max_position_or_shape_value_jump": 1.4210854715202004e-14,
+        "max_velocity_jump": 8.020854599156548e-15
       }
     }
   },
@@ -197,7 +198,7 @@
           759
         ],
         "slider_to_feed_gap_seconds": 0.25,
-        "card_max_delta_during_slider": 0.0010558421138284757,
+        "card_max_delta_during_slider": 0.0006600285413469464,
         "control_max_delta_during_feed": 3.410605131648481e-13
       }
     ],
@@ -239,6 +240,18 @@
     "visible_cards_peak": 6,
     "content_strings_and_colors_immutable": true,
     "display_delay_note": "The feed intentionally holds the previous settled valid result while controls change, then displays the newly calculated endpoint result."
+  },
+  "card_overlap_comparison": {
+    "v42": {
+      "mean_total_text_box_coverage": 0.4367591688727791,
+      "max_single_card_text_box_coverage": 1.7053455955960977,
+      "note": "Geometric category/title box proxy, not a human readability score. Short edge overlap remains."
+    },
+    "v43": {
+      "mean_total_text_box_coverage": 0.08605527571815208,
+      "max_single_card_text_box_coverage": 0.2291959661890517,
+      "note": "Geometric category/title box proxy, not a human readability score. Short edge overlap remains."
+    }
   },
   "passed": true
 }

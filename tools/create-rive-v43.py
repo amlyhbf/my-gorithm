@@ -290,7 +290,7 @@ for board in root.findall('Artboard'):
  def slot(n):return np.array([324+(n%2)*432,1318+(n//2)*168],float)
  frames=np.arange(961);times=frames/60
  # Promoted hobby is in front during the compact three-card circulation.
- order=sorted(byid,key=lambda k:(k!='hobby-1#1',k!='study-5#1',k))
+ order=sorted(byid,key=lambda k:({'hobby-1#1':0,'culture-3#1':1,'tech-2#1':2}.get(k,3),k))
  for ident in order:
   item=byid[ident];g=el(feed,'Node',name='Feed card '+ident,opacity=0)
   initial=ident in layouts[0];initialslot=layouts[0].index(ident) if initial else layouts[1].index(ident)
@@ -310,14 +310,14 @@ for board in root.findall('Artboard'):
     xy[active]=base+np.stack([np.zeros(np.sum(active)),26*(1-q[active])],axis=1);opacity[active]=q[active];scale[active]=.97+.03*q[active]
    elif ident in before and ident in after:
     src,dest=slot(before.index(ident)),slot(after.index(ident));delay=0
-    if not np.all(src==dest):delay={'tech-2#1':0,'culture-3#1':22,'hobby-1#1':12}.get(ident,0)
-    duration={'tech-2#1':54,'culture-3#1':47,'hobby-1#1':42}.get(ident,end-start-delay) if eventidx==1 else end-start-delay
+    if not np.all(src==dest):delay={'tech-2#1':0,'culture-3#1':5,'hobby-1#1':4}.get(ident,0)
+    duration={'tech-2#1':61,'culture-3#1':58,'hobby-1#1':44}.get(ident,end-start-delay) if eventidx==1 else end-start-delay
     q=q5((frames-start-delay)/max(1,duration));arc=np.sin(np.pi*q)
     base=src[None,:]*(1-q[:,None])+dest[None,:]*q[:,None]
     if not np.all(src==dest):
-     base[:,1]+={'tech-2#1':62,'culture-3#1':92,'hobby-1#1':-12}.get(ident,-12)*arc
-     base[:,0]+={'tech-2#1':-40,'culture-3#1':0,'hobby-1#1':26}.get(ident,0)*arc
-     scale[active]=1-.045*arc[active]
+     base[:,1]+={'tech-2#1':25,'culture-3#1':55,'hobby-1#1':78}.get(ident,-12)*arc
+     base[:,0]+={'tech-2#1':-43,'culture-3#1':84,'hobby-1#1':36}.get(ident,0)*arc
+     scale[active]=1-.04*arc[active]
     elif eventidx==0 and item['category']=='study':
      base[:,1]-=9*arc;scale[active]=1+.012*arc[active]
     xy[active]=base[active]

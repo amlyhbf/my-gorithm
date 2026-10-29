@@ -34,12 +34,14 @@ def intersects(p):
 props=['x','y','inRotation','outRotation','inDistance','outDistance']
 stage=next(n for n in nb.findall('Node') if n.get('name')=='Cinematic stage')
 heroes=[n for n in stage.findall('Node') if n.get('name','').endswith('continuous morph material')]
-fail=[];bounds=[];morpherror=0.;joinreport=[];prefixerror=0.
+fail=[];bounds=[];morpherror=0.;joinreport=[];prefixerror=0.;tangent=0.
 for i,h in enumerate(heroes):
  vs=h.findall('Shape/PointsPath/CubicDetachedVertex');ss=[[Signal(v,p,na) for p in props] for v in vs]
  pose=[Signal(h,p,na) for p in ['x','y','rotation']]
  for f in np.arange(120,450.01,.5):
   v=np.array([[s.at(f) for s in row] for row in ss]);poly=outline(v);n=intersects(poly)
+  for vertex in v:
+   if min(vertex[4:])>1e-4:tangent=max(tangent,abs(math.atan2(math.sin(vertex[3]-vertex[2]-math.pi),math.cos(vertex[3]-vertex[2]-math.pi))))
   if n:fail.append({'hero':i,'frame':float(f),'crossings':n})
   a=pose[2].at(f);rot=np.array([[math.cos(a),-math.sin(a)],[math.sin(a),math.cos(a)]])
   poly=poly@rot.T+np.array([s.at(f) for s in pose[:2]])
@@ -52,17 +54,17 @@ for i,h in enumerate(heroes):
  signals=pose+[s for row in ss for s in row]
  for f in [120,210,450]:
   for s in signals:
-   joinreport.append({'frame':f,'value_delta':abs(s.at(f-.0001)-s.at(f+.0001)),
-                      'velocity_delta':abs(s.at(f-.0001,True)-s.at(f+.0001,True))})
+   joinreport.append({'frame':f,'value_delta':abs(s.at(np.nextafter(float(f),-np.inf))-s.at(np.nextafter(float(f),np.inf))),
+                      'velocity_delta':abs(s.at(np.nextafter(float(f),-np.inf),True)-s.at(np.nextafter(float(f),np.inf),True))})
  for n in [h,*vs]:
   for p in (['x','y','rotation'] if n is h else props):
    a,b=Signal(oldobjects[n.get('id')],p,oa),Signal(n,p,na)
    for f in range(120):prefixerror=max(prefixerror,abs(a.at(f)-b.at(f)))
 report['geometry']={'sampled_poses':4*661,'self_intersection_poses':len(fail),'first_failures':fail[:20],
  'bounds':np.array(bounds).min(axis=0)[:2].tolist()+np.array(bounds).max(axis=0)[2:].tolist(),
- 'old_morph_local_vertex_max_difference':morpherror,'first_two_seconds_max_numeric_difference':prefixerror,
- 'joins':{str(f):{'max_value_delta_over_0_0002frame':max(x['value_delta'] for x in joinreport if x['frame']==f),
- 'max_velocity_delta_over_0_0002frame':max(x['velocity_delta'] for x in joinreport if x['frame']==f)} for f in [120,210,450]}}
+ 'old_morph_local_vertex_max_difference':morpherror,'first_two_seconds_max_numeric_difference':prefixerror,'max_g1_tangent_mismatch_degrees':tangent*180/math.pi,
+ 'joins':{str(f):{'max_position_or_shape_value_jump':max(x['value_delta'] for x in joinreport if x['frame']==f),
+ 'max_velocity_jump':max(x['velocity_delta'] for x in joinreport if x['frame']==f)} for f in [120,210,450]}}
 feed=next(n for n in stage.findall('Node') if n.get('name')=='Six-card representative feed')
 cards=[n for n in feed.findall('Node') if n.get('name','').startswith('Feed card ')]
 cs={n.get('name')[10:]:{p:Signal(n,p,na) for p in ['x','y','scaleX','scaleY','opacity']} for n in cards}
@@ -96,6 +98,26 @@ report['ui_spacing']={'card_height':160,'card_pitch':176,'inter_card_gap':16,'tr
  'font_size_unchanged':29,'final_stage_scale':.82,'future_button_safe_rectangle':[204,1570,876,1770]}
 report['attention']={'cycles':nonoverlap,'settled_states':settled,'visible_cards_peak':peak,'content_strings_and_colors_immutable':True,
  'display_delay_note':'The feed intentionally holds the previous settled valid result while controls change, then displays the newly calculated endpoint result.'}
-report['passed']=not fail and morpherror<1e-7 and prefixerror<1e-7
+def occlusion(board,start,end):
+ an=board.find('LinearAnimation');feed=next(n for n in board.iter('Node') if n.get('name')=='Six-card representative feed')
+ nodes=[n for n in feed.findall('Node') if n.get('name','').startswith('Feed card ')]
+ signals=[{p:Signal(n,p,an) for p in ['x','y','scaleX','opacity']} for n in nodes];scores=[];peaks=[]
+ for f in range(start,end+1):
+  active=[]
+  for n,s in zip(nodes,signals):
+   if s['opacity'].at(f)<.1:continue
+   x,y,sc=[s[p].at(f) for p in ['x','y','scaleX']];active.append((x,y,sc,np.array([x-194*sc,y-72*sc,x+194*sc,y+72*sc])))
+  cover=[]
+  for j,(x,y,sc,box) in enumerate(active):
+   total=0.
+   for low,high in [(-53,-14),(12,48)]:
+    t=np.array([x-146*sc,y+low*sc,x+104*sc,y+high*sc])
+    for xx,yy,ss,b in active[:j]:
+     q=np.maximum(0,np.minimum(b[2:],t[2:])-np.maximum(b[:2],t[:2]));total+=q.prod()/(250*(high-low))
+   cover.append(total)
+  scores.append(sum(cover));peaks.append(max(cover))
+ return {'mean_total_text_box_coverage':float(np.mean(scores)),'max_single_card_text_box_coverage':float(max(peaks)),'note':'Geometric category/title box proxy, not a human readability score. Short edge overlap remains.'}
+report['card_overlap_comparison']={'v42':occlusion(ob,718,754),'v43':occlusion(nb,690,759)}
+report['passed']=not fail and morpherror<1e-7 and prefixerror<1e-7 and tangent<.001
 (V/'source-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2,default=lambda x:x.item())+'\n')
 print(json.dumps(report,ensure_ascii=False,indent=2,default=lambda x:x.item()));assert report['passed']
