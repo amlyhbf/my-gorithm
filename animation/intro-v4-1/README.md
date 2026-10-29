@@ -100,3 +100,9 @@ FFmpeg는 실제 프레임을 인코딩하거나 두 영상을 비교 배치하�
 움직임 품질 판단에는 60 FPS MP4를 사용한다.
 
 원본은 [scene.rml](scene.rml), 실제 빌드는 [intro-v4-1.riv](build/intro-v4-1.riv), 실측 상세는 [final-media-verification.json](final-media-verification.json)이다.
+
+## GitHub 다운로드 확인
+
+다크·라이트 MP4, 두 비교 MP4, 전후 이미지, RML, `.riv`의 공개 GitHub 링크 7개에서 실제 파일을 내려받았다.
+모두 HTTP 200이며 크기와 SHA-256이 로컬 최종 결과물과 일치했다.
+[다운로드 검증 기록](github-download-verification.json)에 링크·크기·해시·검증 시각을 남겼다.
