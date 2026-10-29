@@ -3,8 +3,11 @@
   "stream_groups": [],
   "streams": [
     {
+      "codec_name": "h264",
       "width": 1080,
       "height": 1920,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "60/1",
       "avg_frame_rate": "60/1",
       "nb_frames": "960",
       "nb_read_frames": "960"
@@ -16,5 +19,7 @@
     "bit_rate": "2142350"
   },
   "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
-  "sha256": "913101882993da268bdf1eeacfba775dc196a887689f10146fc3c7e675db3ffd"
+  "sha256": "913101882993da268bdf1eeacfba775dc196a887689f10146fc3c7e675db3ffd",
+  "decoded_frames": 960,
+  "max_timestamp_error_seconds": 3.333333342681044e-07
 }

@@ -1,0 +1,29 @@
+{
+  "method": "Static contain-fit from actual native frames; not a browser or physical-device runtime test.",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "viewports": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "reviewed_times": [
+    7.8,
+    12.7
+  ],
+  "category_name_nominal_font_at_360px": 13.333333333333334,
+  "short_title_nominal_font_at_360px": 11.333333333333334,
+  "no_crop": true,
+  "physical_device_performance_tested": false
+}

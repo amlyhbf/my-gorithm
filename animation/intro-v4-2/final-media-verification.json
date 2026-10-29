@@ -1,0 +1,102 @@
+{
+  "intro-v4-2-dark.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "960",
+        "nb_read_frames": "960"
+      }
+    ],
+    "format": {
+      "duration": "16.000000",
+      "size": "3677448",
+      "bit_rate": "1838724"
+    },
+    "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "sha256": "8aa7488ce84a8aa50fa2dbe3a7977f625963ba38ee260f13af0958b1767d1638",
+    "decoded_frames": 960,
+    "max_timestamp_error_seconds": 3.333333342681044e-07
+  },
+  "intro-v4-2-light.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "960",
+        "nb_read_frames": "960"
+      }
+    ],
+    "format": {
+      "duration": "16.000000",
+      "size": "4284700",
+      "bit_rate": "2142350"
+    },
+    "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "sha256": "913101882993da268bdf1eeacfba775dc196a887689f10146fc3c7e675db3ffd",
+    "decoded_frames": 960,
+    "max_timestamp_error_seconds": 3.333333342681044e-07
+  },
+  "compare-morph-6-10.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1040,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "240",
+        "nb_read_frames": "240"
+      }
+    ],
+    "format": {
+      "duration": "4.000000",
+      "size": "811529",
+      "bit_rate": "1623058"
+    },
+    "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "sha256": "fbd35986fb710bb29519b2b9d402d61e110bab6689cfe6aaf92bd91ec68584c9",
+    "decoded_frames": 240,
+    "max_timestamp_error_seconds": 3.33333333379926e-07
+  },
+  "compare-feed-9-6-13-2.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1040,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "216",
+        "nb_read_frames": "216"
+      }
+    ],
+    "format": {
+      "duration": "3.600000",
+      "size": "454453",
+      "bit_rate": "1009895"
+    },
+    "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "sha256": "17c57b2cc995ad3cd1c47fd6eeb63aebd7aa9ac4ebc2f247bcb7e218fdc9fd56",
+    "decoded_frames": 216,
+    "max_timestamp_error_seconds": 3.33333333379926e-07
+  }
+}

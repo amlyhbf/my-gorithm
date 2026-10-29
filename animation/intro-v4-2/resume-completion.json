@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-30T07:53:05+09:00",
+  "checkpoint_commit": "02beb708df89613efecb41cbe41a42b99d74797b",
+  "source_regenerated": false,
+  "native_render_restarted": false,
+  "original_mp4_reencoded": false,
+  "original_mp4_hashes_preserved": true,
+  "native_frames_still_present": 1920,
+  "completed_missing_steps": [
+    "high-resolution V4.1 comparisons from existing MP4s",
+    "storyboards and static mobile layouts from existing native PNGs",
+    "decoded frame count and timestamp verification"
+  ],
+  "all_media_checks_passed": true
+}
