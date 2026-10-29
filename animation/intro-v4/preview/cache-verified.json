@@ -1,0 +1,106 @@
+{
+  "cutoff_frame": 480,
+  "source_rml_sha256": "e7d3e6c3d348323550f5d8f161ea7d918a5826825a79ef61246fff50f5a51429",
+  "themes": {
+    "Dark": {
+      "changed_linear_properties": 32,
+      "all_changed_properties_identical_from_frame": 450,
+      "retained_native_frame_indices": [
+        480,
+        959
+      ]
+    },
+    "Light": {
+      "changed_linear_properties": 32,
+      "all_changed_properties_identical_from_frame": 450,
+      "retained_native_frame_indices": [
+        480,
+        959
+      ]
+    }
+  },
+  "native_ab_comparisons": [
+    {
+      "theme": "Dark",
+      "frame": 480,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 600,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 780,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 960,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 480,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 600,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 780,
+      "pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 960,
+      "pixel_difference": 0
+    }
+  ],
+  "rgb_ab_verification": [
+    {
+      "theme": "Dark",
+      "frame": 480,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 600,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 780,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 960,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 480,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 600,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 780,
+      "rgb_pixel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "frame": 960,
+      "rgb_pixel_difference": 0
+    }
+  ]
+}

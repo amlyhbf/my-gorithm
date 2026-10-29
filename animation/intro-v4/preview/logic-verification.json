@@ -1,0 +1,27 @@
+{
+  "website_states_verified": 22,
+  "feed_count": 12,
+  "initial_card_counts": {
+    "study": 3,
+    "tech": 3,
+    "culture": 3,
+    "hobby": 3
+  },
+  "final_card_counts": {
+    "study": 6,
+    "tech": 2,
+    "culture": 1,
+    "hobby": 3
+  },
+  "actual_feed_ids_match": true,
+  "artboards": [
+    "Dark",
+    "Light"
+  ],
+  "continuous_eight_vertex_hero_paths_per_theme": 4,
+  "hero_material_never_fades_after_birth": true,
+  "native_timeline_fps": 60,
+  "native_timeline_frames": 960,
+  "native_timeline_seconds": 16,
+  "external_writes": false
+}

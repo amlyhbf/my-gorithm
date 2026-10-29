@@ -1,0 +1,19 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "avg_frame_rate": "60/1",
+      "nb_frames": "960",
+      "nb_read_frames": "960"
+    }
+  ],
+  "format": {
+    "duration": "16.000000",
+    "size": "4624829",
+    "bit_rate": "2312414"
+  },
+  "sha256": "4f8b9448238791bcb090a0d085997eec231f6700c56a5bcdff15f829ecb3a124"
+}

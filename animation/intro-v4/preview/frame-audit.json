@@ -1,0 +1,68 @@
+{
+  "native_renderer": "Rive CLI 1.8.0",
+  "source_rml_sha256": "e7d3e6c3d348323550f5d8f161ea7d918a5826825a79ef61246fff50f5a51429",
+  "capture_method": "960 explicit --screenshot calls per theme, --advance=frame at 60 Hz; no interpolation or draft-frame reuse",
+  "themes": {
+    "dark": {
+      "captured_frames": 960,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "distinct_png_hashes": 827,
+      "phases": {
+        "birth": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "cross": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "morph": {
+          "frames": 240,
+          "distinct_png_hashes": 240
+        },
+        "control": {
+          "frames": 180,
+          "distinct_png_hashes": 165
+        },
+        "brand": {
+          "frames": 180,
+          "distinct_png_hashes": 62
+        }
+      }
+    },
+    "light": {
+      "captured_frames": 960,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "distinct_png_hashes": 827,
+      "phases": {
+        "birth": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "cross": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "morph": {
+          "frames": 240,
+          "distinct_png_hashes": 240
+        },
+        "control": {
+          "frames": 180,
+          "distinct_png_hashes": 165
+        },
+        "brand": {
+          "frames": 180,
+          "distinct_png_hashes": 62
+        }
+      }
+    }
+  },
+  "verified_suffix_reuse": "First 480 native frames recaptured after contour refinement; retained suffix is proven identical by linear-keyframe comparison and eight native RGB A/B comparisons in cache-verified.json."
+}

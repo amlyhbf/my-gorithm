@@ -1,0 +1,2136 @@
+[
+  {
+    "frame": 0,
+    "weights": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      }
+    ]
+  },
+  {
+    "frame": 600,
+    "weights": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      }
+    ]
+  },
+  {
+    "frame": 612,
+    "weights": [
+      55,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 55,
+        "exactPct": 26.82926829268293,
+        "displayPct": 27,
+        "cardCount": 3
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 24.390243902439025,
+        "displayPct": 24,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 24.390243902439025,
+        "displayPct": 24,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 24.390243902439025,
+        "displayPct": 24,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      }
+    ]
+  },
+  {
+    "frame": 621,
+    "weights": [
+      60,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 60,
+        "exactPct": 28.57142857142857,
+        "displayPct": 29,
+        "cardCount": 3
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 23.809523809523807,
+        "displayPct": 24,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 23.809523809523807,
+        "displayPct": 24,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 23.809523809523807,
+        "displayPct": 24,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      }
+    ]
+  },
+  {
+    "frame": 628,
+    "weights": [
+      65,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 65,
+        "exactPct": 30.23255813953488,
+        "displayPct": 30,
+        "cardCount": 3
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 23.25581395348837,
+        "displayPct": 23,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 23.25581395348837,
+        "displayPct": 23,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 23.25581395348837,
+        "displayPct": 23,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      }
+    ]
+  },
+  {
+    "frame": 634,
+    "weights": [
+      70,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 70,
+        "exactPct": 31.818181818181817,
+        "displayPct": 32,
+        "cardCount": 4
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 22.727272727272727,
+        "displayPct": 23,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 22.727272727272727,
+        "displayPct": 23,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 22.727272727272727,
+        "displayPct": 23,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      }
+    ]
+  },
+  {
+    "frame": 640,
+    "weights": [
+      75,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 75,
+        "exactPct": 33.33333333333333,
+        "displayPct": 33,
+        "cardCount": 4
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 22.22222222222222,
+        "displayPct": 22,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 22.22222222222222,
+        "displayPct": 22,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 22.22222222222222,
+        "displayPct": 22,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      }
+    ]
+  },
+  {
+    "frame": 645,
+    "weights": [
+      80,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 80,
+        "exactPct": 34.78260869565217,
+        "displayPct": 35,
+        "cardCount": 4
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 21.73913043478261,
+        "displayPct": 22,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 21.73913043478261,
+        "displayPct": 22,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 21.73913043478261,
+        "displayPct": 22,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      }
+    ]
+  },
+  {
+    "frame": 651,
+    "weights": [
+      85,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 85,
+        "exactPct": 36.17021276595745,
+        "displayPct": 36,
+        "cardCount": 4
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 21.27659574468085,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 21.27659574468085,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 21.27659574468085,
+        "displayPct": 21,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      }
+    ]
+  },
+  {
+    "frame": 657,
+    "weights": [
+      90,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 90,
+        "exactPct": 37.5,
+        "displayPct": 38,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 664,
+    "weights": [
+      95,
+      50,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 95,
+        "exactPct": 38.775510204081634,
+        "displayPct": 39,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 50,
+        "exactPct": 20.408163265306122,
+        "displayPct": 20,
+        "cardCount": 3
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 20.408163265306122,
+        "displayPct": 20,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 20.408163265306122,
+        "displayPct": 20,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "tech-4",
+        "category": "tech",
+        "title": "파이썬 코딩 무료 강의: 5시간 만에 끝내는 실전 프로그래밍 기초"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 668,
+    "weights": [
+      95,
+      45,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 95,
+        "exactPct": 39.58333333333333,
+        "displayPct": 40,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 45,
+        "exactPct": 18.75,
+        "displayPct": 19,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 673,
+    "weights": [
+      100,
+      45,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 40.816326530612244,
+        "displayPct": 41,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 45,
+        "exactPct": 18.367346938775512,
+        "displayPct": 18,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 20.408163265306122,
+        "displayPct": 20,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 20.408163265306122,
+        "displayPct": 20,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 686,
+    "weights": [
+      100,
+      40,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 41.66666666666667,
+        "displayPct": 42,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 40,
+        "exactPct": 16.666666666666664,
+        "displayPct": 17,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 20.833333333333336,
+        "displayPct": 21,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 701,
+    "weights": [
+      100,
+      35,
+      50,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 42.5531914893617,
+        "displayPct": 43,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 35,
+        "exactPct": 14.893617021276595,
+        "displayPct": 15,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 50,
+        "exactPct": 21.27659574468085,
+        "displayPct": 21,
+        "cardCount": 3
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 21.27659574468085,
+        "displayPct": 21,
+        "cardCount": 2
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "culture-4",
+        "category": "culture",
+        "title": "쇼츠와 릴스의 시대, 왜 2030은 \"텍스트 힙(Text Hip)\"에 열광하는가"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 705,
+    "weights": [
+      100,
+      35,
+      45,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 43.47826086956522,
+        "displayPct": 43,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 35,
+        "exactPct": 15.217391304347828,
+        "displayPct": 15,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 45,
+        "exactPct": 19.565217391304348,
+        "displayPct": 20,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 21.73913043478261,
+        "displayPct": 22,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 718,
+    "weights": [
+      100,
+      35,
+      40,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 44.44444444444444,
+        "displayPct": 44,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 35,
+        "exactPct": 15.555555555555555,
+        "displayPct": 16,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 40,
+        "exactPct": 17.77777777777778,
+        "displayPct": 18,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 22.22222222222222,
+        "displayPct": 22,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 719,
+    "weights": [
+      100,
+      30,
+      40,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 45.45454545454545,
+        "displayPct": 45,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 30,
+        "exactPct": 13.636363636363635,
+        "displayPct": 14,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 40,
+        "exactPct": 18.181818181818183,
+        "displayPct": 18,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 22.727272727272727,
+        "displayPct": 23,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 728,
+    "weights": [
+      100,
+      30,
+      35,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 46.51162790697674,
+        "displayPct": 47,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 30,
+        "exactPct": 13.953488372093023,
+        "displayPct": 14,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 35,
+        "exactPct": 16.27906976744186,
+        "displayPct": 16,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 23.25581395348837,
+        "displayPct": 23,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 737,
+    "weights": [
+      100,
+      30,
+      30,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 47.61904761904761,
+        "displayPct": 48,
+        "cardCount": 5
+      },
+      "tech": {
+        "weight": 30,
+        "exactPct": 14.285714285714285,
+        "displayPct": 14,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 30,
+        "exactPct": 14.285714285714285,
+        "displayPct": 14,
+        "cardCount": 2
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 23.809523809523807,
+        "displayPct": 24,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "culture-2",
+        "category": "culture",
+        "title": "현대미술 전시가 낯설 때: 도슨트 없이도 작품의 개념과 물성을 읽는 법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      }
+    ]
+  },
+  {
+    "frame": 747,
+    "weights": [
+      100,
+      30,
+      25,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 48.78048780487805,
+        "displayPct": 49,
+        "cardCount": 6
+      },
+      "tech": {
+        "weight": 30,
+        "exactPct": 14.634146341463413,
+        "displayPct": 15,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 25,
+        "exactPct": 12.195121951219512,
+        "displayPct": 12,
+        "cardCount": 1
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 24.390243902439025,
+        "displayPct": 24,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      },
+      {
+        "id": "study-8",
+        "category": "study",
+        "title": "파인만 학습 기법: 복잡한 지식을 가장 단순한 언어로 설명하는 4단계"
+      }
+    ]
+  },
+  {
+    "frame": 760,
+    "weights": [
+      100,
+      30,
+      20,
+      50
+    ],
+    "categories": {
+      "study": {
+        "weight": 100,
+        "exactPct": 50,
+        "displayPct": 50,
+        "cardCount": 6
+      },
+      "tech": {
+        "weight": 30,
+        "exactPct": 15,
+        "displayPct": 15,
+        "cardCount": 2
+      },
+      "culture": {
+        "weight": 20,
+        "exactPct": 10,
+        "displayPct": 10,
+        "cardCount": 1
+      },
+      "hobby": {
+        "weight": 50,
+        "exactPct": 25,
+        "displayPct": 25,
+        "cardCount": 3
+      }
+    },
+    "feed": [
+      {
+        "id": "study-1",
+        "category": "study",
+        "title": "내 안의 가능성을 끌어내는 메타인지의 비밀 | 리사 손 교수"
+      },
+      {
+        "id": "hobby-1",
+        "category": "hobby",
+        "title": "달리기의 기초: 무릎 부상 없는 착지 자세와 지치지 않는 2박자 호흡법"
+      },
+      {
+        "id": "tech-2",
+        "category": "tech",
+        "title": "애플뮤직은 왜 로고를 액체로 흔들었을까? | Apple Music 'Made by Sound' 리뷰"
+      },
+      {
+        "id": "culture-3",
+        "category": "culture",
+        "title": "Relaxing Jazz Piano Radio: 몰입과 휴식을 위한 24/7 슬로우 재즈"
+      },
+      {
+        "id": "study-2",
+        "category": "study",
+        "title": "읽고 잊지 않는 생각의 아카이빙: 나만의 두 번째 뇌를 만드는 메모 독서법"
+      },
+      {
+        "id": "hobby-5",
+        "category": "hobby",
+        "title": "이탈리아 정통 말고 한국 스타일! 실패 없는 K-알리오올리오 파스타"
+      },
+      {
+        "id": "tech-1",
+        "category": "tech",
+        "title": "토스 쇼핑 추천 시스템: 수백만 사용자와 상품을 잇는 멀티 스테이지 접근법"
+      },
+      {
+        "id": "study-5",
+        "category": "study",
+        "title": "원달러 1,384원: 격해지는 글로벌 환율 전쟁과 경제 흐름 읽기"
+      },
+      {
+        "id": "hobby-2",
+        "category": "hobby",
+        "title": "홈카페 핸드드립 입문: 원두 로스팅 포인트와 분쇄도별 브루잉 공식"
+      },
+      {
+        "id": "study-4",
+        "category": "study",
+        "title": "뽀모도로 타이머 최적화: 번아웃 없이 하루 4시간 초몰입 유지하는 법"
+      },
+      {
+        "id": "study-6",
+        "category": "study",
+        "title": "인지심리학 기반 공부법: 벼락치기 대신 인출 연습과 간격 반복의 과학"
+      },
+      {
+        "id": "study-8",
+        "category": "study",
+        "title": "파인만 학습 기법: 복잡한 지식을 가장 단순한 언어로 설명하는 4단계"
+      }
+    ]
+  }
+]
