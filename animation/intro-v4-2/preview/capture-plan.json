@@ -1,0 +1,16 @@
+{
+  "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+  "new_native_frames_per_theme": 480,
+  "preserved_native_frames_per_theme": 480,
+  "preserved_intervals": [
+    [
+      0,
+      359
+    ],
+    [
+      840,
+      959
+    ]
+  ],
+  "render_completed": true
+}

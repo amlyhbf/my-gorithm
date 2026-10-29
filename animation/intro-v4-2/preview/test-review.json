@@ -1,0 +1,28 @@
+{
+  "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+  "assets_sha256": {
+    "scene.rml": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "rive.yaml": "e7910ff9233bfb40157f431c34e174fab982921911f24bddf910736f40c4ceb2",
+    "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+    "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+  },
+  "native_test_fps": 30,
+  "native_test_resolution": [
+    360,
+    640
+  ],
+  "morph_seconds": [
+    6,
+    10
+  ],
+  "feed_seconds": [
+    9.6,
+    13.2
+  ],
+  "review_method": "Native continuous-frame contact sheets, phase/contour analysis, and aligned V4.1 comparison files. Not a physical-device or browser integration test.",
+  "self_revision": "Replaced simultaneous three-card convergence with early hobby promotion and staggered upper/lower paths for tech/culture.",
+  "morph_three_phases_readable": true,
+  "retained_cards_keep_identity": true,
+  "visible_card_count_at_rest": 6,
+  "final_ready": true
+}

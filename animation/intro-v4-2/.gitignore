@@ -1,0 +1,7 @@
+build/
+
+preview/frames-*/
+preview/test-frames/
+preview/test-stills/
+preview/*.log
+preview/test-stills-*/

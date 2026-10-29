@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-30T07:50:43+09:00",
+  "branch": "feat/rive-intro-v4-2",
+  "source_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+  "media": {
+    "dark": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "60/1",
+          "nb_frames": "960",
+          "nb_read_frames": "960"
+        }
+      ],
+      "format": {
+        "duration": "16.000000",
+        "size": "3677448",
+        "bit_rate": "1838724"
+      },
+      "sha256": "8aa7488ce84a8aa50fa2dbe3a7977f625963ba38ee260f13af0958b1767d1638",
+      "native_png_frames_present": 960
+    },
+    "light": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "60/1",
+          "nb_frames": "960",
+          "nb_read_frames": "960"
+        }
+      ],
+      "format": {
+        "duration": "16.000000",
+        "size": "4284700",
+        "bit_rate": "2142350"
+      },
+      "sha256": "913101882993da268bdf1eeacfba775dc196a887689f10146fc3c7e675db3ffd",
+      "native_png_frames_present": 960
+    }
+  },
+  "render_restarted": false,
+  "protected_files_unchanged": true
+}

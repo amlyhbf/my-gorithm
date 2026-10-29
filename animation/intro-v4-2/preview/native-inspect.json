@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "summary": true,
+  "problems": [],
+  "artboards": [
+    {"name": "Dark", "objects": 29440, "types": {"AnimationState": 1, "AnyState": 1, "Artboard": 1, "CubicDetachedVertex": 44, "CubicEaseInterpolator": 318, "CubicValueInterpolator": 13599, "Ellipse": 8, "EntryState": 1, "ExitState": 1, "Fill": 110, "GradientStop": 12, "KeyFrameColor": 12, "KeyFrameDouble": 14314, "KeyFrameString": 84, "KeyedObject": 96, "KeyedProperty": 366, "LayoutComponentStyle": 1, "LinearAnimation": 1, "Node": 40, "PointsPath": 8, "RadialGradient": 4, "Rectangle": 40, "Shape": 56, "SolidColor": 125, "StateMachine": 1, "StateMachineLayer": 1, "StateTransition": 1, "Stroke": 19, "Text": 57, "TextStylePaint": 57, "TextValueRun": 57, "TrimPath": 4}},
+    {"name": "Light", "objects": 29440, "types": {"AnimationState": 1, "AnyState": 1, "Artboard": 1, "CubicDetachedVertex": 44, "CubicEaseInterpolator": 318, "CubicValueInterpolator": 13599, "Ellipse": 8, "EntryState": 1, "ExitState": 1, "Fill": 110, "GradientStop": 12, "KeyFrameColor": 12, "KeyFrameDouble": 14314, "KeyFrameString": 84, "KeyedObject": 96, "KeyedProperty": 366, "LayoutComponentStyle": 1, "LinearAnimation": 1, "Node": 40, "PointsPath": 8, "RadialGradient": 4, "Rectangle": 40, "Shape": 56, "SolidColor": 125, "StateMachine": 1, "StateMachineLayer": 1, "StateTransition": 1, "Stroke": 19, "Text": 57, "TextStylePaint": 57, "TextValueRun": 57, "TrimPath": 4}}
+  ],
+  "events": [],
+  "roots": {"objects": 3, "types": {"Backboard": 1, "FontAsset": 2}}
+}

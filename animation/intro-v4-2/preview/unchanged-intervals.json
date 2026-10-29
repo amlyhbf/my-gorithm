@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+  "assets_sha256": {
+    "scene.rml": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+    "rive.yaml": "e7910ff9233bfb40157f431c34e174fab982921911f24bddf910736f40c4ceb2",
+    "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+    "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+  },
+  "numeric_property_max_difference": 1.9895196601282805e-12,
+  "native_rgb_ab": [
+    {
+      "theme": "Dark",
+      "frame": 72,
+      "seconds": 1.2,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "frame": 359,
+      "seconds": 5.983333333333333,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "frame": 840,
+      "seconds": 14.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "frame": 959,
+      "seconds": 15.983333333333333,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "frame": 72,
+      "seconds": 1.2,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "frame": 359,
+      "seconds": 5.983333333333333,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "frame": 840,
+      "seconds": 14.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "frame": 959,
+      "seconds": 15.983333333333333,
+      "different_pixels_bbox": null
+    }
+  ],
+  "allowed_reuse_intervals": [
+    [
+      0,
+      359
+    ],
+    [
+      840,
+      959
+    ]
+  ],
+  "note": "Original V4.1 native 60-FPS PNGs, never low-FPS video duplication."
+}

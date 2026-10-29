@@ -1,0 +1,132 @@
+{
+  "source_rml_sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+  "protected_files": {
+    "script.js": true,
+    "style.css": true,
+    "data.js": true,
+    "index.html": true,
+    "firebase.js": true,
+    "firebase.json": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "tools/create-rive-v41.py": true,
+    "tools/motion_v41.py": true,
+    "animation/intro-v4-1/scene.rml": true,
+    "animation/intro-v4-1/preview/intro-v4-1-dark.mp4": true,
+    "animation/intro-v4-1/preview/intro-v4-1-light.mp4": true,
+    "animation/intro-v4-1/build/intro-v4-1.riv": true
+  },
+  "recommendation": {
+    "states_verified": 21,
+    "service_feed_size_unchanged": 12,
+    "illustrated_representative_capacity": 6,
+    "all_preview_lists_are_actual_feed_subsequences": true,
+    "initial_weights": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "final_weights": [
+      100,
+      30,
+      20,
+      50
+    ],
+    "final_real_card_counts": {
+      "study": 6,
+      "tech": 2,
+      "culture": 1,
+      "hobby": 3
+    },
+    "response_delays_seconds": [
+      0.1,
+      0.13333333333333333
+    ]
+  },
+  "preserved_numeric_intervals": {
+    "frames": [
+      [
+        0,
+        359
+      ],
+      [
+        840,
+        960
+      ]
+    ],
+    "properties_checked": 213,
+    "max_difference": 1.9895196601282805e-12
+  },
+  "geometry": {
+    "sampled_poses": 1924,
+    "self_intersection_poses": 0,
+    "first_failures": [],
+    "max_tangent_mismatch_deg": 0.00015204074602547738,
+    "bounds": [
+      203.03026518146999,
+      486.0231040897984,
+      856.4650165578003,
+      1302.3291228991764
+    ]
+  },
+  "feed": {
+    "settled_layouts": [
+      {
+        "frame": 630,
+        "instances": [
+          "study-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "hobby-1#1",
+          "study-2#1",
+          "tech-1#1"
+        ],
+        "slots": 6
+      },
+      {
+        "frame": 695,
+        "instances": [
+          "study-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "hobby-1#1",
+          "study-2#1",
+          "study-5#1"
+        ],
+        "slots": 6
+      },
+      {
+        "frame": 770,
+        "instances": [
+          "study-1#1",
+          "hobby-1#1",
+          "tech-2#1",
+          "culture-3#1",
+          "study-2#1",
+          "study-5#1"
+        ],
+        "slots": 6
+      }
+    ],
+    "card_instances": 7,
+    "visible_card_peak": 6,
+    "animated_title_or_category_colors": 0,
+    "replacement_events": 1,
+    "retained_cards_relocated": 3
+  },
+  "native_timeline": {
+    "artboards": [
+      "Dark",
+      "Light"
+    ],
+    "fps": 60,
+    "duration_frames": 960,
+    "seconds": 16
+  },
+  "fit": {
+    "max_33_point_error": 0.35606329549969207,
+    "note": "Numerical contour and native visual review also required; fitting error is not artistic quality."
+  },
+  "passed": true
+}
