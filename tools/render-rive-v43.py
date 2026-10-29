@@ -48,14 +48,14 @@ def encode(folder,frames,fps,name):
 assets={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [P/'scene.rml',P/'rive.yaml',*sorted(P.glob('*.ttf'))]}
 source=hashlib.sha256((P/'scene.rml').read_bytes()).hexdigest();record('렌더 시작: '+mode+' / '+source)
 if mode=='stills':
- with ThreadPoolExecutor(max_workers=4) as pool:
+ with ThreadPoolExecutor(max_workers=int(os.environ.get("RIVE_V43_WORKERS","4"))) as pool:
   frames=[60,135,165,205,210,300,420,460,500,530,550,580,630,680,710,725,740,760,780,900,959]
   jobs=[pool.submit(capture,'Dark',k,frames[k::4],'test-stills-dark',.5) for k in range(4)]
   jobs += [pool.submit(capture,'Light',4,[460,550,725,780,959],'test-stills-light',.5)]
   for j in jobs:j.result()
 elif mode=='tests':
  frames=list(range(0,960,3))
- with ThreadPoolExecutor(max_workers=4) as pool:
+ with ThreadPoolExecutor(max_workers=int(os.environ.get("RIVE_V43_WORKERS","4"))) as pool:
   jobs=[pool.submit(capture,'Dark',k,frames[k::4],'test-frames',1/3) for k in range(4)]
   for j in jobs:j.result()
  encode('test-frames',list(range(0,450,3)),20,'test-01-intro-morph.mp4')
@@ -71,7 +71,7 @@ else:
  frames=list(range(120,960)) if reuse else list(range(960))
  plan={'source_rml_sha256':source,'assets_sha256':assets,'new_native_frames_per_theme':len(frames),'preserved_native_frames_per_theme':960-len(frames),'preserved_intervals':[[0,119]] if reuse else [],'render_completed':False}
  (V/'capture-plan.json').write_text(json.dumps(plan,indent=2)+'\n')
- with ThreadPoolExecutor(max_workers=4) as pool:
+ with ThreadPoolExecutor(max_workers=int(os.environ.get("RIVE_V43_WORKERS","4"))) as pool:
   jobs=[pool.submit(capture,t,k,frames[k::4],f'frames-final-{t.lower()}',1) for t in ['Dark','Light'] for k in range(4)]
   for j in jobs:j.result()
  for theme in ['dark','light']:
