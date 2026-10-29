@@ -1,0 +1,16 @@
+{
+  "dark": {
+    "width": 540,
+    "height": 960,
+    "frames": 90,
+    "duration_ms": 4500,
+    "bytes": 702505
+  },
+  "light": {
+    "width": 540,
+    "height": 960,
+    "frames": 90,
+    "duration_ms": 4500,
+    "bytes": 427600
+  }
+}

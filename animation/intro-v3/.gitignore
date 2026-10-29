@@ -1,0 +1,4 @@
+build/
+
+preview/frames-*/
+preview/render.log

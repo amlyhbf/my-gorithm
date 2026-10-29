@@ -1,0 +1,33 @@
+{
+  "website_js_states_matched": 76,
+  "range_min": 0,
+  "range_max": 100,
+  "range_step": 5,
+  "final": {
+    "frame": 207,
+    "weights": [
+      80,
+      65,
+      35,
+      50
+    ],
+    "labels": [
+      "80% (피드 35%)",
+      "65% (피드 28%)",
+      "35% (피드 15%)",
+      "50% (피드 22%)"
+    ],
+    "actual": [
+      "80% (피드 35%)",
+      "65% (피드 28%)",
+      "35% (피드 15%)",
+      "50% (피드 22%)"
+    ]
+  },
+  "both_themes": [
+    "Dark",
+    "Light"
+  ],
+  "theme_label_sequences_identical": true,
+  "note": "Read-only website calculateAllocation invoked in Node vm, with isolated mock state; no application storage or Firebase calls."
+}
