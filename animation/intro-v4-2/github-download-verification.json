@@ -1,0 +1,81 @@
+{
+  "repository": "amlyhbf/my-gorithm",
+  "branch": "feat/rive-intro-v4-2",
+  "artifact_commit": "244a8fe339da673cbe2f6d9240085f7a51c70b19",
+  "checked_at": "2026-10-30T07:54:22+09:00",
+  "checks": [
+    {
+      "file": "preview/intro-v4-2-dark.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/intro-v4-2-dark.mp4",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/intro-v4-2-dark.mp4",
+      "http_status": 200,
+      "bytes": 3677448,
+      "sha256": "8aa7488ce84a8aa50fa2dbe3a7977f625963ba38ee260f13af0958b1767d1638",
+      "matches_local_file": true
+    },
+    {
+      "file": "preview/intro-v4-2-light.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/intro-v4-2-light.mp4",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/intro-v4-2-light.mp4",
+      "http_status": 200,
+      "bytes": 4284700,
+      "sha256": "913101882993da268bdf1eeacfba775dc196a887689f10146fc3c7e675db3ffd",
+      "matches_local_file": true
+    },
+    {
+      "file": "preview/compare-morph-6-10.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/compare-morph-6-10.mp4",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/compare-morph-6-10.mp4",
+      "http_status": 200,
+      "bytes": 811529,
+      "sha256": "fbd35986fb710bb29519b2b9d402d61e110bab6689cfe6aaf92bd91ec68584c9",
+      "matches_local_file": true
+    },
+    {
+      "file": "preview/compare-feed-9-6-13-2.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/compare-feed-9-6-13-2.mp4",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/compare-feed-9-6-13-2.mp4",
+      "http_status": 200,
+      "bytes": 454453,
+      "sha256": "17c57b2cc995ad3cd1c47fd6eeb63aebd7aa9ac4ebc2f247bcb7e218fdc9fd56",
+      "matches_local_file": true
+    },
+    {
+      "file": "preview/storyboard-morph-before-after.png",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/storyboard-morph-before-after.png",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/storyboard-morph-before-after.png",
+      "http_status": 200,
+      "bytes": 188160,
+      "sha256": "377137fad3660b95ada2ece9a76e25fcaf85f53349dfe0690b419dde7de8baa6",
+      "matches_local_file": true
+    },
+    {
+      "file": "preview/storyboard-feed-before-after.png",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/storyboard-feed-before-after.png",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/preview/storyboard-feed-before-after.png",
+      "http_status": 200,
+      "bytes": 208727,
+      "sha256": "dceff9aa38418a2e34a9eb4af28dd7167ad2dac868466dcd7b0c88a1148f692e",
+      "matches_local_file": true
+    },
+    {
+      "file": "scene.rml",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/scene.rml",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/scene.rml",
+      "http_status": 200,
+      "bytes": 7680952,
+      "sha256": "eee168e2c2e39ea86d743e4344980b4e164ddcc9bee36be8a0849beef051bbf3",
+      "matches_local_file": true
+    },
+    {
+      "file": "build/intro-v4-2.riv",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/build/intro-v4-2.riv",
+      "effective_url": "https://raw.githubusercontent.com/amlyhbf/my-gorithm/refs/heads/feat/rive-intro-v4-2/animation/intro-v4-2/build/intro-v4-2.riv",
+      "http_status": 200,
+      "bytes": 1097426,
+      "sha256": "b0d6b3a56292a08a17ccb199bf84aecf5ac9ff7a6b041975f50f262541e27bc7",
+      "matches_local_file": true
+    }
+  ],
+  "all_passed": true
+}
