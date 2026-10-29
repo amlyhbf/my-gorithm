@@ -1,0 +1,16 @@
+{
+  "test_movies": [
+    "test-v41-motion-0-6.mp4",
+    "test-v41-morph-6-10.mp4",
+    "test-compare-motion-0-6.mp4",
+    "test-compare-morph-6-10.mp4"
+  ],
+  "test_fps": 30,
+  "test_resolution": [
+    360,
+    640
+  ],
+  "test_review": "corrected short-body folds and retargeted gather fragments; no new topology failures; keep the 16-second story and all post-10-second visuals",
+  "final_render_ready": true,
+  "note": "Numbers alone do not establish artistic quality; native stills and aligned comparison clips are supplied for review."
+}

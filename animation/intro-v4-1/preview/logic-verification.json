@@ -1,0 +1,47 @@
+{
+  "website_states_verified": 22,
+  "feed_count": 12,
+  "initial_card_counts": {
+    "study": 3,
+    "tech": 3,
+    "culture": 3,
+    "hobby": 3
+  },
+  "final_card_counts": {
+    "study": 6,
+    "tech": 2,
+    "culture": 1,
+    "hobby": 3
+  },
+  "actual_feed_ids_match": true,
+  "states_identical_to_v4": true,
+  "artboards": [
+    "Dark",
+    "Light"
+  ],
+  "continuous_eight_vertex_hero_paths_per_theme": 4,
+  "hero_material_never_fades_after_birth": true,
+  "native_timeline_fps": 60,
+  "native_timeline_frames": 960,
+  "native_timeline_seconds": 16,
+  "design_tokens_identical_to_v4": true,
+  "fonts_identical_to_v4": {
+    "Pretendard-600.ttf": "852138fbd28feb135fdc969685d572a5850e46870c15d2400704353bf8736066",
+    "Pretendard-800.ttf": "212f8d0156ae2833cba4e4359660712f2cd73f1ea89a2c3406d0b970d28526bc"
+  },
+  "protected_files_sha256_match": {
+    "animation/intro-v4/scene.rml": true,
+    "animation/intro-v4/preview/intro-v4-dark.mp4": true,
+    "animation/intro-v4/preview/intro-v4-light.mp4": true,
+    "tools/create-rive-v4.py": true,
+    "script.js": true,
+    "style.css": true,
+    "data.js": true,
+    "index.html": true,
+    "firebase.js": true,
+    "firebase.json": true,
+    "package.json": true,
+    "package-lock.json": true
+  },
+  "external_writes": false
+}

@@ -1,0 +1,100 @@
+{
+  "method": "Derivatives from exported native RML, topology from flattened native cubic contours",
+  "velocity": [
+    {
+      "hero": "Study",
+      "results": [
+        {
+          "version": "V4",
+          "join_count": 29,
+          "max_join_speed_jump_px_s": 652.327690467705,
+          "peak_speed_px_s": 1046.0530860033175
+        },
+        {
+          "version": "V4.1",
+          "join_count": 62,
+          "max_join_speed_jump_px_s": 0.0006382526295667132,
+          "peak_speed_px_s": 1384.548407181843
+        }
+      ]
+    },
+    {
+      "hero": "Tech",
+      "results": [
+        {
+          "version": "V4",
+          "join_count": 29,
+          "max_join_speed_jump_px_s": 803.2676260359679,
+          "peak_speed_px_s": 1018.6240812178418
+        },
+        {
+          "version": "V4.1",
+          "join_count": 68,
+          "max_join_speed_jump_px_s": 0.0005549992680347429,
+          "peak_speed_px_s": 1775.1721670283018
+        }
+      ]
+    },
+    {
+      "hero": "Culture",
+      "results": [
+        {
+          "version": "V4",
+          "join_count": 29,
+          "max_join_speed_jump_px_s": 643.4958726512315,
+          "peak_speed_px_s": 1046.0530860033168
+        },
+        {
+          "version": "V4.1",
+          "join_count": 67,
+          "max_join_speed_jump_px_s": 0.0009247139578442287,
+          "peak_speed_px_s": 2396.4419322714666
+        }
+      ]
+    },
+    {
+      "hero": "Hobby",
+      "results": [
+        {
+          "version": "V4",
+          "join_count": 29,
+          "max_join_speed_jump_px_s": 820.7661527682249,
+          "peak_speed_px_s": 1018.6240812178415
+        },
+        {
+          "version": "V4.1",
+          "join_count": 62,
+          "max_join_speed_jump_px_s": 0.0018021897448115677,
+          "peak_speed_px_s": 1920.1108525155748
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "poses_checked": 2404,
+    "self_intersection_poses": 0,
+    "first_failures": [],
+    "max_tangent_mismatch_deg": 0.00015203949572529886,
+    "visible_bounds_scope": "All sampled 0..10s hero contours with opacity > 0.01; not text or glow bounds",
+    "visible_path_bounds": [
+      111.98587570115721,
+      329.5924195367041,
+      950.5299004636523,
+      1532.9752808972098
+    ]
+  },
+  "fit": {
+    "sampling": "17-point per-segment check after 9-point adaptive fitting; measured error, not an exact global bound",
+    "max_absolute_error_px_or_property_units": 0.6868166027503089,
+    "by_property": {
+      "inDistance": 0.6062334775995453,
+      "inRotation": 0.0033541703383421217,
+      "outDistance": 0.6010888573708257,
+      "outRotation": 0.0033541703383423993,
+      "rotation": 0.0008085785598073545,
+      "x": 0.6403433958025175,
+      "y": 0.6868166027503089
+    },
+    "above_nominal_search_target_count": 78
+  }
+}

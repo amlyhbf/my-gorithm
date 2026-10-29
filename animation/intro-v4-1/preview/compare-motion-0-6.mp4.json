@@ -1,0 +1,24 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1080,
+      "height": 1040,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "nb_frames": "360",
+      "nb_read_frames": "360"
+    }
+  ],
+  "format": {
+    "duration": "6.000000",
+    "size": "891511",
+    "bit_rate": "1188681"
+  },
+  "sha256": "0df2951b510b535ee8fca9b649d1b826d51b9dcd4db9451d0a8f217f478553ed",
+  "decoded_frames_count": 360,
+  "max_timestamp_error_seconds": 3.33333333379926e-07
+}

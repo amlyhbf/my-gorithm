@@ -1,0 +1,31 @@
+{
+  "method": "Static contain-fit from native frames. No browser integration or physical-phone runtime test.",
+  "viewports": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "reviewed_scenes": [
+    "control at 12.8s",
+    "brand at 15.9833s"
+  ],
+  "title_font_at_360px_width": 27.333333333333332,
+  "subtitle_font_at_360px_width": 16.0,
+  "fit": "contain",
+  "crop": false,
+  "html_start_button_space_preserved": true,
+  "note": "Native design is 9:16. Taller phones use safe empty margins; responsive Rive layout remains future integration work."
+}

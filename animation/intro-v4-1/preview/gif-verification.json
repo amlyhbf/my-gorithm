@@ -1,0 +1,24 @@
+{
+  "intro-v4-1-dark.gif": {
+    "dimensions": [
+      360,
+      640
+    ],
+    "gif_frames_after_coalescing": 240,
+    "duration_ms": 16000,
+    "sampling_target_fps": 15,
+    "bytes": 3056789,
+    "sha256": "84102560ea2c0331f79ed07b95e42b57c08ebf3fc498b6fbd104ece634f8e019"
+  },
+  "intro-v4-1-light.gif": {
+    "dimensions": [
+      360,
+      640
+    ],
+    "gif_frames_after_coalescing": 240,
+    "duration_ms": 16000,
+    "sampling_target_fps": 15,
+    "bytes": 3248364,
+    "sha256": "6045911b0ae30aeda9479e7adb90db489ab786b19cb7e2a9021787a8947ecd1d"
+  }
+}

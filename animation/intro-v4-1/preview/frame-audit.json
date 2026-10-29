@@ -1,0 +1,73 @@
+{
+  "native_renderer": "Rive CLI 1.8.0",
+  "source_rml_sha256": "6acdbb87245d732404c90225f6d33ee7ab8fce8012029b3f56fe6f102238d53b",
+  "new_capture": "frames 0..599 at t=frame/60 via official --screenshot --advance=frame+1",
+  "preserved_capture": "frames 600..959 copied from original V4 native 60-FPS PNGs after structural, numeric and RGB proof",
+  "pixel_frame_duplication_or_optical_flow": false,
+  "themes": {
+    "dark": {
+      "captured_frames": 960,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "newly_captured_native_frames": 600,
+      "preserved_native_frames": 360,
+      "distinct_png_hashes": 827,
+      "phases": {
+        "birth": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "cross": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "morph": {
+          "frames": 240,
+          "distinct_png_hashes": 240
+        },
+        "control": {
+          "frames": 180,
+          "distinct_png_hashes": 165
+        },
+        "brand": {
+          "frames": 180,
+          "distinct_png_hashes": 62
+        }
+      }
+    },
+    "light": {
+      "captured_frames": 960,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "newly_captured_native_frames": 600,
+      "preserved_native_frames": 360,
+      "distinct_png_hashes": 827,
+      "phases": {
+        "birth": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "cross": {
+          "frames": 180,
+          "distinct_png_hashes": 180
+        },
+        "morph": {
+          "frames": 240,
+          "distinct_png_hashes": 240
+        },
+        "control": {
+          "frames": 180,
+          "distinct_png_hashes": 165
+        },
+        "brand": {
+          "frames": 180,
+          "distinct_png_hashes": 62
+        }
+      }
+    }
+  }
+}

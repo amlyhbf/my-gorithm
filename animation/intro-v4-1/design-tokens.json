@@ -1,0 +1,78 @@
+{
+  "dark": {
+    "bg-page": "#090D16",
+    "bg-card": "#0F172A",
+    "bg-subtle": "#1E293B",
+    "bg-active": "#334155",
+    "text-main": "#F8FAFC",
+    "text-muted": "#94A3B8",
+    "text-subtle": "#64748B",
+    "border-color": "#1E293B",
+    "border-subtle": "#151F32",
+    "color-study": "#4F46E5",
+    "color-tech": "#0284C7",
+    "color-culture": "#BE185D",
+    "color-hobby": "#059669",
+    "primary": "#F8FAFC",
+    "primary-text": "#0F172A",
+    "skeleton-base": "#182234",
+    "skeleton-wave": "#243247"
+  },
+  "light": {
+    "bg-page": "#F8FAFC",
+    "bg-card": "#FFFFFF",
+    "bg-subtle": "#F1F5F9",
+    "bg-active": "#E2E8F0",
+    "text-main": "#0F172A",
+    "text-muted": "#64748B",
+    "text-subtle": "#94A3B8",
+    "border-color": "#E2E8F0",
+    "border-subtle": "#F1F5F9",
+    "color-study": "#4F46E5",
+    "color-tech": "#0284C7",
+    "color-culture": "#BE185D",
+    "color-hobby": "#059669",
+    "primary": "#0F172A",
+    "primary-text": "#FFFFFF",
+    "skeleton-base": "#EAEFF5",
+    "skeleton-wave": "#F8FAFD"
+  },
+  "categories": {
+    "study": {
+      "id": "study",
+      "name": "공부",
+      "color": "#4F46E5",
+      "tagBg": "#EEF2FF",
+      "tagText": "#4338CA",
+      "border": "#C7D2FE",
+      "description": "학습법, 외국어, 자격증, 인문·교양 지식"
+    },
+    "tech": {
+      "id": "tech",
+      "name": "기술",
+      "color": "#0284C7",
+      "tagBg": "#F0F9FF",
+      "tagText": "#0369A1",
+      "border": "#BAE6FD",
+      "description": "AI, 개발, IT 트렌드, 디지털 생산성"
+    },
+    "culture": {
+      "id": "culture",
+      "name": "문화",
+      "color": "#BE185D",
+      "tagBg": "#FFF1F2",
+      "tagText": "#9F1239",
+      "border": "#FECDD3",
+      "description": "전시, 영화, 음악, 도서, 예술 트렌드"
+    },
+    "hobby": {
+      "id": "hobby",
+      "name": "취미",
+      "color": "#059669",
+      "tagBg": "#ECFDF5",
+      "tagText": "#047857",
+      "border": "#A7F3D0",
+      "description": "운동, 러닝, 홈카페, 가드닝, 쿠킹"
+    }
+  }
+}

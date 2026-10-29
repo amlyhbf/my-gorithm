@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "source_rml_sha256": "6acdbb87245d732404c90225f6d33ee7ab8fce8012029b3f56fe6f102238d53b",
+  "components_identical": true,
+  "max_numeric_property_difference_after_10s": 3.589792907376932e-09,
+  "native_rgb_ab": [
+    {
+      "theme": "Dark",
+      "time_seconds": 10.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "time_seconds": 12.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "time_seconds": 14.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Dark",
+      "time_seconds": 15.983333333333333,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "time_seconds": 10.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "time_seconds": 12.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "time_seconds": 14.0,
+      "different_pixels_bbox": null
+    },
+    {
+      "theme": "Light",
+      "time_seconds": 15.983333333333333,
+      "different_pixels_bbox": null
+    }
+  ],
+  "retained_native_frames": [
+    600,
+    959
+  ],
+  "note": "Retained V4 suffix consists of original 60-FPS native Rive frames, not upsampled video."
+}

@@ -1,0 +1,7 @@
+{
+  "official_cli": "1.8.0",
+  "expected_x_at_half_second": 725,
+  "native_rendered_x": 725.0,
+  "tolerance_px": 1,
+  "passed": true
+}

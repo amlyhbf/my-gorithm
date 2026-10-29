@@ -1,0 +1,3668 @@
+{
+  "method": "C2 quintic travel -> derivative-matched native cubicValue Hermite segments; delayed tangent-aware surface; damped orientation",
+  "duration_unchanged": 16,
+  "scene_cuts_unchanged": [
+    0,
+    3,
+    6,
+    10,
+    13,
+    16
+  ],
+  "front_to_tail_delay_seconds": [
+    0.23,
+    0.19,
+    0.27,
+    0.24
+  ],
+  "fit_records": [
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.07823061307487933,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 76,
+      "fit_max_error": 0.07457749818763659,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 62,
+      "fit_max_error": 0.0007935749919130292,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 74,
+      "fit_max_error": 0.5547470472762228,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5996607565492127,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405274953,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405272663,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2881743380327286,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:920",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5611523061763108,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5509709916931342,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 26,
+      "fit_max_error": 0.585412141239047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341955,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383421217,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5717231166181591,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:921",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.1337255240058628,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5799836158382448,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 27,
+      "fit_max_error": 0.6868166027503089,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341733,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5027989300086801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:922",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5799836158382448,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 27,
+      "fit_max_error": 0.6868166027503089,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383423993,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:923",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5027989300086801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.590735721282698,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 26,
+      "fit_max_error": 0.585412141239047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383421217,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341511,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.1337255240058628,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:924",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5677919414328443,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 75,
+      "fit_max_error": 0.519475955820937,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5974471076467722,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405272663,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405274953,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5739985158924412,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:925",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2881743380327286,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5369038084952678,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5587827201540789,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.003074409340527273,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5961535199934787,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:926",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5369038084952678,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5587827201540789,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.003074409340527051,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:927",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5961535199934787,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1616",
+      "name": "공부 separated handle",
+      "property": "x",
+      "native_cubic_segments": 76,
+      "fit_max_error": 0.1057720720547195,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:1616",
+      "name": "공부 separated handle",
+      "property": "y",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.09927400508445317,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:1698",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 73,
+      "fit_max_error": 0.19075403136952218,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:1698",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 67,
+      "fit_max_error": 0.1954836956631425,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 89,
+      "fit_max_error": 0.07690058263540323,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.08989780285423876,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.0007150571029314601,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 70,
+      "fit_max_error": 0.6031016712714745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6071115933630153,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949973,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.003208518640894928,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4271065995454215,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1884",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5848998237693337,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6076201687516232,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5716096614739996,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711248477,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252293,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 46,
+      "fit_max_error": 0.6062334775995453,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1885",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2188235847367146,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 37,
+      "fit_max_error": 0.5169278390080478,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.5478377783370572,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252918,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.42870874784709745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1886",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 37,
+      "fit_max_error": 0.5169278390080478,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.5478377783370572,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252918,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1887",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.42870874784709745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 54,
+      "fit_max_error": 0.6403433958025175,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5716096614739996,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252293,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711248477,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2188235847367146,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1888",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 44,
+      "fit_max_error": 0.5925234594821802,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 72,
+      "fit_max_error": 0.5291513186415528,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.6105220972425585,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949765,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949973,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 45,
+      "fit_max_error": 0.5848998237693337,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1889",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4271065995454215,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5096589914648177,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 48,
+      "fit_max_error": 0.4924553963742575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408952193,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 19,
+      "fit_max_error": 0.5893629752728415,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1890",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5096589914648177,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 48,
+      "fit_max_error": 0.4924553963742575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408952193,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:1891",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 19,
+      "fit_max_error": 0.5893629752728415,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2544",
+      "name": "기술 separated handle",
+      "property": "x",
+      "native_cubic_segments": 85,
+      "fit_max_error": 0.09655640413052424,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:2544",
+      "name": "기술 separated handle",
+      "property": "y",
+      "native_cubic_segments": 102,
+      "fit_max_error": 0.0966034644178535,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:2616",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.19314716077224148,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:2616",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 80,
+      "fit_max_error": 0.19398937458839782,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.07803052741735428,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 87,
+      "fit_max_error": 0.07933009385124024,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.0008085785598073545,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 96,
+      "fit_max_error": 0.5007902619513835,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5668493569285147,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.00331108336746596,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.37815287850535384,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2802",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.559667937528479,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.5542668686996706,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.5507536761059555,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.003311083367465946,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5597656865449565,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2803",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.5727453670135461,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 28,
+      "fit_max_error": 0.621188914490233,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.6156800970950607,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674656615,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 20,
+      "fit_max_error": 0.5837986862864,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2804",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 28,
+      "fit_max_error": 0.621188914490233,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.6156800970950607,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2805",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 20,
+      "fit_max_error": 0.5837986862864,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.5969473282698949,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.5507536761059555,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.003311083367465946,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.5727453670135461,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2806",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5575437723154142,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 98,
+      "fit_max_error": 0.5130766630337575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.549233473056276,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.00331108336746596,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5634451411130144,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2807",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.37815287850535384,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 69,
+      "fit_max_error": 0.47572187798536447,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.5982637055711875,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.48747953223740126,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2808",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 69,
+      "fit_max_error": 0.47572187798536447,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.5982637055711875,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674656615,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:2809",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.48747953223740126,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3462",
+      "name": "문화 separated handle",
+      "property": "x",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.09450393080510366,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:3462",
+      "name": "문화 separated handle",
+      "property": "y",
+      "native_cubic_segments": 121,
+      "fit_max_error": 0.09720810562805582,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:3534",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 74,
+      "fit_max_error": 0.19282784272616027,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:3534",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 72,
+      "fit_max_error": 0.1886539032412884,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 83,
+      "fit_max_error": 0.0767049932592272,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.07993991659941457,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.0007905600564015458,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.5872303892860913,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5813476273320219,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.002902515929843997,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.23895262677728013,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3720",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.537420716940801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6026437628851795,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5990462032055035,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.0028533422293715027,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229372018,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.537420716940801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3721",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4254903036548896,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 35,
+      "fit_max_error": 0.5771284884012431,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5851929212243179,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229371947,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 21,
+      "fit_max_error": 0.5108627102709988,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3722",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 35,
+      "fit_max_error": 0.5771284884012431,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5851929212243179,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229371947,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3723",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 21,
+      "fit_max_error": 0.5108627102709988,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.6189246009524823,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5990462032055035,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229372018,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.0028533422293715027,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4254903036548896,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3724",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5865449713631037,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.5870697986172857,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5722625068869007,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.002902515929844001,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.539076972361002,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3725",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.23895262677728013,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.578171379309893,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5184994753287047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298439185,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.6010888573708257,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3726",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.578171379309893,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5184994753287047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:3727",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.6010888573708257,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:4324",
+      "name": "취미 separated handle",
+      "property": "x",
+      "native_cubic_segments": 77,
+      "fit_max_error": 0.11440388898017773,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:4324",
+      "name": "취미 separated handle",
+      "property": "y",
+      "native_cubic_segments": 98,
+      "fit_max_error": 0.09959772485592566,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:4382",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12642257125139622,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4382",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4415",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12087925451999126,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4415",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 33,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4448",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.13628868603723276,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4448",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 33,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4481",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12284311221901589,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4481",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:4514",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.19303570631780076,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:4514",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 73,
+      "fit_max_error": 0.21322976594615284,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.07823061307487933,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 76,
+      "fit_max_error": 0.07457749818763659,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 62,
+      "fit_max_error": 0.0007935749919130292,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 74,
+      "fit_max_error": 0.5547470472762228,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5996607565492127,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405274953,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405272663,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2881743380327286,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5974",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5611523061763108,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5509709916931342,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 26,
+      "fit_max_error": 0.585412141239047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341955,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383421217,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5717231166181591,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5975",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.1337255240058628,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5799836158382448,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 27,
+      "fit_max_error": 0.6868166027503089,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341733,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5027989300086801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5976",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5799836158382448,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 27,
+      "fit_max_error": 0.6868166027503089,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383423993,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5977",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5027989300086801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.590735721282698,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 26,
+      "fit_max_error": 0.585412141239047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.0033541703383421217,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.003354170338341511,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.1337255240058628,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5978",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5677919414328443,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 75,
+      "fit_max_error": 0.519475955820937,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5974471076467722,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405272663,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.0030744093405274953,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5739985158924412,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5979",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2881743380327286,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5369038084952678,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5587827201540789,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.003074409340527273,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5961535199934787,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5980",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5369038084952678,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5587827201540789,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 63,
+      "fit_max_error": 0.003074409340527051,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:5981",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.5961535199934787,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6670",
+      "name": "공부 separated handle",
+      "property": "x",
+      "native_cubic_segments": 76,
+      "fit_max_error": 0.1057720720547195,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:6670",
+      "name": "공부 separated handle",
+      "property": "y",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.09927400508445317,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:6752",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 73,
+      "fit_max_error": 0.19075403136952218,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:6752",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 67,
+      "fit_max_error": 0.1954836956631425,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 89,
+      "fit_max_error": 0.07690058263540323,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.08989780285423876,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.0007150571029314601,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 70,
+      "fit_max_error": 0.6031016712714745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6071115933630153,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949973,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.003208518640894928,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4271065995454215,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6938",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 47,
+      "fit_max_error": 0.5848998237693337,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6076201687516232,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5716096614739996,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711248477,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252293,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 46,
+      "fit_max_error": 0.6062334775995453,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6939",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2188235847367146,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 37,
+      "fit_max_error": 0.5169278390080478,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.5478377783370572,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252918,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.42870874784709745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6940",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 37,
+      "fit_max_error": 0.5169278390080478,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.5478377783370572,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252918,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6941",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.42870874784709745,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 54,
+      "fit_max_error": 0.6403433958025175,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5716096614739996,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711252293,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085163711248477,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.2188235847367146,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6942",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 44,
+      "fit_max_error": 0.5925234594821802,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 72,
+      "fit_max_error": 0.5291513186415528,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.6105220972425585,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949765,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408949973,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 45,
+      "fit_max_error": 0.5848998237693337,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6943",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4271065995454215,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5096589914648177,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 48,
+      "fit_max_error": 0.4924553963742575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408952193,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 19,
+      "fit_max_error": 0.5893629752728415,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6944",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5096589914648177,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 48,
+      "fit_max_error": 0.4924553963742575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.0032085186408952193,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:6945",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 19,
+      "fit_max_error": 0.5893629752728415,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7598",
+      "name": "기술 separated handle",
+      "property": "x",
+      "native_cubic_segments": 85,
+      "fit_max_error": 0.09655640413052424,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:7598",
+      "name": "기술 separated handle",
+      "property": "y",
+      "native_cubic_segments": 102,
+      "fit_max_error": 0.0966034644178535,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:7670",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.19314716077224148,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:7670",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 80,
+      "fit_max_error": 0.19398937458839782,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.07803052741735428,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 87,
+      "fit_max_error": 0.07933009385124024,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.0008085785598073545,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 96,
+      "fit_max_error": 0.5007902619513835,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5668493569285147,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.00331108336746596,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.37815287850535384,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7856",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.559667937528479,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.5542668686996706,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.5507536761059555,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.003311083367465946,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.5597656865449565,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7857",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.5727453670135461,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 28,
+      "fit_max_error": 0.621188914490233,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.6156800970950607,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674656615,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 20,
+      "fit_max_error": 0.5837986862864,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7858",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 28,
+      "fit_max_error": 0.621188914490233,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 64,
+      "fit_max_error": 0.6156800970950607,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7859",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 20,
+      "fit_max_error": 0.5837986862864,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 68,
+      "fit_max_error": 0.5969473282698949,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.5507536761059555,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.003311083367465946,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 84,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.5727453670135461,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7860",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5575437723154142,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 98,
+      "fit_max_error": 0.5130766630337575,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.549233473056276,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.00331108336746596,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 58,
+      "fit_max_error": 0.5634451411130144,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7861",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.37815287850535384,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 69,
+      "fit_max_error": 0.47572187798536447,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.5982637055711875,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674658835,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.48747953223740126,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7862",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 69,
+      "fit_max_error": 0.47572187798536447,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 71,
+      "fit_max_error": 0.5982637055711875,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 86,
+      "fit_max_error": 0.0033110833674656615,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:7863",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 22,
+      "fit_max_error": 0.48747953223740126,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8516",
+      "name": "문화 separated handle",
+      "property": "x",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.09450393080510366,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:8516",
+      "name": "문화 separated handle",
+      "property": "y",
+      "native_cubic_segments": 121,
+      "fit_max_error": 0.09720810562805582,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:8588",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 74,
+      "fit_max_error": 0.19282784272616027,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:8588",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 72,
+      "fit_max_error": 0.1886539032412884,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "x",
+      "native_cubic_segments": 83,
+      "fit_max_error": 0.0767049932592272,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "y",
+      "native_cubic_segments": 88,
+      "fit_max_error": 0.07993991659941457,
+      "tolerance": 0.08
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "rotation",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.0007905600564015458,
+      "tolerance": 0.0008
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.5872303892860913,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "y",
+      "native_cubic_segments": 50,
+      "fit_max_error": 0.5813476273320219,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.002902515929843997,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "inDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.23895262677728013,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8774",
+      "name": "Morph vertex 0",
+      "property": "outDistance",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.537420716940801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "x",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.6026437628851795,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5990462032055035,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.0028533422293715027,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229372018,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "inDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.537420716940801,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8775",
+      "name": "Morph vertex 1",
+      "property": "outDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4254903036548896,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "x",
+      "native_cubic_segments": 35,
+      "fit_max_error": 0.5771284884012431,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "y",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5851929212243179,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229371947,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "inDistance",
+      "native_cubic_segments": 21,
+      "fit_max_error": 0.5108627102709988,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8776",
+      "name": "Morph vertex 2",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "x",
+      "native_cubic_segments": 35,
+      "fit_max_error": 0.5771284884012431,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "y",
+      "native_cubic_segments": 36,
+      "fit_max_error": 0.5851929212243179,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229371947,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8777",
+      "name": "Morph vertex 3",
+      "property": "outDistance",
+      "native_cubic_segments": 21,
+      "fit_max_error": 0.5108627102709988,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "x",
+      "native_cubic_segments": 51,
+      "fit_max_error": 0.6189246009524823,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "y",
+      "native_cubic_segments": 29,
+      "fit_max_error": 0.5990462032055035,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "inRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.002853342229372018,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "outRotation",
+      "native_cubic_segments": 57,
+      "fit_max_error": 0.0028533422293715027,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "inDistance",
+      "native_cubic_segments": 4,
+      "fit_max_error": 0.4254903036548896,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8778",
+      "name": "Morph vertex 4",
+      "property": "outDistance",
+      "native_cubic_segments": 53,
+      "fit_max_error": 0.5865449713631037,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.5870697986172857,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5722625068869007,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.002902515929844001,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "inDistance",
+      "native_cubic_segments": 52,
+      "fit_max_error": 0.539076972361002,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8779",
+      "name": "Morph vertex 5",
+      "property": "outDistance",
+      "native_cubic_segments": 5,
+      "fit_max_error": 0.23895262677728013,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "x",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.578171379309893,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5184994753287047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "inRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298439185,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "outRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "inDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.6010888573708257,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8780",
+      "name": "Morph vertex 6",
+      "property": "outDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "x",
+      "native_cubic_segments": 55,
+      "fit_max_error": 0.578171379309893,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "y",
+      "native_cubic_segments": 49,
+      "fit_max_error": 0.5184994753287047,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "inRotation",
+      "native_cubic_segments": 10,
+      "fit_max_error": 0.002997092558938985,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "outRotation",
+      "native_cubic_segments": 59,
+      "fit_max_error": 0.0029025159298443626,
+      "tolerance": 0.0033
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "inDistance",
+      "native_cubic_segments": 1,
+      "fit_max_error": 0.0,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:8781",
+      "name": "Morph vertex 7",
+      "property": "outDistance",
+      "native_cubic_segments": 18,
+      "fit_max_error": 0.6010888573708257,
+      "tolerance": 0.6
+    },
+    {
+      "object": "0:9378",
+      "name": "취미 separated handle",
+      "property": "x",
+      "native_cubic_segments": 77,
+      "fit_max_error": 0.11440388898017773,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:9378",
+      "name": "취미 separated handle",
+      "property": "y",
+      "native_cubic_segments": 98,
+      "fit_max_error": 0.09959772485592566,
+      "tolerance": 0.1
+    },
+    {
+      "object": "0:9436",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12642257125139622,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9436",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 34,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9469",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12087925451999126,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9469",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 33,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9502",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.13628868603723276,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9502",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 33,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9535",
+      "name": "Gather fragment",
+      "property": "x",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.12284311221901589,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9535",
+      "name": "Gather fragment",
+      "property": "y",
+      "native_cubic_segments": 32,
+      "fit_max_error": 0.11232854854642937,
+      "tolerance": 0.15
+    },
+    {
+      "object": "0:9568",
+      "name": "Directional echo",
+      "property": "x",
+      "native_cubic_segments": 66,
+      "fit_max_error": 0.19303570631780076,
+      "tolerance": 0.2
+    },
+    {
+      "object": "0:9568",
+      "name": "Directional echo",
+      "property": "y",
+      "native_cubic_segments": 73,
+      "fit_max_error": 0.21322976594615284,
+      "tolerance": 0.2
+    }
+  ]
+}

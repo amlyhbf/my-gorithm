@@ -1,0 +1,21 @@
+{
+  "rml_sha256": "6acdbb87245d732404c90225f6d33ee7ab8fce8012029b3f56fe6f102238d53b",
+  "rive_cli": "1.8.0",
+  "runtime_file": "animation/intro-v4-1/build/intro-v4-1.riv",
+  "runtime_bytes": 850558,
+  "runtime_sha256": "f02a96805f80e53060c12af90240f041f44da89d4c0ac0b49c6602111491eb4f",
+  "native_end_state_checks": [
+    {
+      "theme": "dark",
+      "capture_seconds": 18,
+      "identical_to_final_poster": true
+    },
+    {
+      "theme": "light",
+      "capture_seconds": 18,
+      "identical_to_final_poster": true
+    }
+  ],
+  "web_runtime_tested": false,
+  "editor_rev_exported": false
+}
