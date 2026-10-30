@@ -1,0 +1,47 @@
+{
+  "source_rml_sha256": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
+  "capture_plan": {
+    "source_rml_sha256": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
+    "assets_sha256": {
+      "scene.rml": "56a8f785cbd5c3bb2870d4114e5b854143822f8c8ba76b9e41bd0de933a96c9f",
+      "rive.yaml": "0476f9fdbc65b185a48ae84c3981f5a6316aeca199cbb4187f43e844bcf02cd7",
+      "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+      "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+    },
+    "new_native_frames_per_theme": 840,
+    "preserved_native_frames_per_theme": 120,
+    "preserved_intervals": [
+      [
+        0,
+        119
+      ]
+    ],
+    "render_completed": true
+  },
+  "native_renderer": "Official Rive CLI 1.8.0",
+  "step_seconds": 0.016666666666666666,
+  "themes": {
+    "dark": {
+      "native_frames": 960,
+      "size": [
+        1080,
+        1920
+      ],
+      "distinct_png_hashes": 805,
+      "unique_morph_frames": 240,
+      "unique_control_feed_frames": 295,
+      "brand_hold_distinct_frames": 1
+    },
+    "light": {
+      "native_frames": 960,
+      "size": [
+        1080,
+        1920
+      ],
+      "distinct_png_hashes": 805,
+      "unique_morph_frames": 240,
+      "unique_control_feed_frames": 295,
+      "brand_hold_distinct_frames": 1
+    }
+  }
+}

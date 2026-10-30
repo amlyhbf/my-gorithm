@@ -1,0 +1,22 @@
+[
+  {
+    "authored_control_window_frames": [
+      468,
+      522
+    ],
+    "last_measurable_handle_change_frame": 512,
+    "feed_response_frame": 537,
+    "additional_pause_after_authored_window_seconds": 0.25,
+    "observed_pause_after_handle_change_seconds": 0.4166666666666667
+  },
+  {
+    "authored_control_window_frames": [
+      609,
+      675
+    ],
+    "last_measurable_handle_change_frame": 660,
+    "feed_response_frame": 690,
+    "additional_pause_after_authored_window_seconds": 0.25,
+    "observed_pause_after_handle_change_seconds": 0.5
+  }
+]

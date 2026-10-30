@@ -1,0 +1,8 @@
+{
+  "left": "V4.2",
+  "right": "V4.3",
+  "playback_speed_multiplier": 1,
+  "compare_a_seconds": 6.5,
+  "compare_b_seconds": 5.8,
+  "note": "Different original durations. The shorter pane visibly holds its last frame; no speed-up or time-normalization. These are comparison montages, not final animation renders."
+}

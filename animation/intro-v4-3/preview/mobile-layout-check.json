@@ -1,0 +1,33 @@
+{
+  "viewports": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "method": "Contain-fit actual decoded MP4 final frames and native settled-feed stills. No cropping; static image review, not a physical-device/browser performance test.",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "final_tick_nominal_font_px_at_width": {
+    "360": 7.926666666666666,
+    "390": 8.587222222222222,
+    "430": 9.467962962962963
+  },
+  "caveat": "Final ticks are auxiliary small print (about 8\u20139.5 px). Padding is corrected without reducing the V4.2 font; physical-phone viewing remains a design approval check.",
+  "future_button_safe_rectangle_native": [
+    204,
+    1570,
+    876,
+    1770
+  ]
+}

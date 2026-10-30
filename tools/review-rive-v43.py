@@ -45,14 +45,14 @@ for theme in ['dark','light']:
  poster=extract(V/f'intro-v4-3-{theme}.mp4',959,V/f'poster-{theme}-from-mp4.png')
  for w,h in [(360,640),(390,844),(430,932)]:
   for label,path in [('final',poster),('feed',frame(theme,780))]:
-   s=min(w/1080,h/1920);nw,nh=round(1080*s),round(1920*s);out=Image.new('RGB',(w,h),bg);out.paste(im(path,(nw,nh)),((w-nw)//2,(h-nh)//2));out.save(V/f'phone-{theme}-{label}-{w}x{h}.png')
+   s=min(w/1080,h/1920);nw,nh=round(1080*s),round(1920*s);outer=im(path).getpixel((0,0));out=Image.new('RGB',(w,h),outer);out.paste(im(path,(nw,nh)),((w-nw)//2,(h-nh)//2));out.save(V/f'phone-{theme}-{label}-{w}x{h}.png')
  oldposter=extract(B/f'intro-v4-2-{theme}.mp4',959,P/'build'/f'old-final-{theme}.png')
  # Same-sized full final frames plus an unscaled crop of the upper channel card.
  out=Image.new('RGB',(1080,1360),bg);d=ImageDraw.Draw(out)
  for j,(label,path) in enumerate([('V4.2 · 기존',oldposter),('V4.3 · 여백 보정',poster)]):
   d.text((j*540+20,12),label,font=big,fill=fg);out.paste(im(path,(540,960)),(j*540,64))
-  crop=im(path).crop((190,906,890,1076));out.paste(crop.resize((540,131),Image.Resampling.LANCZOS),(j*540,1060))
-  d.text((j*540+20,1210),'같은 크기 · 실제 MP4 마지막 프레임',font=small,fill=muted)
+  crop=Image.new('RGB',(700,170),bg);crop.paste(im(path).crop((190,906,890,1042 if j==0 else 1062)),(0,0));out.paste(crop.resize((540,131),Image.Resampling.LANCZOS),(j*540,1060))
+  d.text((j*540+20,1210),'실제 MP4 · 첫 카드 동일 배율 확대',font=small,fill=muted)
   d.text((j*540+20,1250),'눈금 중심–카드 하단: '+('6px' if j==0 else '30px')+' (원본 좌표)',font=small,fill=muted)
  out.save(V/f'compare-c-final-ui-{theme}.png')
 (V/'frame-audit.json').write_text(json.dumps(audit,indent=2)+'\n')

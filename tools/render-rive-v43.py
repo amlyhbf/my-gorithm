@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Official Rive captures: stills, short tests, then native 60-FPS finals."""
 from pathlib import Path
+from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -31,7 +32,13 @@ def capture(theme,part,frames,folder,scale):
   else:stamp.write_text(json.dumps(signature,indent=2)+'\n')
  with (d/'capture.log').open('w') as log:
   for j,f in enumerate(frames):
-   if (dest/f'{f:04d}.png').exists():continue
+   existing=dest/f'{f:04d}.png'
+   if existing.exists():
+    try:
+     with Image.open(existing) as png:
+      assert png.size==(round(1080*scale),round(1920*scale));png.verify()
+     continue
+    except (OSError,AssertionError):existing.unlink()
    if os.environ.get('RIVE_V43_FRAME_WINDOW','1')=='1':
     from bisect import bisect_right
     for kp,keys,clock in channels:
@@ -40,6 +47,13 @@ def capture(theme,part,frames,folder,scale):
    run([str(R/'tools/rive'),str(d),f'--screenshot={dest/f"{f:04d}.png"}',f'--advance={f+1}',f'--scale={scale}'],stdout=log,stderr=log)
    if (j+1)%30==0:print(f'{mode}/{theme}/{part}: {j+1}/{len(frames)}',flush=True)
 def encode(folder,frames,fps,name):
+ previous=V/(name+'.json')
+ if (V/name).exists() and previous.exists():
+  prior=json.loads(previous.read_text())
+  if prior.get('source_rml_sha256')==source and prior.get('sha256')==hashlib.sha256((V/name).read_bytes()).hexdigest():
+   stream=prior['streams'][0]
+   if stream['avg_frame_rate']==f'{fps}/1' and int(stream['nb_read_frames'])==len(frames):
+    record('검증된 기존 MP4 재사용: '+name);return
  fl=V/folder/'encode.txt';fl.write_text(''.join(f"file '{f:04d}.png'\nduration {1/fps:.12f}\n" for f in frames))
  run(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-r',str(fps),'-i',str(fl),'-frames:v',str(len(frames)),'-c:v','libx264','-preset','medium','-crf','16','-pix_fmt','yuv420p','-movflags','+faststart',str(V/name)])
  data=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_entries','stream=width,height,avg_frame_rate,nb_frames,nb_read_frames:format=duration,size,bit_rate','-of','json',str(V/name)],text=True))

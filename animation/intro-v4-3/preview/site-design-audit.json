@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "css_sha256": "594536acd56a35c48da30e0cac2bed498b0fd5c779fcce0f81b0de7972064a43",
+  "theme_tokens": {
+    "light": {
+      "bg-page": true,
+      "bg-card": true,
+      "bg-subtle": true,
+      "bg-active": true,
+      "text-main": true,
+      "text-muted": true,
+      "text-subtle": true,
+      "border-color": true,
+      "border-subtle": true,
+      "color-study": true,
+      "color-tech": true,
+      "color-culture": true,
+      "color-hobby": true,
+      "primary": true,
+      "primary-text": true,
+      "skeleton-base": true,
+      "skeleton-wave": true
+    },
+    "dark": {
+      "bg-page": true,
+      "bg-card": true,
+      "bg-subtle": true,
+      "bg-active": true,
+      "text-main": true,
+      "text-muted": true,
+      "text-subtle": true,
+      "border-color": true,
+      "border-subtle": true,
+      "color-study": true,
+      "color-tech": true,
+      "color-culture": true,
+      "color-hobby": true,
+      "primary": true,
+      "primary-text": true,
+      "skeleton-base": true,
+      "skeleton-wave": true
+    }
+  },
+  "actual_category_meta_equal": true,
+  "font": "Pretendard Variable / instantiated 600 and 800",
+  "actual_theme_switch": "body.dark-mode + saved mamgorithm_theme_v2; intro theme connection not implemented",
+  "actual_slider": "Independent ranges 0–100 step5. Website track6px, white22px knob/category3px border; intro scales these forms for the movie.",
+  "note": "Source code design audit; no website code modified."
+}
