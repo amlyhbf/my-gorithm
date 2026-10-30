@@ -13,7 +13,9 @@
     "test:feed": "node --test tests/feed-engine.test.mjs",
     "test:feed:browser": "node tests/feed.browser.cjs",
     "test:content": "node --test tests/content-admin.test.mjs",
-    "test:content:browser": "node tests/content-admin.browser.cjs"
+    "test:content:browser": "node tests/content-admin.browser.cjs",
+    "studio": "node tools/studio-server.mjs",
+    "test:studio": "node --test tests/studio.test.mjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
