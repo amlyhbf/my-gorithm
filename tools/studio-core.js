@@ -26,6 +26,8 @@ export function studioIssues(item) {
     errors.push('본문 소제목·내용 최소 2개(각 본문 50자 이상) 필요');
   if (item.imagePending || String(item.imageUrl||'').startsWith('/studio-generated/'))
     errors.push('AI 이미지의 영구 HTTPS 주소를 등록해야 승인 가능');
+  if (!(item.imageCredit || '').trim())
+    errors.push('대표 이미지의 저작자·라이선스·출처 또는 직접 제작 근거 기록 필요');
   if (item.secondaryCategory && item.secondaryCategory===item.category)
     errors.push('대표 분야와 보조 분야 중복 확인');
   return [...new Set(errors)];
@@ -35,7 +37,8 @@ export function toApprovedStudioCard(item) {
   if (item.status!=='승인'||errors.length)
     throw new Error('승인 전 항목을 확인하세요: '+errors.join(', '));
   const basic=toWebsiteCard(item);
-  return {...basic,keyPoints:item.keyPoints.map(x=>x.trim()),
+  return {...basic,duration:item.duration||basic.duration,date:item.date||basic.date,
+    keyPoints:item.keyPoints.map(x=>x.trim()),
     sections:item.sections.map(s=>({heading:s.heading.trim(),body:s.body.trim()}))};
 }
 export function approvedStudioCards(items) {
