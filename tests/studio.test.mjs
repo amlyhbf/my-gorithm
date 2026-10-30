@@ -15,7 +15,7 @@ function validItem(){
   const [item]=fromCsv(csv,[]);
   Object.assign(item,{
     recommendationReason:'추천 시스템의 기본 개념을 탐구하는 사용자에게 도움이 되는 읽을거리입니다.',
-    imageUrl:'https://upload.wikimedia.org/test.png',linkChecked:true,rightsChecked:true,
+    imageUrl:'https://upload.wikimedia.org/test.png',imageCredit:'Wikimedia Commons · 출처 및 라이선스 확인',linkChecked:true,rightsChecked:true,
     contentChecked:true,
     keyPoints:[
       '추천 시스템은 데이터를 이용해 콘텐츠를 분류하고 사용자에게 제시합니다.',
