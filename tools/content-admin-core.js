@@ -62,6 +62,7 @@ export function importCandidates(text, existingCards = []) {
   const oldUrls = new Set(existingCards.map(x => canonicalUrl(x.url)).filter(Boolean));
   const oldTitles = new Set(existingCards.map(x => (x.title || '').trim().toLowerCase()));
   const seenUrls = new Set();
+  const seenTitles = new Set();
   return rows.map((row, index) => {
     const key = canonicalUrl(row['원본URL']);
     const title = row['제목'];
@@ -69,7 +70,9 @@ export function importCandidates(text, existingCards = []) {
     if (key && oldUrls.has(key)) duplicates.push('기존 카드와 URL 중복');
     if (oldTitles.has(title.toLowerCase())) duplicates.push('기존 카드와 제목 중복');
     if (key && seenUrls.has(key)) duplicates.push('이번 CSV 내 URL 중복');
+    if (seenTitles.has(title.toLowerCase())) duplicates.push('이번 CSV 내 제목 중복');
     if (key) seenUrls.add(key);
+    seenTitles.add(title.toLowerCase());
     return {
       importId: 'candidate-' + (index + 1) + '-' + hash(row['원본URL'] + title),
       rowNumber: index + 2,
