@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""Inspect actual final MP4s, extract final frames and produce mobile/comparison sheets."""
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import hashlib,json,subprocess,shutil,datetime
+from zoneinfo import ZoneInfo
+R=Path(__file__).resolve().parent.parent;P=R/'animation/intro-v4-4';V=P/'preview';B=R/'animation/intro-v4-3/preview'
+font='/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc';ft=ImageFont.truetype(font,24,index=1);small=ImageFont.truetype(font,19,index=1);big=ImageFont.truetype(font,32,index=1)
+def extract(path,f,dest):
+ subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(path),'-vf',f'select=eq(n\\,{f})','-frames:v','1',str(dest)],check=True)
+ return dest
+def im(path,size=None):
+ with Image.open(path) as x:
+  x=x.convert('RGB');return x if size is None else x.resize(size,Image.Resampling.LANCZOS)
+def frame(theme,f):return V/f'frames-final-{theme}'/f'{f:04d}.png'
+source=hashlib.sha256((P/'scene.rml').read_bytes()).hexdigest();plan=json.load(open(V/'capture-plan.json'));assert plan['render_completed'] and plan['source_rml_sha256']==source
+assets={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [P/'scene.rml',P/'rive.yaml',*sorted(P.glob('*.ttf'))]}
+assert json.load(open(V/'test-review.json'))['assets_sha256']==assets
+assert json.load(open(V/'native-preservation.json'))['assets_sha256']==assets
+media={}
+for name,secs,dims in [('intro-v4-4-dark.mp4',16,(1080,1920)),('intro-v4-4-light.mp4',16,(1080,1920)),('compare-a-entrance.mp4',4.1,(1080,1040)),('compare-b-response.mp4',5.1,(1080,1040))]:
+ path=V/name;d=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_entries','stream=codec_name,pix_fmt,width,height,r_frame_rate,avg_frame_rate,nb_frames,nb_read_frames:format=duration,size,bit_rate','-of','json',str(path)],text=True));s=d['streams'][0]
+ assert (s['width'],s['height'])==dims and s['r_frame_rate']==s['avg_frame_rate']=='60/1'
+ assert int(s['nb_read_frames'])==int(s['nb_frames'])==round(secs*60) and abs(float(d['format']['duration'])-secs)<1e-6
+ stamps=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_frames','-show_entries','frame=best_effort_timestamp_time','-of','json',str(path)],text=True))['frames'];err=max(abs(float(x['best_effort_timestamp_time'])-j/60) for j,x in enumerate(stamps));assert err<1e-6
+ d.update({'source_rml_sha256':source,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'decoded_frames':len(stamps),'max_timestamp_error_seconds':err});media[name]=d;(V/(name+'.json')).write_text(json.dumps(d,indent=2)+'\n')
+(P/'final-media-verification.json').write_text(json.dumps(media,indent=2)+'\n')
+audit={'source_rml_sha256':source,'capture_plan':plan,'native_renderer':'Official Rive CLI 1.8.0','step_seconds':1/60,'themes':{}}
+scenes=[('첫 움직임',.1),('교차 합류',.45),('네 관심사',.9),('기존 흐름 연결',1.5),('보존한 모핑',5.6),('빠른 피드 반응',11.4),('같은 최종 피드',796/60),('같은 브랜드·UI',15.5)]
+for theme in ['dark','light']:
+ files=sorted((V/f'frames-final-{theme}').glob('*.png'));assert [f.name for f in files]==[f'{j:04d}.png' for j in range(960)]
+ hs=[]
+ for f in files:
+  with Image.open(f) as x:assert x.size==(1080,1920)
+  hs.append(hashlib.sha256(f.read_bytes()).hexdigest())
+ for a,z,offset in plan['preserved_intervals']:assert all(files[j].read_bytes()==(B/f'frames-final-{theme}'/f'{j+offset:04d}.png').read_bytes() for j in range(a,z+1))
+ audit['themes'][theme]={'native_frames':960,'size':[1080,1920],'distinct_png_hashes':len(set(hs)),'unique_morph_frames':len(set(hs[234:474])),'unique_control_feed_frames':len(set(hs[474:798])),'brand_hold_distinct_frames':len(set(hs[858:960]))}
+ bg,fg,muted=('#090D16','#F8FAFC','#94A3B8') if theme=='dark' else ('#F8FAFC','#0F172A','#64748B')
+ sheet=Image.new('RGB',(1080,1112),bg);d=ImageDraw.Draw(sheet)
+ for j,(label,t) in enumerate(scenes):
+  f=round(t*60);dest=V/f'scene-{theme}-{j+1:02d}.png';shutil.copyfile(frame(theme,f),dest)
+  x=j%4*270;y=j//4*556;sheet.paste(im(dest,(270,480)),(x,y));d.text((x+10,y+488),label,font=ft,fill=fg);d.text((x+10,y+526),f'{t:.2f}s',font=small,fill=muted)
+ sheet.save(V/f'storyboard-{theme}.png')
+ # Actual decoded last MP4 frame, not just the source/native poster.
+ poster=extract(V/f'intro-v4-4-{theme}.mp4',959,V/f'poster-{theme}-from-mp4.png')
+ for w,h in [(360,640),(390,844),(430,932)]:
+  for label,path in [('final',poster),('feed',frame(theme,780))]:
+   s=min(w/1080,h/1920);nw,nh=round(1080*s),round(1920*s);outer=im(path).getpixel((0,0));out=Image.new('RGB',(w,h),outer);out.paste(im(path,(nw,nh)),((w-nw)//2,(h-nh)//2));out.save(V/f'phone-{theme}-{label}-{w}x{h}.png')
+ # Same phase/size, original native frames. No redesign of approved UI.
+ sheet=Image.new('RGB',(1080,1472),bg);d=ImageDraw.Draw(sheet)
+ for row,(label,base,times) in enumerate([('V4.3 · 기준',B,[5.2,796/60,15.5]),('V4.4 · 보존',V,[5.6,796/60,15.5])]):
+  y=row*736;d.text((18,y+8),label,font=big,fill=fg)
+  for col,(name,t) in enumerate(zip(['모핑 · 같은 국면','최종 피드','브랜드 · 최종 UI'],times)):
+   file=base/f'frames-final-{theme}'/f'{round(t*60):04d}.png';sheet.paste(im(file,(360,640)),(col*360,y+52));d.text((col*360+15,y+702),name,font=small,fill=muted)
+ sheet.save(V/f'compare-c-preserved-{theme}.png')
+(V/'frame-audit.json').write_text(json.dumps(audit,indent=2)+'\n')
+(V/'mobile-layout-check.json').write_text(json.dumps({'viewports':[[360,640],[390,844],[430,932]],'method':'Contain-fit actual decoded MP4 final frames and native settled-feed stills. No cropping; static image review, not a physical-device/browser performance test.','themes':['dark','light'],'unchanged_v43_final_tick_nominal_font_px_at_width':{str(w):29*.82*w/1080 for w in [360,390,430]},'caveat':'Final ticks are auxiliary small print (about 8–9.5 px). Approved V4.3 padding/font/layout are preserved; physical-phone performance remains untested.','future_button_safe_rectangle_native':[204,1570,876,1770]},indent=2)+'\n')
+# Actual realtime playback in the available headless SDL software driver.
+import os,time
+playenv=dict(os.environ);playenv.update(SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',SDL_RENDER_DRIVER='software')
+play=[]
+for theme in ['dark','light']:
+ name=f'intro-v4-4-{theme}.mp4';start=time.monotonic()
+ with (P/'build'/f'playback-{theme}.log').open('w') as log:proc=subprocess.run(['ffplay','-autoexit','-an','-loglevel','warning',str(V/name)],env=playenv,stdout=log,stderr=log)
+ assert proc.returncode==0
+ play.append({'file':name,'exit_code':0,'elapsed_seconds':time.monotonic()-start,'method':'Actual realtime FFplay software/dummy SDL playback. No physical screen or mobile-performance claim.'})
+(V/'playback-verification.json').write_text(json.dumps({'passed':True,'playback':play,'visual_review':'Actual decoded MP4 frames/contact sheets are reviewed separately.'},indent=2)+'\n')
+with (P/'WORK_LOG.md').open('a') as f:f.write('- '+datetime.datetime.now(ZoneInfo('Asia/Seoul')).isoformat(timespec='seconds')+' — 1,920장 PNG·실제 MP4 디코딩 프레임/시각 검사, 두 비교 영상, 마지막 MP4 프레임 추출 및 모바일 시안 생성.\n')
+print(json.dumps({k:d['format'] for k,d in media.items()},indent=2))
