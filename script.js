@@ -1,3 +1,5 @@
+import { createIntro, readIntroFlag } from './intro.js';
+import './intro.css';
 // ==========================================================================
 // 맘고리즘 (내맘대로 알고리즘) - Modern Product Script with Mini Dock & Recipe Sharing
 // ==========================================================================
@@ -68,18 +70,26 @@ document.addEventListener('DOMContentLoaded', () => {
   bindUIEvents();
   renderAllViews({ withSkeleton: true, delay: 350 });
 
-  // 첫 방문 시 인터랙티브 믹서 온보딩 화면 자동 노출
-  const hasOnboarded = localStorage.getItem(STORAGE_KEYS.ONBOARDED);
-  if (!hasOnboarded) {
-    openOnboarding();
-  } else {
-    // 온보딩 완료 후 코치마크 미확인 사용자에게 가이드 안내
-    const hasSeenCoachmark = localStorage.getItem(STORAGE_KEYS.COACHMARK_SEEN);
-    if (!hasSeenCoachmark) {
-      setTimeout(() => startCoachmarkTour(), 600);
-    }
-  }
+  const intro = createIntro({
+    isDark: () => state.darkMode,
+    onFirstVisitFinished: continueAfterIntro
+  });
+  document.getElementById('btnReplayIntro')?.addEventListener('click', () => intro.open({ replay: true }));
+  if (!intro.hasSeen()) intro.open();
+  else continueAfterIntro();
 });
+
+// Intro exposure and onboarding completion are deliberately independent.
+function continueAfterIntro() {
+  if (!readIntroFlag(STORAGE_KEYS.ONBOARDED)) {
+    openOnboarding();
+    document.querySelector('#onboardingOverlay button, #onboardingOverlay input')?.focus({ preventScroll: true });
+  } else if (!readIntroFlag(STORAGE_KEYS.COACHMARK_SEEN)) {
+    setTimeout(() => {
+      if (!document.querySelector('.intro-dialog[open]')) startCoachmarkTour();
+    }, 600);
+  }
+}
 
 // 로컬 설정 불러오기
 function loadSavedPreferences() {

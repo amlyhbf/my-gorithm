@@ -8,9 +8,11 @@
     "start": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "test:intro": "node tests/intro.integration.cjs"
   },
   "devDependencies": {
+    "playwright": "^1.62.1",
     "vite": "^6.0.0"
   },
   "dependencies": {
