@@ -1,0 +1,22 @@
+@import url("./card-studio.css");
+
+/* V3 is a static, Work-friendly editor. Main visual card template remains unchanged. */
+.work-panel { background:#fff; border:1px solid #dce4f0; border-radius:15px; padding:18px; margin-bottom:15px; box-shadow:0 3px 18px rgba(20,31,68,.04); }
+.work-header { display:flex; align-items:flex-start; justify-content:space-between; gap:15px; margin-bottom:13px; }
+.work-header strong { font-size:15px; color:#1a2440; }
+.work-header p { font-size:12px; line-height:1.6; color:#71809a; margin:5px 0 0; }
+.spark { color:#6351d8; }
+.web-only { flex-shrink:0; border:1px solid #d4dbfb; background:#f4f5ff; color:#5143a1; padding:5px 10px; border-radius:50px; font-weight:700; font-size:10px; }
+.mini-label { display:block; margin:11px 0 6px; font-size:12px; font-weight:700; color:#52617e; }
+.work-panel textarea { width:100%; box-sizing:border-box; border:1px solid #d5ddeb; border-radius:10px; padding:13px; background:#fcfdff; color:#21304b; resize:vertical; font-size:12px; line-height:1.65; }
+.work-panel #workPrompt { background:#f5f7fc; }
+.work-panel #cardJson { border:1px dashed #a6ace5; min-height:140px; }
+.work-panel textarea:focus { outline:2px solid #b2b8fb; outline-offset:1px; }
+.work-actions { display:flex; align-items:center; justify-content:flex-start; flex-wrap:wrap; gap:8px; margin:8px 0 12px; }
+.work-actions .tiny { color:#7f8b9f; font-size:10px; line-height:1.5; flex:1 1 180px; }
+.design-area .work-panel + .notice { margin-top:0; }
+button.upload { font:inherit; padding:11px; font-size:12px; border:1px solid #d7deec; }
+@media(max-width:760px) {
+  .work-header { flex-wrap:wrap; } .work-panel { padding:12px; }
+  .work-panel #cardJson { min-height:160px; }
+}
