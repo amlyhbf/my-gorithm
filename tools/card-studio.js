@@ -27,6 +27,9 @@ function autoHeight(node){
 }
 function reflectImage(){
   const x=selected();const image=$('cover'),empty=$('heroEmpty');
+  const credit=$('previewImageCredit');
+  credit.textContent=x?.imageCredit ? '이미지: '+x.imageCredit : '';
+  credit.hidden=!x?.imageCredit;
   if(!x||!x.imageUrl){image.removeAttribute('src');image.classList.remove('visible');empty.hidden=false;return;}
   image.src=x.imageUrl;image.classList.add('visible');empty.hidden=true;
 }
@@ -131,7 +134,7 @@ function updateField(key,value,verify=null){
   x[key]=value;
   if(!unchanged)invalidate(verify);
   if(key==='url')$('originalLink').href=safeOriginalUrl(value)||'#';
-  if(key==='imageUrl')reflectImage();
+  if(key==='imageUrl'||key==='imageCredit')reflectImage();
   if(key==='category')updateBadge();
   updateReview();save();
 }
