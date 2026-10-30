@@ -5,7 +5,7 @@ V4.2의 16초, 네 도형·4초 모핑, 여섯 대표 카드와 두 테마를 �
 
 ## 최종 다운로드
 
-다크·라이트 최종 렌더 및 디코딩/PTS 검사를 완료했다. 다운로드 링크는 실제 GitHub 파일과 SHA256 대조로 추가 확인한다.
+다크·라이트 최종 렌더 및 디코딩/PTS 검사를 완료했다. GitHub 링크 8개를 실제 다운로드해 HTTP 200·크기·SHA256 일치를 확인했다.
 
 - [다크 MP4](https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-3/animation/intro-v4-3/preview/intro-v4-3-dark.mp4)
 - [라이트 MP4](https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-3/animation/intro-v4-3/preview/intro-v4-3-light.mp4)
@@ -65,5 +65,5 @@ unchanged-intervals.json에 기록한다. PNG를 FFmpeg로 H.264 MP4에 압축�
 - `preview/phone-*.png`: 세 모바일 크기의 정적 확인 이미지.
 - `preview/timeline-before-after.png`, `TIMELINE.md`: 시간 배분과 키프레임.
 - `VALIDATION.md`, `final-media-verification.json`, `preview/source-verification.json`: 실제 검증.
-- `github-download-verification.json`: GitHub 실제 다운로드·크기·SHA256 결과(확인 후 생성).
+- `github-download-verification.json`: GitHub 실제 다운로드·크기·SHA256 결과(8개 모두 통과).
 - `RECOVERY.md`: 중단 복구 방법. 원시 1,920장 PNG는 작업 환경에 보존하고 Git에는 큰 결과물만 저장.

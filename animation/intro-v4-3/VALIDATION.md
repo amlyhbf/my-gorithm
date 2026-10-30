@@ -87,3 +87,10 @@ script.js의 실제 calculateAllocation/buildFeedList와 data.js를 격리된 No
 실제16초 최종 MP4를 구분한다. 비교A/B도60FPS/390프레임/348프레임으로 디코딩 검사를 통과했다.
 
 실제 배포·웹 연결·기존 브랜치 병합·원본 저장소 수정은 수행하지 않았다.
+
+## GitHub 보존·다운로드 확인
+
+feat/rive-intro-v4-3 브랜치에 원본/빌드/최종 MP4/비교/검증 자료를 보존했다.
+실제 GitHub raw 링크 8개(MP4 두 개, 비교 영상 두 개, 마지막 UI 비교 PNG 두 개, RML, Rive)를
+총16,256,608바이트 다운로드해 HTTP200과 로컬 파일의 크기·SHA256 완전 일치를 확인했다.
+github-download-verification.json에 URL·확인 시각·보존 커밋·해시를 남겼다.
