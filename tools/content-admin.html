@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>맘고리즘 | 콘텐츠 관리 V1 (개발 전용)</title>
+  <link rel="stylesheet" href="./content-admin.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="eyebrow">MAMGORITHM / TEAM WORKSPACE</span>
+      <h1>콘텐츠 관리 <span>V1</span></h1>
+      <p>후보 수집 → 팀 검토 → 승인 → 개발용 카드 생성</p>
+    </div>
+    <div class="sandbox-pill">로컬 검토 도구 · 운영 사이트와 분리됨</div>
+  </header>
+
+  <main>
+    <section class="import-panel" aria-label="데이터 가져오기 및 내보내기">
+      <div>
+        <h2>후보 CSV 가져오기</h2>
+        <p>승민이의 콘텐츠 후보 CSV를 선택하세요. 검토 내용은 이 브라우저에 임시 보관됩니다.</p>
+        <label for="csvFile" class="upload-btn">CSV 파일 선택 <span aria-hidden="true">↗</span></label>
+        <input type="file" id="csvFile" accept=".csv,text/csv"/>
+        <span id="fileName" class="file-name">아직 파일을 선택하지 않았어요</span>
+      </div>
+      <div class="export-actions">
+        <button type="button" id="exportReview" disabled>검토표 CSV 저장</button>
+        <button type="button" id="exportApproved" class="primary" disabled>승인 카드 JSON 생성</button>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="콘텐츠 검토 진행">
+      <div><span>불러온 후보</span><strong id="totalCount">0</strong></div>
+      <div><span>승인</span><strong id="approvedCount">0</strong></div>
+      <div><span>검토 중</span><strong id="reviewCount">0</strong></div>
+      <div><span>보류</span><strong id="holdCount">0</strong></div>
+    </section>
+
+    <div class="workspace">
+      <aside class="sidebar" aria-label="콘텐츠 후보 목록">
+        <div class="sidebar-head">
+          <h2>후보 목록</h2>
+          <label for="searchInput" class="visually-hidden">제목 검색</label>
+          <input id="searchInput" type="search" placeholder="제목 또는 원문 검색" disabled/>
+          <label for="filterSelect" class="visually-hidden">검토 상태 필터</label>
+          <select id="filterSelect" disabled>
+            <option value="all">전체 상태</option>
+            <option value="대기">대기</option>
+            <option value="검토중">검토 중</option>
+            <option value="승인">승인</option>
+            <option value="보류">보류</option>
+            <option value="중복">중복 의심</option>
+          </select>
+        </div>
+        <div id="candidateList" class="candidate-list">
+          <p class="empty-message">CSV 파일을 불러오면 여기에 목록이 표시돼요.</p>
+        </div>
+      </aside>
+
+      <section class="editor" aria-label="카드 내용 검토">
+        <div id="emptyEditor" class="editor-empty">
+          <div class="empty-icon">▤</div>
+          <h2>후보를 선택해 검토해 보세요</h2>
+          <p>추천 이유와 썸네일이 비어 있는 자료는 자동으로 승인되지 않습니다.<br/>
+            원본 문서를 직접 확인한 뒤 내용을 정리해 주세요.</p>
+        </div>
+        <div id="editorContent" hidden>
+          <div class="editor-header">
+            <div>
+              <span class="eyebrow">CONTENT REVIEW</span>
+              <h2 id="selectedHeading"></h2>
+              <span id="candidateMeta" class="editor-meta"></span>
+            </div>
+            <span id="selectedStatus" class="status-chip">대기</span>
+          </div>
+
+          <div id="validation" class="validation" role="status" aria-live="polite"></div>
+
+          <form id="reviewForm" autocomplete="off">
+            <div class="form-grid">
+              <label>대표 분야
+                <select name="category">
+                  <option value="study">공부</option><option value="tech">기술</option>
+                  <option value="culture">문화</option><option value="hobby">취미</option>
+                </select>
+              </label>
+              <label>보조 분야 (추천 계산에는 아직 미반영)
+                <select name="secondaryCategory">
+                  <option value="">없음</option><option value="study">공부</option>
+                  <option value="tech">기술</option><option value="culture">문화</option>
+                  <option value="hobby">취미</option>
+                </select>
+              </label>
+            </div>
+            <label>추천 카드 제목
+              <input name="title" required maxlength="140"/>
+            </label>
+            <label>원본 문서 제목
+              <input name="originalTitle" readonly/>
+            </label>
+            <label>카드 요약 (원문 확인 후 직접 재작성)
+              <textarea name="summary" rows="5" required></textarea>
+            </label>
+            <label>추천 이유 (필수)
+              <textarea name="recommendationReason" rows="3" placeholder="이 관심 분야 사용자에게 이 콘텐츠를 추천하는 이유를 작성하세요." required></textarea>
+            </label>
+            <label>분야 연결 근거 (내부 검토용)
+              <textarea name="rationale" rows="2"></textarea>
+            </label>
+            <label>원문 URL
+              <input name="url" type="url" required/>
+            </label>
+            <div class="link-row">
+              <a id="openSource" target="_blank" rel="noopener noreferrer" href="#">원본 문서 열기 ↗</a>
+              <span>링크 접속은 직접 확인해 주세요. 자동 검증으로 처리하지 않습니다.</span>
+            </div>
+            <label>출처
+              <input name="source" required/>
+            </label>
+            <label>썸네일 URL (HTTPS, 필수)
+              <input name="imageUrl" type="url" placeholder="https://..."/>
+            </label>
+            <label>이미지 출처·저작권 메모 (내부 검토용)
+              <input name="imageCredit" placeholder="예: 직접 제작 / Commons 파일명·저작자·라이선스"/>
+            </label>
+            <label>검토 메모
+              <textarea name="reviewNotes" rows="2" placeholder="원문과 제목 불일치, 썸네일 보완 필요 등"></textarea>
+            </label>
+
+            <div class="check-panel">
+              <label><input type="checkbox" name="linkChecked"/> 원문 링크를 직접 열어 정상 연결을 확인했어요.</label>
+              <label><input type="checkbox" name="contentChecked"/> 제목·요약을 원문과 대조하고 필요한 부분을 재작성했어요.</label>
+              <label><input type="checkbox" name="rightsChecked"/> 텍스트 및 썸네일 사용 조건과 출처 표기를 검토했어요.</label>
+            </div>
+            <div class="form-actions">
+              <button type="button" id="holdButton" class="secondary">보류</button>
+              <button type="button" id="reviewButton" class="secondary">검토 중으로 표시</button>
+              <button type="button" id="approveButton" class="primary">이 카드 승인</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <strong>개발 반영 안내</strong> · 이 화면에서 승인해도 실제 웹사이트에는 자동 등록되지 않습니다.
+      JSON을 내보내 별도 개발 브랜치에서 데이터 반영과 테스트를 거쳐야 합니다.
+      브라우저 데이터를 삭제하면 임시 검토 기록도 사라지므로 검토표 CSV를 정기적으로 저장하세요.
+    </footer>
+  </main>
+  <script type="module" src="./content-admin.js"></script>
+</body>
+</html>
