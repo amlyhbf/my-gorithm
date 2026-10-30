@@ -39,6 +39,7 @@
       795
     ]
   ],
-  "render_completed": false,
-  "dark_completed": true
+  "render_completed": true,
+  "dark_completed": true,
+  "light_completed": true
 }

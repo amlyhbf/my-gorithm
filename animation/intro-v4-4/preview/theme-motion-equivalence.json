@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "themes": {
+    "Dark": {
+      "channels": 370,
+      "sha256": "cdcbfc1a84ca8578a75fef79b5afcd122bf0a74e1aaf18c7239ed110ac8475f2"
+    },
+    "Light": {
+      "channels": 370,
+      "sha256": "cdcbfc1a84ca8578a75fef79b5afcd122bf0a74e1aaf18c7239ed110ac8475f2"
+    }
+  },
+  "method": "All animated channels, target hierarchy, frames, values and interpolation handles; excluding authored IDs."
+}
