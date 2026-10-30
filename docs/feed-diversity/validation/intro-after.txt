@@ -1,0 +1,15 @@
+
+> mamgorithm@1.0.0 test:intro
+> node tests/intro.integration.cjs
+
+PASS mobile: real 16s light playback → final poster → unchanged onboarding → 12 cards → revisit
+PASS touch: first tap reveals only; 1.8s hide; repeated taps reset; actual skip opens onboarding
+PASS keyboard and hover keep skip visible; focus isolated; refresh bypasses repeat
+PASS dark: real playback completes; replay restores settings, focus, scroll; presets/bookmarks/shuffle/theme remain usable
+PASS reduced: static brand and working start button
+PASS denyPlay: static brand and working start button
+PASS broken: static brand and working start button
+PASS stall: static brand and working start button
+PASS shared recipe stays intact through intro and onboarding
+PASS poster failure, blocked storage and reduced motion still offer a usable entry
+PASS small landscape viewport keeps complete portrait and CTA in viewport

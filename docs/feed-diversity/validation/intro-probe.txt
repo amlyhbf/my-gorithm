@@ -1,0 +1,45 @@
+{
+  time: 5.291552,
+  duration: 16,
+  paused: false,
+  ended: false,
+  ready: 4,
+  error: undefined,
+  visibility: 'visible'
+}
+{
+  time: 10.393602,
+  duration: 16,
+  paused: false,
+  ended: false,
+  ready: 4,
+  error: undefined,
+  visibility: 'visible'
+}
+{
+  time: 14.833201,
+  duration: 16,
+  paused: false,
+  ended: false,
+  ready: 4,
+  error: undefined,
+  visibility: 'visible'
+}
+{
+  time: 16,
+  duration: 16,
+  paused: true,
+  ended: true,
+  ready: 4,
+  error: undefined,
+  visibility: 'visible'
+}
+{
+  time: 16,
+  duration: 16,
+  paused: true,
+  ended: true,
+  ready: 4,
+  error: undefined,
+  visibility: 'visible'
+}

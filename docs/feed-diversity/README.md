@@ -1,5 +1,7 @@
 # 추천 피드 다양성 개선 — 개발 검토본
 
+> 최신 전체 검증 결과는 [VALIDATION.md](VALIDATION.md)를 참조. 아래 실행 상태는 이번 전체 검증 이전의 개발 기록이며, 현재 빌드·추천 단위 8개·피드 브라우저·인트로 11개 검사는 통과함.
+
 기준: `feat/intro-web-integration`에서 파생한 `feat/feed-diversity-v1`.
 기존 운영 사이트 및 Vercel V4.4 테스트 사이트는 변경하지 않았음.
 

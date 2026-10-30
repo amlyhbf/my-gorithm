@@ -1,0 +1,11 @@
+
+> mamgorithm@1.0.0 test:feed:browser
+> node tests/feed.browser.cjs
+
+PASS: revisit prioritizes unshown cards before catalog exhaustion
+PASS: 12 → 24 → 32 distinct cards without duplicates
+PASS: revisit prioritizes previously unshown/older cards
+PASS: shuffle, content-type filtering
+PASS: study-only shows 8 rather than duplicating to 12
+PASS: article filter, statistics, bookmark persistence/removal, sliders, themes and recipe round-trip
+PASS: presets/bookmarks remain functional; no runtime errors

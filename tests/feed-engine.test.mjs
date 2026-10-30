@@ -9,6 +9,13 @@ const items = Object.entries({ study: 8, tech: 9, culture: 7, hobby: 8 }).flatMa
 );
 const balanced = { study: 50, tech: 50, culture: 50, hobby: 50 };
 
+test('unequal weights award residual slots to distinct largest remainders', () => {
+  assert.deepEqual(allocateAvailableSlots(
+    { study: 10, tech: 20, culture: 30, hobby: 40 },
+    { study: 8, tech: 9, culture: 7, hobby: 8 }, 12
+  ), { study: 1, tech: 2, culture: 4, hobby: 5 });
+});
+
 test('initial balanced feed has 12 unique cards, three per category', () => {
   const result = recommendPage(items, balanced, { seed: 123 });
   assert.equal(result.cards.length, 12);

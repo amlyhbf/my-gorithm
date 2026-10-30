@@ -37,10 +37,13 @@ export function allocateAvailableSlots(weights, capacity, requested) {
       weights[b.c] - weights[a.c] ||
       FEED_CATEGORIES.indexOf(a.c) - FEED_CATEGORIES.indexOf(b.c)
     );
-    const next = ideals.find(({ c }) => counts[c] < (capacity[c] || 0));
-    if (!next) continue;
-    counts[next.c] += 1;
-    remaining -= 1;
+    // Award each remainder once before recalculating after inventory caps.
+    for (const { c } of ideals) {
+      if (!remaining) break;
+      if (counts[c] >= (capacity[c] || 0)) continue;
+      counts[c] += 1;
+      remaining -= 1;
+    }
   }
   return counts;
 }
