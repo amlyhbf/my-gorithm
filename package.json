@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "deploy": "npm run build && firebase deploy",
     "test:intro": "node tests/intro.integration.cjs",
-    "test:feed": "node --test tests/feed-engine.test.mjs"
+    "test:feed": "node --test tests/feed-engine.test.mjs",
+    "test:feed:browser": "node tests/feed.browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
