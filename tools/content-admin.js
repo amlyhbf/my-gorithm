@@ -127,7 +127,17 @@ function selectCandidate(id) {
 function updateCurrent(field, value) {
   const candidate = current();
   if (!candidate || !FIELDS.includes(field)) return;
+  const previous = candidate[field];
   candidate[field] = value;
+  if (previous !== value) {
+    const reset = field === 'url' ? 'linkChecked'
+      : (field === 'imageUrl' || field === 'imageCredit') ? 'rightsChecked'
+      : ['title','summary','category','secondaryCategory'].includes(field) ? 'contentChecked' : null;
+    if (reset) {
+      candidate[reset] = false;
+      $('#reviewForm').elements.namedItem(reset).checked = false;
+    }
+  }
   // Any edit after approval triggers a fresh review; nothing auto-publishes.
   if (candidate.status === '승인') candidate.status = '검토중';
   $('#selectedHeading').textContent = candidate.title;
