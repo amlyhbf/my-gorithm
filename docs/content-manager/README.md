@@ -45,6 +45,7 @@
 - npm run test:content
 - npm run test:feed
 - npm run build
+- 개발 서버 실행 중 CHROMIUM_PATH 환경변수에 크로미움 실행 파일을 지정한 후 npm run test:content:browser
 
 실제 브라우저에서 CSV 업로드, 승인, CSV 검토표 재가져오기, 승인 JSON 다운로드 및 로컬 저장 복구를 검증해야 합니다.
 **작성·저장과 테스트 통과는 별도 상태입니다.**
