@@ -1,4 +1,5 @@
 import { createIntro, readIntroFlag } from './intro.js';
+import { recommendPage, updateRecentFeed } from './feed-engine.js';
 import './intro.css';
 // ==========================================================================
 // 맘고리즘 (내맘대로 알고리즘) - Modern Product Script with Mini Dock & Recipe Sharing
@@ -257,62 +258,91 @@ function calculateAllocation() {
   return { totalWeight, categories: result };
 }
 
-function seededShuffle(arr, seed) {
-  const list = [...arr];
-  if (seed === 0) return list;
-  let s = seed;
-  for (let i = list.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const j = Math.floor((s / 233280) * (i + 1));
-    [list[i], list[j]] = [list[j], list[i]];
-  }
-  return list;
+const FEED_HISTORY_KEY = 'mamgorithm_recent_feed_v1';
+const feedSession = { key: null, cards: [] };
+const sessionFeedSeed = Math.floor(Math.random() * 0x7fffffff);
+
+function readRecentFeed() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(FEED_HISTORY_KEY) || '[]');
+    return Array.isArray(parsed) ? parsed.filter(id => typeof id === 'string') : [];
+  } catch { return []; }
+}
+
+function rememberFeed(items) {
+  const ids = items.map(item => item.id);
+  if (!ids.length) return;
+  try {
+    localStorage.setItem(FEED_HISTORY_KEY, JSON.stringify(updateRecentFeed(readRecentFeed(), ids)));
+  } catch { /* Private browsing may block storage. */ }
+}
+
+function feedKey() {
+  return JSON.stringify([
+    state.weights.study, state.weights.tech, state.weights.culture, state.weights.hobby,
+    state.contentType, state.shuffleSeed
+  ]);
+}
+
+function feedSelectionOptions(overrides = {}) {
+  return {
+    limit: state.feedSize,
+    type: state.contentType,
+    recentIds: readRecentFeed(),
+    seed: (sessionFeedSeed + state.shuffleSeed * 9973 + feedSession.cards.length * 17) >>> 0,
+    ...overrides
+  };
 }
 
 function buildFeedList(allocation) {
-  if (allocation.totalWeight === 0) return [];
-
-  const filteredPool = CONTENT_DATA.filter((item) => {
-    if (state.contentType === 'all') return true;
-    return item.type === state.contentType;
-  });
-
-  const buckets = {};
-  ['study', 'tech', 'culture', 'hobby'].forEach((cat) => {
-    const quota = allocation.categories[cat].cardCount;
-    if (quota <= 0) {
-      buckets[cat] = [];
-      return;
-    }
-    const catItems = seededShuffle(
-      filteredPool.filter((item) => item.category === cat),
-      state.shuffleSeed
-    );
-    const selected = [];
-    for (let i = 0; i < quota && catItems.length > 0; i++) {
-      selected.push(catItems[i % catItems.length]);
-    }
-    buckets[cat] = selected;
-  });
-
-  const interleaved = [];
-  const sortedCats = ['study', 'tech', 'culture', 'hobby'].sort(
-    (a, b) => state.weights[b] - state.weights[a]
-  );
-
-  let hasMore = true;
-  let idx = 0;
-  while (hasMore) {
-    hasMore = false;
-    for (const cat of sortedCats) {
-      if (buckets[cat] && idx < buckets[cat].length) {
-        interleaved.push(buckets[cat][idx]);
-        hasMore = true;
-      }
-    }
-    idx++;
+  const key = feedKey();
+  if (feedSession.key !== key) {
+    const result = allocation.totalWeight === 0
+      ? { cards: [] }
+      : recommendPage(CONTENT_DATA, state.weights, feedSelectionOptions());
+    feedSession.key = key;
+    feedSession.cards = result.cards;
+    rememberFeed(result.cards);
   }
-  return interleaved;
+  return feedSession.cards;
+}
+
+function remainingFeedCount() {
+  const shownIds = new Set(feedSession.cards.map(item => item.id));
+  const eligible = new Set();
+  for (const item of CONTENT_DATA) {
+    if (state.weights[item.category] <= 0 || (state.contentType !== 'all' && item.type !== state.contentType)) continue;
+    if (!shownIds.has(item.id)) eligible.add(item.id);
+  }
+  return eligible.size;
+}
+
+function updateFeedMoreButton() {
+  const wrapper = document.getElementById('feedMoreWrap');
+  const button = document.getElementById('btnFeedMore');
+  if (!wrapper || !button) return;
+  const remaining = remainingFeedCount();
+  wrapper.hidden = remaining === 0;
+  button.disabled = remaining === 0;
+  button.textContent = `새로운 추천 더 보기 · ${remaining}개 남음`;
+}
+
+function loadMoreFeed() {
+  const allocation = calculateAllocation();
+  buildFeedList(allocation);
+  const existing = feedSession.cards.map(item => item.id);
+  const next = recommendPage(CONTENT_DATA, state.weights, feedSelectionOptions({
+    excludeIds: existing
+  }));
+  if (!next.cards.length) {
+    updateFeedMoreButton();
+    return;
+  }
+  feedSession.cards = [...feedSession.cards, ...next.cards];
+  rememberFeed(next.cards);
+  renderFeedCards(allocation);
+  triggerHaptic('light');
+  showToast(`새로운 콘텐츠 ${next.cards.length}개를 추가했어요.`);
 }
 
 // ==========================================================================
@@ -371,6 +401,8 @@ function renderFeedCardsWithSkeleton(allocation, delay = 260, onComplete = null)
 
   // 1. 스켈레톤 즉시 표시 (일렁이는 쉬머 효과)
   renderSkeletonCards(container, 3);
+  const more = document.getElementById('feedMoreWrap');
+  if (more) more.hidden = true;
 
   // 2. 부드러운 딜레이 후 실제 카드 페이드인 렌더링
   feedTransitionTimer = setTimeout(() => {
@@ -468,6 +500,8 @@ function renderFeedCards(allocation) {
   if (!container) return;
 
   if (allocation.totalWeight === 0) {
+    const more = document.getElementById('feedMoreWrap');
+    if (more) more.hidden = true;
     container.innerHTML = `
       <div class="empty-feed-placeholder">
         <div class="empty-feed-title">관심 분야가 모두 꺼져 있습니다</div>
@@ -489,7 +523,10 @@ function renderFeedCards(allocation) {
   }
 
   const cards = buildFeedList(allocation);
-  container.innerHTML = cards.map(createCardMarkup).join('');
+  container.innerHTML = cards.length
+    ? cards.map(createCardMarkup).join('')
+    : '<div class="empty-feed-placeholder"><div class="empty-feed-title">이 조건에 맞는 콘텐츠가 아직 없습니다</div><p class="empty-feed-desc">다른 콘텐츠 유형을 선택하거나 관심도를 바꿔 보세요.</p></div>';
+  updateFeedMoreButton();
 }
 
 // ==========================================================================
@@ -1122,6 +1159,8 @@ function bindUIEvents() {
       showToast('새로운 추천 콘텐츠 조합을 불러왔습니다.');
     });
   });
+
+  document.getElementById('btnFeedMore')?.addEventListener('click', loadMoreFeed);
 
   // 10) 카드 인터랙션: 영상은 인앱 바텀시트 플레이어, 기사는 원본 열기 & 북마크 토글
   const handleCardInteraction = (e) => {
