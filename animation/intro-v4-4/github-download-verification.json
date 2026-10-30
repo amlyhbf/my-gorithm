@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-30T10:27:52+09:00",
+  "artifact_commit": "065924dae1dbabea5d4523905105a0c7be08689a",
+  "repository": "amlyhbf/my-gorithm",
+  "branch": "feat/rive-intro-v4-4",
+  "all_passed": true,
+  "checks": [
+    {
+      "file": "preview/intro-v4-4-dark.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/intro-v4-4-dark.mp4",
+      "http_status": 200,
+      "bytes": 3358480,
+      "sha256": "e9bf2e04d58349ecfd54e747dd639d396459dcccc9bd7a6ecf171a60f11bfee5",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "preview/intro-v4-4-light.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/intro-v4-4-light.mp4",
+      "http_status": 200,
+      "bytes": 3876586,
+      "sha256": "4a7379bc08fec82708d851f675573e122ffdf3bbd3c35f287476b3307285e414",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "preview/compare-a-entrance.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/compare-a-entrance.mp4",
+      "http_status": 200,
+      "bytes": 483202,
+      "sha256": "156b5be494b5aeb953373fd749995d4fa4e2ec21445dfcf877a7f4e7bcb378b8",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "preview/compare-b-response.mp4",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/compare-b-response.mp4",
+      "http_status": 200,
+      "bytes": 513092,
+      "sha256": "82ab587a16724b2deb254a9ba18d66e66b0960cc3176cbb8d172b22c14bf8fbc",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "preview/compare-c-preserved-dark.png",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/compare-c-preserved-dark.png",
+      "http_status": 200,
+      "bytes": 305929,
+      "sha256": "9eef07a4c173a2b6c86d0c3d91bf74b303fea1b555fde8fd77d3ed10f9887964",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "preview/compare-c-preserved-light.png",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/preview/compare-c-preserved-light.png",
+      "http_status": 200,
+      "bytes": 299606,
+      "sha256": "417346699525bbe80ecc73bcc71dcb441c4208fd60f8e38df4d49b933824ab9e",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "scene.rml",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/scene.rml",
+      "http_status": 200,
+      "bytes": 6724495,
+      "sha256": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+      "local_sha256_equal": true
+    },
+    {
+      "file": "build/intro-v4-4.riv",
+      "url": "https://github.com/amlyhbf/my-gorithm/raw/refs/heads/feat/rive-intro-v4-4/animation/intro-v4-4/build/intro-v4-4.riv",
+      "http_status": 200,
+      "bytes": 946164,
+      "sha256": "596a10496466103121f69cad097ab0ee0d4f74d795ad2b98f014b3b5484cc70b",
+      "local_sha256_equal": true
+    }
+  ]
+}

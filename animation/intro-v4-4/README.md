@@ -12,7 +12,7 @@
 - [RML 편집 원본](scene.rml) / [실제 로컬 빌드 .riv](build/intro-v4-4.riv)
 - 기존 장면 보존 비교: [다크](preview/compare-c-preserved-dark.png) / [라이트](preview/compare-c-preserved-light.png)
 
-두 테마 최종 렌더·실제 디코딩·헤드리스 재생을 완료했다. 실제 GitHub 다운로드 확인은 별도 기록한다.
+두 테마 최종 렌더·실제 디코딩·헤드리스 재생을 완료했다. GitHub 링크8개를 실제 다운로드해 모두 HTTP200·크기·SHA256 일치를 확인했다.
 
 | 버전 | 해상도 | FPS | 길이 | 디코딩 프레임 | 크기 | 비트레이트 |
 | --- | --- | --- | --- | --- | --- | --- |
