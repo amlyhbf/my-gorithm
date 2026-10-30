@@ -23,3 +23,6 @@ Thumbs.db
 
 # Paid AI image output stays on the local computer until reviewed and hosted.
 public/studio-generated/
+
+dist-card-studio-v3/
+.vercel/
