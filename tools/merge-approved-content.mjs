@@ -16,7 +16,7 @@ export function validateApprovedPayload(cards, current = CONTENT_DATA) {
   const oldIds = new Set(current.map(x => x.id));
   const oldTitles = new Set(current.map(x => x.title.trim().toLowerCase()));
   const oldUrls = new Set(current.map(x => canonicalUrl(x.url)));
-  const newIds = new Set(), newUrls = new Set();
+  const newIds = new Set(), newUrls = new Set(), newTitles = new Set();
   for (const card of cards) {
     if (!card || typeof card !== 'object') throw new Error('카드 형식이 올바르지 않습니다.');
     if (!/^(study|tech|culture|hobby)$/.test(card.category)) throw new Error('분야 오류: ' + card.id);
@@ -32,8 +32,9 @@ export function validateApprovedPayload(cards, current = CONTENT_DATA) {
     const url = canonicalUrl(card.url);
     if (oldIds.has(card.id) || newIds.has(card.id)) throw new Error(card.id + ': ID 중복');
     if (oldUrls.has(url) || newUrls.has(url)) throw new Error(card.id + ': URL 중복');
-    if (oldTitles.has(card.title.trim().toLowerCase())) throw new Error(card.id + ': 제목 중복');
-    newIds.add(card.id); newUrls.add(url);
+    const titleKey = card.title.trim().toLowerCase();
+    if (oldTitles.has(titleKey) || newTitles.has(titleKey)) throw new Error(card.id + ': 제목 중복');
+    newIds.add(card.id); newUrls.add(url); newTitles.add(titleKey);
   }
   return cards;
 }
