@@ -502,6 +502,9 @@ function renderFeedCards(allocation) {
   if (allocation.totalWeight === 0) {
     const more = document.getElementById('feedMoreWrap');
     if (more) more.hidden = true;
+    feedSession.key = feedKey();
+    feedSession.cards = [];
+    renderStatsView(allocation);
     container.innerHTML = `
       <div class="empty-feed-placeholder">
         <div class="empty-feed-title">관심 분야가 모두 꺼져 있습니다</div>
@@ -527,6 +530,7 @@ function renderFeedCards(allocation) {
     ? cards.map(createCardMarkup).join('')
     : '<div class="empty-feed-placeholder"><div class="empty-feed-title">이 조건에 맞는 콘텐츠가 아직 없습니다</div><p class="empty-feed-desc">다른 콘텐츠 유형을 선택하거나 관심도를 바꿔 보세요.</p></div>';
   updateFeedMoreButton();
+  renderStatsView(allocation);
 }
 
 // ==========================================================================
@@ -745,6 +749,10 @@ function closeDockMixer() {
 function renderStatsView(allocation) {
   const container = document.getElementById('statsTableContainer');
   if (!container) return;
+  const visibleCounts = { study: 0, tech: 0, culture: 0, hobby: 0 };
+  for (const item of feedSession.cards) {
+    if (Object.hasOwn(visibleCounts, item.category)) visibleCounts[item.category] += 1;
+  }
 
   const rows = ['study', 'tech', 'culture', 'hobby']
     .map((cat) => {
@@ -759,7 +767,7 @@ function renderStatsView(allocation) {
           </td>
           <td>${alloc.weight}% (${levelDesc.label})</td>
           <td><strong>${alloc.displayPct}%</strong></td>
-          <td>${alloc.cardCount}장</td>
+          <td>${visibleCounts[cat]}장</td>
         </tr>
       `;
     })
@@ -772,7 +780,7 @@ function renderStatsView(allocation) {
           <th>분야</th>
           <th>설정 가중치</th>
           <th>추천 비율</th>
-          <th>피드 카드 수</th>
+          <th>현재 표시 카드 수</th>
         </tr>
       </thead>
       <tbody>
