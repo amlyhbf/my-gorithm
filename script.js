@@ -435,6 +435,13 @@ function renderPresetChips() {
   }).join('');
 }
 
+// Curated/AI-authored content is plain text, not executable HTML.
+function escapeHtmlText(value) {
+  return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[char]);
+}
+
 function createCardMarkup(item) {
   const meta = CATEGORY_META[item.category];
   const isSaved = state.savedIds.has(item.id);
@@ -444,17 +451,17 @@ function createCardMarkup(item) {
   return `
     <article
       class="content-feed-card"
-      data-id="${item.id}"
-      data-type="${item.type}"
-      data-url="${item.url}"
+      data-id="${escapeHtmlText(item.id)}"
+      data-type="${escapeHtmlText(item.type)}"
+      data-url="${escapeHtmlText(item.url)}"
       role="link"
       tabindex="0"
-      aria-label="${meta.name} ${typeText}: ${item.title}"
+      aria-label="${meta.name} ${typeText}: ${escapeHtmlText(item.title)}"
     >
       <div class="card-media-wrap">
         <img
-          src="${item.imageUrl}"
-          alt="${item.title}"
+          src="${escapeHtmlText(item.imageUrl)}"
+          alt="${escapeHtmlText(item.title)}"
           class="card-media-img"
           loading="lazy"
           onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80'"
@@ -464,11 +471,11 @@ function createCardMarkup(item) {
           <span>${meta.name} · ${typeText}</span>
         </div>
         ${item.isNew ? '<span class="card-badge-new">NEW</span>' : ''}
-        <span class="card-duration-overlay">${item.duration}</span>
+        <span class="card-duration-overlay">${escapeHtmlText(item.duration)}</span>
         <button
           type="button"
           class="card-bookmark-btn ${isSaved ? 'saved' : ''}"
-          data-bookmark-id="${item.id}"
+          data-bookmark-id="${escapeHtmlText(item.id)}"
           title="${isSaved ? '보관함에서 제거' : '보관함에 저장'}"
           aria-label="북마크"
         >
@@ -479,10 +486,10 @@ function createCardMarkup(item) {
       </div>
 
       <div class="card-content-body">
-        <h3 class="card-title-text">${item.title}</h3>
-        <p class="card-summary-text">${item.summary}</p>
+        <h3 class="card-title-text">${escapeHtmlText(item.title)}</h3>
+        <p class="card-summary-text">${escapeHtmlText(item.summary)}</p>
         <div class="card-meta-bar">
-          <span class="card-meta-source">${item.source} · ${item.date}</span>
+          <span class="card-meta-source">${escapeHtmlText(item.source)} · ${escapeHtmlText(item.date)}</span>
           <span class="card-meta-link">
             <span>바로가기</span>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1500,14 +1507,14 @@ function openArticleModal(item) {
       html += `
         <li class="article-recom-box">
           <div class="article-recom-badge">💡 맘고리즘 추천 이유</div>
-          <div class="article-recom-text">${item.recommendationReason}</div>
+          <div class="article-recom-text">${escapeHtmlText(item.recommendationReason)}</div>
         </li>
       `;
     }
     const points = item.keyPoints && item.keyPoints.length > 0
       ? item.keyPoints
       : [item.summary];
-    html += points.map((p) => `<li>${p}</li>`).join('');
+    html += points.map((p) => `<li>${escapeHtmlText(p)}</li>`).join('');
     keyPointsEl.innerHTML = html;
   }
 
@@ -1517,14 +1524,14 @@ function openArticleModal(item) {
     if (item.sections && item.sections.length > 0) {
       contentEl.innerHTML = item.sections.map((sec) => `
         <div class="article-section-block">
-          <h3 class="article-section-heading">${sec.heading}</h3>
-          <p class="article-section-body">${sec.body}</p>
+          <h3 class="article-section-heading">${escapeHtmlText(sec.heading)}</h3>
+          <p class="article-section-body">${escapeHtmlText(sec.body)}</p>
         </div>
       `).join('');
     } else {
       contentEl.innerHTML = `
         <div class="article-section-block">
-          <p class="article-section-body">${item.summary}</p>
+          <p class="article-section-body">${escapeHtmlText(item.summary)}</p>
         </div>
       `;
     }
