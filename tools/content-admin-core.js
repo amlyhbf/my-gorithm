@@ -79,11 +79,17 @@ export function importCandidates(text, existingCards = []) {
       title, originalTitle: row['원본제목'], summary: row['소개'],
       rationale: row['분야연결근거'], recommendationReason: row['추천이유'],
       url: row['원본URL'], source: row['출처'], imageUrl: row['썸네일URL'],
-      imageCredit: '', reviewNotes: '',
-      linkChecked: false, contentChecked: false, rightsChecked: false,
-      status: '대기', duplicates,
+      imageCredit: row['이미지출처'] || '', reviewNotes: row['검토메모'] || '',
+      linkChecked: row['링크확인'] === '확인',
+      contentChecked: row['내용확인'] === '확인',
+      rightsChecked: row['이용조건확인'] === '확인',
+      status: ['대기', '검토중', '보류', '승인'].includes(row['상태']) ? row['상태'] : '대기', duplicates,
       originalDate: row['저장일']
     };
+  }).map(candidate => {
+    // An exported review CSV is a backup, not a way around approval checks.
+    if (candidate.status === '승인' && validateCandidate(candidate).length) candidate.status = '검토중';
+    return candidate;
   });
 }
 export function validateCandidate(item) {
@@ -102,7 +108,8 @@ export function validateCandidate(item) {
   if ((item.duplicates || []).length) errors.push(...item.duplicates);
   // The existing website inserts some card fields into HTML.
   if ([item.title, item.summary, item.recommendationReason, item.source, item.imageCredit]
-      .some(v => /[<>]/.test(v || ''))) errors.push('HTML 특수기호(<, >) 제거 필요');
+      .some(v => /[<>]/.test(v || '')) || /[\"]/.test(item.title || ''))
+    errors.push('HTML 특수기호(<, >)와 제목의 큰따옴표 제거 필요');
   return errors;
 }
 export function toWebsiteCard(item) {
@@ -113,7 +120,7 @@ export function toWebsiteCard(item) {
     category: item.category, type: item.type,
     title: item.title.trim(), summary: item.summary.trim(),
     recommendationReason: item.recommendationReason.trim(),
-    source: item.source.trim(), duration: '읽을거리', date: '검토 콘텐츠',
+    source: item.source.trim(), duration: item.type === 'video' ? '영상' : '읽을거리', date: '검토 콘텐츠',
     imageUrl: item.imageUrl.trim(), url: item.url.trim(),
     secondaryCategory: item.secondaryCategory || undefined,
     contentAttribution: item.imageCredit?.trim() || undefined,
