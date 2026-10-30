@@ -12,7 +12,7 @@
 2. git clone --branch feat/content-manager-v1 --single-branch https://github.com/amlyhbf/my-gorithm.git my-gorithm-content-preview
 3. cd .\my-gorithm-content-preview
 4. npm.cmd ci
-5. npm.cmd run dev -- --host 127.0.0.1
+5. npx.cmd vite --host 127.0.0.1 (메인 웹사이트 자동 열기 없이 관리 도구용 서버만 실행)
 6. 브라우저에서 http://127.0.0.1:5173/tools/content-admin.html 로 이동
 
 **반드시 /tools/content-admin.html 에 접속하세요.** 이 도구는 firebase.js를 import하지 않고 원본 CSV를 서버에 자동 업로드하지 않습니다.
