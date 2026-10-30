@@ -16,7 +16,11 @@
     "test:content:browser": "node tests/content-admin.browser.cjs",
     "studio": "node tools/studio-server.mjs",
     "test:studio": "node --test tests/studio.test.mjs",
-    "test:studio:browser": "node tests/studio.browser.cjs"
+    "test:studio:browser": "node tests/studio.browser.cjs",
+    "build:studio:v3": "vite build --config vite.studio-v3.config.js",
+    "dev:studio:v3": "vite --config vite.studio-v3.config.js --host 127.0.0.1",
+    "test:studio:v3": "node --test tests/studio-v3.test.mjs",
+    "test:studio:v3:browser": "node tests/studio-v3.browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
