@@ -2638,3 +2638,7 @@ body.dark-mode .coachmark-badge {
 .feed-more-btn:hover { background-color: var(--bg-subtle); }
 .feed-more-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
 .feed-more-btn:disabled { cursor: default; opacity: .55; }
+
+/* Curated article image provenance (optional on legacy cards). */
+.article-image-attribution { padding: 7px 16px; margin: 0; text-align: right; font-size: 0.68rem; color: var(--text-muted); background: var(--bg-card); line-height: 1.5; }
+.article-image-attribution.hidden { display: none; }
