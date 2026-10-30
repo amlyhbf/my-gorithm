@@ -1,0 +1,17 @@
+{
+  "left": "V4.3",
+  "right": "V4.4",
+  "playback_speed_multiplier": 1,
+  "compare_a_seconds": 4.1,
+  "compare_b_seconds": 5.1,
+  "compare_b_slider_start_aligned": true,
+  "old_clip_frames": [
+    468,
+    774
+  ],
+  "new_clip_frames": [
+    492,
+    798
+  ],
+  "note": "Both inputs are original60FPS at original speed. Opening comparison uses the same absolute start; response comparison aligns the two slider starts to expose the shorter response delay."
+}

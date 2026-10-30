@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "playback": [
+    {
+      "file": "intro-v4-4-dark.mp4",
+      "exit_code": 0,
+      "elapsed_seconds": 16.105425167996145,
+      "method": "Actual realtime FFplay software/dummy SDL playback. No physical screen or mobile-performance claim."
+    },
+    {
+      "file": "intro-v4-4-light.mp4",
+      "exit_code": 0,
+      "elapsed_seconds": 16.1310618360003,
+      "method": "Actual realtime FFplay software/dummy SDL playback. No physical screen or mobile-performance claim."
+    }
+  ],
+  "visual_review": "Actual decoded MP4 frames/contact sheets are reviewed separately."
+}

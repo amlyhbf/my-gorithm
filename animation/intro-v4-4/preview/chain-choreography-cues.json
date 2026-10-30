@@ -1,0 +1,32 @@
+[
+  {
+    "leading_category": "study",
+    "next_category": "tech",
+    "next_onset_frame": 15,
+    "leading_position_at_next_onset": [
+      470.0,
+      560.0
+    ],
+    "meaning": "Visual choreography cue, not collision physics or an interactive trigger"
+  },
+  {
+    "leading_category": "tech",
+    "next_category": "culture",
+    "next_onset_frame": 29,
+    "leading_position_at_next_onset": [
+      680.1169806075138,
+      745.0901203777937
+    ],
+    "meaning": "Visual choreography cue, not collision physics or an interactive trigger"
+  },
+  {
+    "leading_category": "culture",
+    "next_category": "hobby",
+    "next_onset_frame": 41,
+    "leading_position_at_next_onset": [
+      204.93139048441,
+      1477.5617176144
+    ],
+    "meaning": "Visual choreography cue, not collision physics or an interactive trigger"
+  }
+]
