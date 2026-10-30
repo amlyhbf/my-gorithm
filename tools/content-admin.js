@@ -140,23 +140,26 @@ function updateCurrent(field, value) {
       $('#openSource').href = url.href;
     } catch { $('#openSource').removeAttribute('href'); }
   }
-  // Recompute URL duplicates against all imported candidates and existing cards.
+  // Recompute duplicates consistently when a URL or title is edited.
   if (field === 'url' || field === 'title') {
-    const canonical = canonicalUrlForCheck(candidate.url);
-    candidate.duplicates = [];
     const oldUrls = new Set(CONTENT_DATA.map(x => canonicalUrlForCheck(x.url)));
-    if (canonical && oldUrls.has(canonical)) candidate.duplicates.push('기존 카드와 URL 중복');
-    if (CONTENT_DATA.some(x => x.title.trim().toLowerCase() === candidate.title.trim().toLowerCase()))
-      candidate.duplicates.push('기존 카드와 제목 중복');
-    if (canonical && app.items.some(x => x !== candidate && canonicalUrlForCheck(x.url) === canonical))
-      candidate.duplicates.push('이번 CSV 내 URL 중복');
-    // Account for a collision introduced by this edit in the other candidate too.
-    for (const other of app.items) {
-      if (other === candidate) continue;
-      const duplicate = canonical && canonicalUrlForCheck(other.url) === canonical;
-      other.duplicates = (other.duplicates || []).filter(x => x !== '이번 CSV 내 URL 중복');
-      if (duplicate) other.duplicates.push('이번 CSV 내 URL 중복');
-      if (duplicate && other.status === '승인') other.status = '검토중';
+    const oldTitles = new Set(CONTENT_DATA.map(x => x.title.trim().toLowerCase()));
+    const urlCounts = new Map(), titleCounts = new Map();
+    for (const item of app.items) {
+      const url = canonicalUrlForCheck(item.url);
+      const title = item.title.trim().toLowerCase();
+      if (url) urlCounts.set(url, (urlCounts.get(url) || 0) + 1);
+      if (title) titleCounts.set(title, (titleCounts.get(title) || 0) + 1);
+    }
+    for (const item of app.items) {
+      const url = canonicalUrlForCheck(item.url);
+      const title = item.title.trim().toLowerCase();
+      item.duplicates = [];
+      if (url && oldUrls.has(url)) item.duplicates.push('기존 카드와 URL 중복');
+      if (title && oldTitles.has(title)) item.duplicates.push('기존 카드와 제목 중복');
+      if (url && urlCounts.get(url) > 1) item.duplicates.push('이번 CSV 내 URL 중복');
+      if (title && titleCounts.get(title) > 1) item.duplicates.push('이번 CSV 내 제목 중복');
+      if (item.status === '승인' && item.duplicates.length) item.status = '검토중';
     }
   }
   drawValidation(); drawList(); stats(); persist();
