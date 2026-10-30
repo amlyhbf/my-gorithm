@@ -1,4 +1,4 @@
-// Run npm run dev -- --host 127.0.0.1, then npm run test:content:browser.
+// Run npx vite --host 127.0.0.1, then npm run test:content:browser.
 // Network requests outside local Vite origin are blocked (no Firebase).
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
