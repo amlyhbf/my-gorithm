@@ -1475,6 +1475,12 @@ function openArticleModal(item) {
     heroImg.src = item.imageUrl;
     heroImg.alt = item.title;
   }
+  const attribution = document.getElementById('articleImageCredit');
+  if (attribution) {
+    const hasCredit = Boolean(item.contentAttribution);
+    attribution.classList.toggle('hidden', !hasCredit);
+    attribution.textContent = hasCredit ? '이미지: ' + item.contentAttribution : '';
+  }
 
   // 5. 메타 정보 (출처, 작성일)
   const sourceEl = document.getElementById('articleSource');
