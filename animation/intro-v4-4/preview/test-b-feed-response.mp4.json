@@ -1,0 +1,20 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "width": 540,
+      "height": 960,
+      "avg_frame_rate": "30/1",
+      "nb_frames": "162",
+      "nb_read_frames": "162"
+    }
+  ],
+  "format": {
+    "duration": "5.400000",
+    "size": "253666",
+    "bit_rate": "375801"
+  },
+  "source_rml_sha256": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+  "sha256": "4b054403618b0b4e209c4c08d1874eb5abd3763cb3e582935e245975f12388e3"
+}

@@ -1,0 +1,43 @@
+{
+  "source_rml_sha256": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+  "assets_sha256": {
+    "scene.rml": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+    "rive.yaml": "07d575d68618b58c5ecab2a2aa655cad1db57f25a772cb659d283329d3d95095",
+    "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+    "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+  },
+  "new_native_frames_per_theme": 322,
+  "preserved_native_frames_per_theme": 638,
+  "preserved_intervals": [
+    [
+      90,
+      516,
+      -24
+    ],
+    [
+      616,
+      662,
+      -24
+    ],
+    [
+      796,
+      959,
+      0
+    ]
+  ],
+  "changed_intervals": [
+    [
+      0,
+      89
+    ],
+    [
+      517,
+      615
+    ],
+    [
+      663,
+      795
+    ]
+  ],
+  "render_completed": false
+}

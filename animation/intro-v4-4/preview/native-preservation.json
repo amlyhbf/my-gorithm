@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "assets_sha256": {
+    "scene.rml": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+    "rive.yaml": "07d575d68618b58c5ecab2a2aa655cad1db57f25a772cb659d283329d3d95095",
+    "Pretendard-600.ttf": "3f24cd7ccae02e3f08b939707363f10680e5b672052daf580d333d258fa42ed2",
+    "Pretendard-800.ttf": "8c394aa4eadec5984a1af06f975d6371775b4a0d632d228df1848a8918d0c0c8"
+  },
+  "source_rml_sha256": "1aa8a6ff03c9a8e524c82cc6d5e3e382a45620509f776ece4b066ba917430e3c",
+  "reused_native_ab": [
+    {
+      "theme": "Dark",
+      "new_frame": 90,
+      "v43_frame": 66,
+      "identical_rgb": false,
+      "different_pixels": 4,
+      "pixel_ratio": 1.9290123456790124e-06,
+      "mean_channel_difference": 3.632973251028807e-05,
+      "max_channel_difference": 52
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 150,
+      "v43_frame": 126,
+      "identical_rgb": false,
+      "different_pixels": 6,
+      "pixel_ratio": 2.8935185185185184e-06,
+      "mean_channel_difference": 7.667824074074074e-05,
+      "max_channel_difference": 63
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 300,
+      "v43_frame": 276,
+      "identical_rgb": false,
+      "different_pixels": 15,
+      "pixel_ratio": 7.2337962962962966e-06,
+      "mean_channel_difference": 0.00013374485596707818,
+      "max_channel_difference": 50
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 500,
+      "v43_frame": 476,
+      "identical_rgb": false,
+      "different_pixels": 2,
+      "pixel_ratio": 9.645061728395062e-07,
+      "mean_channel_difference": 1.2377829218106996e-05,
+      "max_channel_difference": 47
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 640,
+      "v43_frame": 616,
+      "identical_rgb": false,
+      "different_pixels": 3,
+      "pixel_ratio": 1.4467592592592592e-06,
+      "mean_channel_difference": 5.3208590534979426e-05,
+      "max_channel_difference": 63
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 840,
+      "v43_frame": 840,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "new_frame": 959,
+      "v43_frame": 959,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "new_frame": 90,
+      "v43_frame": 66,
+      "identical_rgb": false,
+      "different_pixels": 4,
+      "pixel_ratio": 1.9290123456790124e-06,
+      "mean_channel_difference": 5.594135802469136e-05,
+      "max_channel_difference": 61
+    },
+    {
+      "theme": "Light",
+      "new_frame": 150,
+      "v43_frame": 126,
+      "identical_rgb": false,
+      "different_pixels": 6,
+      "pixel_ratio": 2.8935185185185184e-06,
+      "mean_channel_difference": 0.00011268647119341564,
+      "max_channel_difference": 63
+    },
+    {
+      "theme": "Light",
+      "new_frame": 300,
+      "v43_frame": 276,
+      "identical_rgb": false,
+      "different_pixels": 15,
+      "pixel_ratio": 7.2337962962962966e-06,
+      "mean_channel_difference": 0.0001838991769547325,
+      "max_channel_difference": 61
+    },
+    {
+      "theme": "Light",
+      "new_frame": 500,
+      "v43_frame": 476,
+      "identical_rgb": false,
+      "different_pixels": 2,
+      "pixel_ratio": 9.645061728395062e-07,
+      "mean_channel_difference": 1.7200360082304527e-05,
+      "max_channel_difference": 47
+    },
+    {
+      "theme": "Light",
+      "new_frame": 640,
+      "v43_frame": 616,
+      "identical_rgb": false,
+      "different_pixels": 3,
+      "pixel_ratio": 1.4467592592592592e-06,
+      "mean_channel_difference": 5.3208590534979426e-05,
+      "max_channel_difference": 63
+    },
+    {
+      "theme": "Light",
+      "new_frame": 840,
+      "v43_frame": 840,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    },
+    {
+      "theme": "Light",
+      "new_frame": 959,
+      "v43_frame": 959,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    }
+  ],
+  "full_vs_windowed_native_ab": [
+    {
+      "theme": "Dark",
+      "frame": 30,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 550,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    },
+    {
+      "theme": "Dark",
+      "frame": 708,
+      "identical_rgb": false,
+      "different_pixels": 129,
+      "pixel_ratio": 0.0002488425925925926,
+      "mean_channel_difference": 0.0037011316872427986,
+      "max_channel_difference": 30
+    },
+    {
+      "theme": "Light",
+      "frame": 30,
+      "identical_rgb": true,
+      "different_pixels": 0,
+      "pixel_ratio": 0.0,
+      "mean_channel_difference": 0.0,
+      "max_channel_difference": 0
+    }
+  ],
+  "note": "Preserved vectors/keys/speeds checked independently. Actual pixel differences are recorded, never declared RGB-identical unless zero. Native cache remains original 1080\u00d71920 60FPS PNGs; no low-FPS interpolation."
+}
