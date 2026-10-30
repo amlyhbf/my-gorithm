@@ -110,7 +110,31 @@ function drawLibrary(){
     container.append(button);
   }
 }
+function refreshDuplicateWarnings(){
+  const normUrl=(v)=>{
+    try{const url=new URL(v);return url.hostname.toLowerCase()+decodeURIComponent(url.pathname).replace(/\/$/,'')+(url.hostname.endsWith('wikipedia.org')?'':url.search);}
+    catch{return '';}
+  };
+  const currentUrlCounts=new Map(),currentTitleCounts=new Map();
+  for(const item of app.items){
+    const url=normUrl(item.url),title=(item.title||'').trim().toLowerCase();
+    if(url)currentUrlCounts.set(url,(currentUrlCounts.get(url)||0)+1);
+    if(title)currentTitleCounts.set(title,(currentTitleCounts.get(title)||0)+1);
+  }
+  const oldUrls=new Set(CONTENT_DATA.map(item=>normUrl(item.url)));
+  const oldTitles=new Set(CONTENT_DATA.map(item=>(item.title||'').trim().toLowerCase()));
+  for(const item of app.items){
+    const url=normUrl(item.url),title=(item.title||'').trim().toLowerCase();
+    item.duplicates=[];
+    if(url&&oldUrls.has(url))item.duplicates.push('기존 카드와 URL 중복');
+    if(title&&oldTitles.has(title))item.duplicates.push('기존 카드와 제목 중복');
+    if(url&&currentUrlCounts.get(url)>1)item.duplicates.push('이번 후보 중 URL 중복');
+    if(title&&currentTitleCounts.get(title)>1)item.duplicates.push('이번 후보 중 제목 중복');
+    if(item.status==='승인'&&item.duplicates.length)item.status='검토중';
+  }
+}
 function updateReview(){
+  refreshDuplicateWarnings();
   const x=selected();
   const total=app.items.length,approved=app.items.filter(v=>v.status==='승인').length;
   $('counts').textContent=total+'개 후보 · '+approved+'개 승인';
