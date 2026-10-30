@@ -1,0 +1,2732 @@
+{
+  "duration": 16,
+  "fps": 60,
+  "entrances": [
+    {
+      "category": "study",
+      "start": 0,
+      "end": 72,
+      "origin": [
+        -38,
+        310
+      ],
+      "velocity": [
+        2400,
+        900
+      ],
+      "knots": [
+        [
+          0.25,
+          470,
+          560,
+          1700,
+          500
+        ],
+        [
+          0.57,
+          800,
+          570,
+          140,
+          -160
+        ]
+      ],
+      "angle": -0.1,
+      "stretch": 0.075,
+      "character": "stable diagonal / restrained overshoot"
+    },
+    {
+      "category": "tech",
+      "start": 15,
+      "end": 80,
+      "origin": [
+        1190,
+        555
+      ],
+      "velocity": [
+        -2850,
+        700
+      ],
+      "knots": [
+        [
+          0.52,
+          640,
+          790,
+          -1050,
+          1250
+        ],
+        [
+          0.88,
+          660,
+          1160,
+          170,
+          590
+        ]
+      ],
+      "angle": 0.08,
+      "stretch": 0.1,
+      "character": "agile opposite crossing"
+    },
+    {
+      "category": "culture",
+      "start": 29,
+      "end": 86,
+      "origin": [
+        -115,
+        1560
+      ],
+      "velocity": [
+        1550,
+        -280
+      ],
+      "knots": [
+        [
+          0.81,
+          325,
+          1380,
+          650,
+          -850
+        ],
+        [
+          1.13,
+          320,
+          1225,
+          -250,
+          -500
+        ]
+      ],
+      "angle": -0.15,
+      "stretch": 0.035,
+      "character": "soft arc joining the flow"
+    },
+    {
+      "category": "hobby",
+      "start": 41,
+      "end": 90,
+      "origin": [
+        930,
+        2035
+      ],
+      "velocity": [
+        -1150,
+        -2500
+      ],
+      "knots": [
+        [
+          0.96,
+          665,
+          1500,
+          -400,
+          -1550
+        ],
+        [
+          1.23,
+          680,
+          1270,
+          240,
+          -400
+        ]
+      ],
+      "angle": 0.13,
+      "stretch": 0.065,
+      "character": "short upward curve / light follow-through"
+    }
+  ],
+  "shift_frames": 24,
+  "sliders": [
+    [
+      492,
+      546
+    ],
+    [
+      633,
+      699
+    ]
+  ],
+  "responses": [
+    [
+      532,
+      574
+    ],
+    [
+      678,
+      747
+    ]
+  ],
+  "changed_ranges_inclusive": [
+    [
+      0,
+      89
+    ],
+    [
+      517,
+      615
+    ],
+    [
+      663,
+      795
+    ]
+  ],
+  "cache_reuse_new_start_end_old_offset": [
+    [
+      90,
+      516,
+      -24
+    ],
+    [
+      616,
+      662,
+      -24
+    ],
+    [
+      796,
+      959,
+      0
+    ]
+  ],
+  "records": [
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 21,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.03495356380778958
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 24,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.024867709725981513
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 3,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 4.163336342344337e-17
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.00010486002321585808
+    },
+    {
+      "object": "0:815",
+      "name": "공부 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.243001160792904e-05
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 29,
+      "nominal_target": 0.035,
+      "measured_33point_error": 7.0319366455078125
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 32,
+      "nominal_target": 0.035,
+      "measured_33point_error": 1.727142333984375
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 4,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 8.326672684688674e-17
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 7,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 8.193180059112848e-05
+    },
+    {
+      "object": "0:1779",
+      "name": "기술 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.0001869456765781763
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 3.8243865966796875
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.69085693359375
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 7,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 1.7803355598450255e-05
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.0001104307622596945
+    },
+    {
+      "object": "0:2697",
+      "name": "문화 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.521538112984725e-05
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 28,
+      "nominal_target": 0.035,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 6.168365478515625
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 6,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.551115123125783e-17
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 8,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 6.781025972291133e-05
+    },
+    {
+      "object": "0:3615",
+      "name": "취미 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.00018565993347430254
+    },
+    {
+      "object": "0:4382",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:4382",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.168365478515398
+    },
+    {
+      "object": "0:4415",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.83744812011696
+    },
+    {
+      "object": "0:4415",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.16836547851517
+    },
+    {
+      "object": "0:4448",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.837448120117301
+    },
+    {
+      "object": "0:4448",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.168365478515625
+    },
+    {
+      "object": "0:4481",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:4481",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.16836547851608
+    },
+    {
+      "object": "0:89311",
+      "name": "Input response 1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.7646606978469208
+    },
+    {
+      "object": "0:89311",
+      "name": "Input response 1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.1990554737519915
+    },
+    {
+      "object": "0:89336",
+      "name": "Input response 2",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 3,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:89336",
+      "name": "Input response 2",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 3,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 17,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0024809429819470097
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 17,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0024809429819470097
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 24,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.6435501647831643
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0007425578824826751
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0007425578824826751
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 2.3252462277856267e-07
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.000491560141199443
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.00032770676034488133
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0002953841051691608
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0002953841051691608
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 15,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 2.048167255375155e-05
+    },
+    {
+      "object": "0:89311",
+      "name": "Input response 1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 4,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:89311",
+      "name": "Input response 1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 4,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0
+    },
+    {
+      "object": "0:89336",
+      "name": "Input response 2",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.2910915451886922
+    },
+    {
+      "object": "0:89336",
+      "name": "Input response 2",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 12,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.2715114956901822
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 18,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.4960065755076357e-06
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 19,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.0190813100052765e-06
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6622319076731173e-09
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6622319076731173e-09
+    },
+    {
+      "object": "0:89361",
+      "name": "Feed card hobby-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 19,
+      "nominal_target": 0.005,
+      "measured_33point_error": 8.189880418285611e-07
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 16,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.0332686290203128e-07
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.4382037774485212e-05
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.4382037774485212e-05
+    },
+    {
+      "object": "0:89820",
+      "name": "Feed card culture-3#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 16,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0006576031328791032
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0011349875323958258
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 9,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.594304052332518e-06
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 9,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.594304052332518e-06
+    },
+    {
+      "object": "0:90275",
+      "name": "Feed card tech-2#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:90714",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91137",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:91546",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 5.684341886080801e-13
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:92015",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6090638158977475e-48
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 21,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.03495356380778958
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 24,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.024867709725981513
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 3,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 4.163336342344337e-17
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.00010486002321585808
+    },
+    {
+      "object": "0:5869",
+      "name": "공부 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        72
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.243001160792904e-05
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 29,
+      "nominal_target": 0.035,
+      "measured_33point_error": 7.0319366455078125
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 32,
+      "nominal_target": 0.035,
+      "measured_33point_error": 1.727142333984375
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 4,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 8.326672684688674e-17
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 7,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 8.193180059112848e-05
+    },
+    {
+      "object": "0:6833",
+      "name": "기술 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        80
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.0001869456765781763
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 3.8243865966796875
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 0.69085693359375
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 7,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 1.7803355598450255e-05
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.0001104307622596945
+    },
+    {
+      "object": "0:7751",
+      "name": "문화 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        86
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.521538112984725e-05
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 28,
+      "nominal_target": 0.035,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.035,
+      "measured_33point_error": 6.168365478515625
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "rotation",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 6,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 5.551115123125783e-17
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "scaleX",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 8,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 6.781025972291133e-05
+    },
+    {
+      "object": "0:8669",
+      "name": "취미 continuous morph material",
+      "property": "scaleY",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 5,
+      "nominal_target": 0.0002,
+      "measured_33point_error": 0.00018565993347430254
+    },
+    {
+      "object": "0:9436",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:9436",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.168365478515398
+    },
+    {
+      "object": "0:9469",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.83744812011696
+    },
+    {
+      "object": "0:9469",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.16836547851517
+    },
+    {
+      "object": "0:9502",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.837448120117301
+    },
+    {
+      "object": "0:9502",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.168365478515625
+    },
+    {
+      "object": "0:9535",
+      "name": "Gather fragment",
+      "property": "x",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 2.8374481201171875
+    },
+    {
+      "object": "0:9535",
+      "name": "Gather fragment",
+      "property": "y",
+      "frames": [
+        0,
+        90
+      ],
+      "segments": 27,
+      "nominal_target": 0.04,
+      "measured_33point_error": 6.16836547851608
+    },
+    {
+      "object": "0:99785",
+      "name": "Input response 1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.7646606978469208
+    },
+    {
+      "object": "0:99785",
+      "name": "Input response 1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.1990554737519915
+    },
+    {
+      "object": "0:99810",
+      "name": "Input response 2",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 3,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:99810",
+      "name": "Input response 2",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 3,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 17,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0024809429819470097
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 17,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0024809429819470097
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 8,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.00019082434861616981
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 6,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 24,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.6435501647831643
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0007425578824826751
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0007425578824826751
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 16,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 2.3252462277856267e-07
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.000491560141199443
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.00032770676034488133
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0002953841051691608
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0002953841051691608
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        517,
+        615
+      ],
+      "segments": 15,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 2.048167255375155e-05
+    },
+    {
+      "object": "0:99785",
+      "name": "Input response 1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 4,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.2737367544323206e-13
+    },
+    {
+      "object": "0:99785",
+      "name": "Input response 1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 4,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.0
+    },
+    {
+      "object": "0:99810",
+      "name": "Input response 2",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.2910915451886922
+    },
+    {
+      "object": "0:99810",
+      "name": "Input response 2",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 12,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 0.2715114956901822
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 18,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.4960065755076357e-06
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 19,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.0190813100052765e-06
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6622319076731173e-09
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 11,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6622319076731173e-09
+    },
+    {
+      "object": "0:99835",
+      "name": "Feed card hobby-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 19,
+      "nominal_target": 0.005,
+      "measured_33point_error": 8.189880418285611e-07
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 16,
+      "nominal_target": 0.005,
+      "measured_33point_error": 2.0332686290203128e-07
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.4382037774485212e-05
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 10,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.4382037774485212e-05
+    },
+    {
+      "object": "0:100294",
+      "name": "Feed card culture-3#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 16,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0006576031328791032
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 13,
+      "nominal_target": 0.005,
+      "measured_33point_error": 0.0011349875323958258
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 9,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.594304052332518e-06
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 9,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.594304052332518e-06
+    },
+    {
+      "object": "0:100749",
+      "name": "Feed card tech-2#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 6.821210263296962e-13
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101188",
+      "name": "Feed card study-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 1.7053025658242404e-13
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:101611",
+      "name": "Feed card study-2#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 3.410605131648481e-13
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:102020",
+      "name": "Feed card study-5#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 4.440892098500626e-16
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "x",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 5.684341886080801e-13
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "y",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.005,
+      "measured_33point_error": 9.094947017729282e-13
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleX",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "scaleY",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 5.551115123125783e-16
+    },
+    {
+      "object": "0:102489",
+      "name": "Feed card tech-1#1",
+      "property": "opacity",
+      "frames": [
+        663,
+        795
+      ],
+      "segments": 7,
+      "nominal_target": 0.0003,
+      "measured_33point_error": 1.6090638158977475e-48
+    }
+  ]
+}
