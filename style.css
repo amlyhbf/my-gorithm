@@ -2615,3 +2615,26 @@ body.dark-mode .coachmark-badge {
   0% { opacity: 0; transform: translateY(6px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+/* Recommendation pagination: preserve the existing card design and theme tokens. */
+.feed-more-wrap {
+  padding: 0 16px 28px;
+  text-align: center;
+}
+.feed-more-wrap[hidden] { display: none; }
+.feed-more-btn {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease;
+}
+.feed-more-btn:hover { background-color: var(--bg-subtle); }
+.feed-more-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.feed-more-btn:disabled { cursor: default; opacity: .55; }
