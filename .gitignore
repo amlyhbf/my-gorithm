@@ -20,3 +20,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Paid AI image output stays on the local computer until reviewed and hosted.
+public/studio-generated/
