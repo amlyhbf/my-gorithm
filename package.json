@@ -12,7 +12,8 @@
     "test:intro": "node tests/intro.integration.cjs",
     "test:feed": "node --test tests/feed-engine.test.mjs",
     "test:feed:browser": "node tests/feed.browser.cjs",
-    "test:content": "node --test tests/content-admin.test.mjs"
+    "test:content": "node --test tests/content-admin.test.mjs",
+    "test:content:browser": "node tests/content-admin.browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
