@@ -65,6 +65,16 @@ function triggerHaptic(type = 'light') {
   }
 }
 
+// S10-01: 값은 1%씩 바뀌지만 햅틱은 5% 경계마다 한 번만 발생합니다.
+const sliderHapticBuckets = new Map();
+function triggerSliderHaptic(area, cat, value) {
+  const key = area + ':' + cat;
+  const bucket = Math.floor(value / 5);
+  if (sliderHapticBuckets.get(key) === bucket) return;
+  sliderHapticBuckets.set(key, bucket);
+  triggerHaptic('light');
+}
+
 // 초기화
 document.addEventListener('DOMContentLoaded', () => {
   loadSavedPreferences();
@@ -1062,7 +1072,7 @@ function bindUIEvents() {
       const val = parseInt(input.value, 10);
       if (cat && !Number.isNaN(val)) {
         state.weights[cat] = Math.max(0, Math.min(100, val));
-        triggerHaptic('light');
+        triggerSliderHaptic('dock', cat, val);
         persistWeights();
 
         const meta = CATEGORY_META[cat];
@@ -1102,7 +1112,7 @@ function bindUIEvents() {
       const val = parseInt(input.value, 10);
       if (cat && !Number.isNaN(val)) {
         state.weights[cat] = Math.max(0, Math.min(100, val));
-        triggerHaptic('light');
+        triggerSliderHaptic('onboarding', cat, val);
 
         const meta = CATEGORY_META[cat];
         input.style.background = `linear-gradient(to right, ${meta.color} ${val}%, var(--bg-subtle) ${val}%)`;
