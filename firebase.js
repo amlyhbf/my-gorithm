@@ -7,19 +7,17 @@ import { getAuth, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBcmT4HagqGYpo_ZfizIReEIvDPG-LtsJs",
+  apiKey: "AIzaSyBjsDf-Riw7EI6dTkJVofRc7zRK__j-cf8",
 
-  authDomain: "my-gorithm.firebaseapp.com",
+  authDomain: "mamgorithm.firebaseapp.com",
 
-  projectId: "my-gorithm",
+  projectId: "mamgorithm",
 
-  storageBucket: "my-gorithm.firebasestorage.app",
+  storageBucket: "mamgorithm.firebasestorage.app",
 
-  messagingSenderId: "844754199331",
+  messagingSenderId: "984165040136",
 
-  appId: "1:844754199331:web:2adf2f89e4cf45e188e296",
-
-  measurementId: "G-SEVD6WLTHP"
+  appId: "1:984165040136:web:394f53bd9b18a0ac16d1bd"
 
 };
 
