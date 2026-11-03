@@ -14,6 +14,7 @@ import {
 
 const STORAGE_KEYS = {
   WEIGHTS: 'mamgorithm_weights_v2',
+  WEIGHTS_SCALE: 'mamgorithm_weights_scale_v3',
   SAVED_IDS: 'mamgorithm_saved_v2',
   THEME: 'mamgorithm_theme_v2',
   ONBOARDED: 'mamgorithm_onboarded_v2',
@@ -73,9 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const intro = createIntro({
     isDark: () => state.darkMode,
-    onFirstVisitFinished: continueAfterIntro
+    onFirstVisitFinished: continueAfterIntro,
+    onReplayFinished: returnHomeForReplay
   });
-  document.getElementById('btnReplayIntro')?.addEventListener('click', () => intro.open({ replay: true }));
+  document.getElementById('btnReplayIntro')?.addEventListener('click', () => {
+    returnHomeForReplay();
+    intro.open({ replay: true });
+  });
   if (!intro.hasSeen()) intro.open();
   else continueAfterIntro();
 });
@@ -99,7 +104,7 @@ function loadSavedPreferences() {
     if (savedWeights) {
       const parsed = JSON.parse(savedWeights);
       const maxVal = Math.max(...['study', 'tech', 'culture', 'hobby'].map((c) => (typeof parsed[c] === 'number' ? parsed[c] : 0)));
-      const isOldScale = maxVal <= 3; // 이전 0~3 단계 레거시 데이터 감지
+      const isOldScale = localStorage.getItem(STORAGE_KEYS.WEIGHTS_SCALE) !== '100' && maxVal <= 3; // 구버전 한 번만 변환; 새 1~3%는 그대로 유지
 
       ['study', 'tech', 'culture', 'hobby'].forEach((cat) => {
         if (typeof parsed[cat] === 'number') {
@@ -111,6 +116,9 @@ function loadSavedPreferences() {
           }
         }
       });
+      // 새 정수 단위 저장 여부를 기록해 모든 값이 1~3%여도 옛 단계로 오해하지 않습니다.
+      if (isOldScale) localStorage.setItem(STORAGE_KEYS.WEIGHTS, JSON.stringify(state.weights));
+      localStorage.setItem(STORAGE_KEYS.WEIGHTS_SCALE, '100');
     }
 
     const savedBookmarks = localStorage.getItem(STORAGE_KEYS.SAVED_IDS);
@@ -131,6 +139,7 @@ function loadSavedPreferences() {
 function persistWeights() {
   try {
     localStorage.setItem(STORAGE_KEYS.WEIGHTS, JSON.stringify(state.weights));
+    localStorage.setItem(STORAGE_KEYS.WEIGHTS_SCALE, '100');
     if (isFirebaseConfigured() && currentUser?.uid) {
       saveUserSettingsToCloud(currentUser.uid, state.weights);
     }
@@ -158,10 +167,6 @@ function checkRecipeFromUrl() {
       const parseParam = (val) => {
         if (val === null || isNaN(parseInt(val, 10))) return null;
         let num = parseInt(val, 10);
-        if (num <= 3 && !val.includes('0')) {
-          const map = { 0: 0, 1: 25, 2: 50, 3: 100 };
-          return map[num] ?? num;
-        }
         return Math.max(0, Math.min(100, num));
       };
 
@@ -443,7 +448,8 @@ function createCardMarkup(item) {
 
   return `
     <article
-      class="content-feed-card"
+      class="content-feed-card category-${item.category}"
+      style="--card-category-color: ${meta.color}; --card-category-light: ${meta.tagBg}; --card-category-text: ${meta.tagText};"
       data-id="${item.id}"
       data-type="${item.type}"
       data-url="${item.url}"
@@ -459,9 +465,11 @@ function createCardMarkup(item) {
           loading="lazy"
           onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80'"
         />
-        <div class="card-tag-overlay">
-          <span class="card-tag-indicator" style="background-color: ${meta.color}"></span>
-          <span>${meta.name} · ${typeText}</span>
+        <div class="card-tag-overlay" aria-label="분야: ${meta.name}, 콘텐츠 유형: ${typeText}">
+          <span class="card-tag-indicator" aria-hidden="true"></span>
+          <span class="card-tag-category">${meta.name}</span>
+          <span class="card-tag-divider" aria-hidden="true">·</span>
+          <span class="card-tag-type">${typeText}</span>
         </div>
         ${item.isNew ? '<span class="card-badge-new">NEW</span>' : ''}
         <span class="card-duration-overlay">${item.duration}</span>
@@ -704,7 +712,7 @@ function renderDockMixer(allocation) {
               type="range"
               min="0"
               max="100"
-              step="5"
+              step="1"
               value="${currentVal}"
               class="channel-range-input dock-range-input"
               data-cat="${cat}"
@@ -903,7 +911,7 @@ function renderOnboardingView() {
               type="range"
               min="0"
               max="100"
-              step="5"
+              step="1"
               value="${currentVal}"
               class="channel-range-input onboarding-range-input"
               data-cat="${cat}"
@@ -953,6 +961,14 @@ function closeOnboarding() {
 // ==========================================================================
 // 이벤트 바인딩
 // ==========================================================================
+function returnHomeForReplay() {
+  // S10-02: 모든 다시보기는 메인 피드 화면을 기준으로 시작하고 여기로 복귀합니다.
+  closeVideoModal();
+  closeArticleModal();
+  dismissCoachmark();
+  switchTab('viewFeed');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
 function switchTab(targetTabId) {
   closeDockMixer();
   state.currentTab = targetTabId;
@@ -1124,6 +1140,7 @@ function bindUIEvents() {
   document.getElementById('btnOnboardingStart')?.addEventListener('click', closeOnboarding);
 
   document.getElementById('btnReopenOnboarding')?.addEventListener('click', () => {
+    returnHomeForReplay();
     triggerHaptic('medium');
     openOnboarding();
   });
@@ -1366,6 +1383,7 @@ function bindUIEvents() {
   });
 
   document.getElementById('btnReplayCoachmark')?.addEventListener('click', () => {
+    returnHomeForReplay();
     triggerHaptic('medium');
     startCoachmarkTour();
   });
