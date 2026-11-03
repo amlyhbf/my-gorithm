@@ -14,13 +14,15 @@
 - 새 Firebase 프로젝트 및 웹 앱 생성
 - 선택 기능인 Google 개발자 프로그램 추가 가입, Gemini, Google 애널리틱스 비활성화로 생성
 - Authentication의 익명 로그인 활성화 확인
+- 기본 Standard Firestore 데이터베이스를 사용자 승인 후 서울 `asia-northeast3`에 생성
+- 사용자 본인 문서만 읽고 쓸 수 있도록 prototype 규칙 게시 및 Firebase 콘솔 구문 검사 통과
+- 콘솔 규칙 플레이그라운드 확인: 비로그인 읽기 거부, 본인 읽기 허용, 타인 읽기 거부
 - 이 브랜치의 `.firebaserc`와 `firebase.js`를 새 프로젝트로 연결
 - 기본 추천 테스트 8개 및 Vite 빌드 통과
 
 ## 아직 완료되지 않은 작업
 
-- Firestore 데이터베이스 생성: 기본 Standard 버전, 비공개 프로덕션 모드, 서울 `asia-northeast3` 지역으로 준비했으나 지역에 대한 사용자 확인 대기
-- Firestore 사용자별 보안 규칙 검증 및 적용
+- Firestore 쓰기·업데이트·스키마 위반 자동 검증: Java 21 이상이 필요한데 현재 환경은 Java 17이어서 에뮬레이터 실행이 차단됨. 쓰기 규칙을 완전히 검증했다고 판단하면 안 됨.
 - 기존 데이터 확인 및 필요한 데이터 복사
 - 새 Hosting 사이트에 콘텐츠 배포와 실제 접속 검증
 - 이 브랜치의 main 반영
@@ -45,3 +47,11 @@ npx -y firebase-tools@latest deploy --only hosting --project mamgorithm
 ```
 
 현재 실행 환경의 Firebase CLI에는 로그인된 계정이 없다. Google 브라우저 인증과 CLI 로그인은 별개다. 콘솔의 Cloud Shell도 이 브라우저에서는 `Site Unavailable`로 열리지 않아 아직 배포에 사용하지 못했다.
+
+## 적용된 규칙의 범위와 한계
+
+`users/{uid}`의 본인 문서만 읽기·생성·업데이트를 허용한다. 문서 필드는 `weights`, `updatedAt`만 허용하고, 관심도 맵은 4개 분야의 0~100 정수만 허용한다. 클라이언트 삭제와 다른 컬렉션 접근은 거부한다. `customCards`는 현재 화면에서 사용하지 않으므로 검토 전 클라이언트 접근을 허용하지 않았다.
+
+I've set up prototype Security Rules to keep the data in Firestore safe. They are designed to be secure for private interest settings by restricting access to the document owner, validating both creates and updates, and denying unrecognized fields and paths. However, you should review and verify them before broadly sharing your app. If you'd like, I can help you harden these rules.
+
+현재 로그인된 계정의 프로젝트 목록에서 원본 `my-gorithm` 프로젝트는 확인되지 않았다. 원본 프로젝트의 Firestore 콘솔에 직접 접속해도 "프로젝트가 존재하지 않거나 프로젝트의 앱을 나열할 권한이 없습니다."가 표시됐다. 기존 클라우드 데이터를 읽거나 복사하지 않았으며, 삭제·덮어쓰기도 하지 않았다. 새 프로젝트 데이터베이스는 아직 사용자 데이터를 이관하지 않은 상태다.
