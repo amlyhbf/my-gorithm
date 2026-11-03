@@ -2638,3 +2638,59 @@ body.dark-mode .coachmark-badge {
 .feed-more-btn:hover { background-color: var(--bg-subtle); }
 .feed-more-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
 .feed-more-btn:disabled { cursor: default; opacity: .55; }
+
+/* =======================================================================
+   10회차 피드백 S10-03: 분야 컬러 카드
+   분야 색상은 data.js CATEGORY_META 값을 그대로 사용하고 카드별로 주입합니다.
+   시각적 식별은 색뿐 아니라 확대된 텍스트 배지로도 제공합니다.
+   ======================================================================= */
+.content-feed-card {
+  border-inline-start: 5px solid var(--card-category-color, var(--border-color));
+}
+.content-feed-card:hover {
+  border-inline-start-color: var(--card-category-color, var(--border-color));
+}
+.content-feed-card .card-tag-overlay {
+  background-color: var(--card-category-color, #334155);
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 800;
+  padding: 7px 12px;
+  min-height: 30px;
+  border-radius: 8px;
+  gap: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+  letter-spacing: 0;
+}
+.content-feed-card .card-tag-indicator {
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.content-feed-card .card-tag-category {
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+.content-feed-card .card-tag-type,
+.content-feed-card .card-tag-divider {
+  font-size: 0.76rem;
+  opacity: .88;
+}
+.content-feed-card .card-content-body {
+  background-image: linear-gradient(to bottom, var(--card-category-light, var(--bg-card)) 0, var(--bg-card) 46px);
+}
+body.dark-mode .content-feed-card .card-content-body {
+  background-image: none;
+}
+@media (max-width: 440px) {
+  .content-feed-card .card-tag-overlay {
+    top: 9px;
+    left: 9px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  .content-feed-card .card-tag-category { font-size: 0.85rem; }
+}
