@@ -1,3 +1,6 @@
+import { createIntro, readIntroFlag } from './intro.js';
+import { recommendPage, updateRecentFeed } from './feed-engine.js';
+import './intro.css';
 // ==========================================================================
 // 맘고리즘 (내맘대로 알고리즘) - Modern Product Script with Mini Dock & Recipe Sharing
 // ==========================================================================
@@ -11,6 +14,7 @@ import {
 
 const STORAGE_KEYS = {
   WEIGHTS: 'mamgorithm_weights_v2',
+  WEIGHTS_SCALE: 'mamgorithm_weights_scale_v3',
   SAVED_IDS: 'mamgorithm_saved_v2',
   THEME: 'mamgorithm_theme_v2',
   ONBOARDED: 'mamgorithm_onboarded_v2',
@@ -61,6 +65,16 @@ function triggerHaptic(type = 'light') {
   }
 }
 
+// S10-01: 값은 1%씩 바뀌지만 햅틱은 5% 경계마다 한 번만 발생합니다.
+const sliderHapticBuckets = new Map();
+function triggerSliderHaptic(area, cat, value) {
+  const key = area + ':' + cat;
+  const bucket = Math.floor(value / 5);
+  if (sliderHapticBuckets.get(key) === bucket) return;
+  sliderHapticBuckets.set(key, bucket);
+  triggerHaptic('light');
+}
+
 // 초기화
 document.addEventListener('DOMContentLoaded', () => {
   loadSavedPreferences();
@@ -68,18 +82,30 @@ document.addEventListener('DOMContentLoaded', () => {
   bindUIEvents();
   renderAllViews({ withSkeleton: true, delay: 350 });
 
-  // 첫 방문 시 인터랙티브 믹서 온보딩 화면 자동 노출
-  const hasOnboarded = localStorage.getItem(STORAGE_KEYS.ONBOARDED);
-  if (!hasOnboarded) {
-    openOnboarding();
-  } else {
-    // 온보딩 완료 후 코치마크 미확인 사용자에게 가이드 안내
-    const hasSeenCoachmark = localStorage.getItem(STORAGE_KEYS.COACHMARK_SEEN);
-    if (!hasSeenCoachmark) {
-      setTimeout(() => startCoachmarkTour(), 600);
-    }
-  }
+  const intro = createIntro({
+    isDark: () => state.darkMode,
+    onFirstVisitFinished: continueAfterIntro,
+    onReplayFinished: returnHomeForReplay
+  });
+  document.getElementById('btnReplayIntro')?.addEventListener('click', () => {
+    returnHomeForReplay();
+    intro.open({ replay: true });
+  });
+  if (!intro.hasSeen()) intro.open();
+  else continueAfterIntro();
 });
+
+// Intro exposure and onboarding completion are deliberately independent.
+function continueAfterIntro() {
+  if (!readIntroFlag(STORAGE_KEYS.ONBOARDED)) {
+    openOnboarding();
+    document.querySelector('#onboardingOverlay button, #onboardingOverlay input')?.focus({ preventScroll: true });
+  } else if (!readIntroFlag(STORAGE_KEYS.COACHMARK_SEEN)) {
+    setTimeout(() => {
+      if (!document.querySelector('.intro-dialog[open]')) startCoachmarkTour();
+    }, 600);
+  }
+}
 
 // 로컬 설정 불러오기
 function loadSavedPreferences() {
@@ -88,7 +114,7 @@ function loadSavedPreferences() {
     if (savedWeights) {
       const parsed = JSON.parse(savedWeights);
       const maxVal = Math.max(...['study', 'tech', 'culture', 'hobby'].map((c) => (typeof parsed[c] === 'number' ? parsed[c] : 0)));
-      const isOldScale = maxVal <= 3; // 이전 0~3 단계 레거시 데이터 감지
+      const isOldScale = localStorage.getItem(STORAGE_KEYS.WEIGHTS_SCALE) !== '100' && maxVal <= 3; // 구버전 한 번만 변환; 새 1~3%는 그대로 유지
 
       ['study', 'tech', 'culture', 'hobby'].forEach((cat) => {
         if (typeof parsed[cat] === 'number') {
@@ -100,6 +126,9 @@ function loadSavedPreferences() {
           }
         }
       });
+      // 새 정수 단위 저장 여부를 기록해 모든 값이 1~3%여도 옛 단계로 오해하지 않습니다.
+      if (isOldScale) localStorage.setItem(STORAGE_KEYS.WEIGHTS, JSON.stringify(state.weights));
+      localStorage.setItem(STORAGE_KEYS.WEIGHTS_SCALE, '100');
     }
 
     const savedBookmarks = localStorage.getItem(STORAGE_KEYS.SAVED_IDS);
@@ -120,6 +149,7 @@ function loadSavedPreferences() {
 function persistWeights() {
   try {
     localStorage.setItem(STORAGE_KEYS.WEIGHTS, JSON.stringify(state.weights));
+    localStorage.setItem(STORAGE_KEYS.WEIGHTS_SCALE, '100');
     if (isFirebaseConfigured() && currentUser?.uid) {
       saveUserSettingsToCloud(currentUser.uid, state.weights);
     }
@@ -147,10 +177,6 @@ function checkRecipeFromUrl() {
       const parseParam = (val) => {
         if (val === null || isNaN(parseInt(val, 10))) return null;
         let num = parseInt(val, 10);
-        if (num <= 3 && !val.includes('0')) {
-          const map = { 0: 0, 1: 25, 2: 50, 3: 100 };
-          return map[num] ?? num;
-        }
         return Math.max(0, Math.min(100, num));
       };
 
@@ -247,62 +273,91 @@ function calculateAllocation() {
   return { totalWeight, categories: result };
 }
 
-function seededShuffle(arr, seed) {
-  const list = [...arr];
-  if (seed === 0) return list;
-  let s = seed;
-  for (let i = list.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const j = Math.floor((s / 233280) * (i + 1));
-    [list[i], list[j]] = [list[j], list[i]];
-  }
-  return list;
+const FEED_HISTORY_KEY = 'mamgorithm_recent_feed_v1';
+const feedSession = { key: null, cards: [] };
+const sessionFeedSeed = Math.floor(Math.random() * 0x7fffffff);
+
+function readRecentFeed() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(FEED_HISTORY_KEY) || '[]');
+    return Array.isArray(parsed) ? parsed.filter(id => typeof id === 'string') : [];
+  } catch { return []; }
+}
+
+function rememberFeed(items) {
+  const ids = items.map(item => item.id);
+  if (!ids.length) return;
+  try {
+    localStorage.setItem(FEED_HISTORY_KEY, JSON.stringify(updateRecentFeed(readRecentFeed(), ids)));
+  } catch { /* Private browsing may block storage. */ }
+}
+
+function feedKey() {
+  return JSON.stringify([
+    state.weights.study, state.weights.tech, state.weights.culture, state.weights.hobby,
+    state.contentType, state.shuffleSeed
+  ]);
+}
+
+function feedSelectionOptions(overrides = {}) {
+  return {
+    limit: state.feedSize,
+    type: state.contentType,
+    recentIds: readRecentFeed(),
+    seed: (sessionFeedSeed + state.shuffleSeed * 9973 + feedSession.cards.length * 17) >>> 0,
+    ...overrides
+  };
 }
 
 function buildFeedList(allocation) {
-  if (allocation.totalWeight === 0) return [];
-
-  const filteredPool = CONTENT_DATA.filter((item) => {
-    if (state.contentType === 'all') return true;
-    return item.type === state.contentType;
-  });
-
-  const buckets = {};
-  ['study', 'tech', 'culture', 'hobby'].forEach((cat) => {
-    const quota = allocation.categories[cat].cardCount;
-    if (quota <= 0) {
-      buckets[cat] = [];
-      return;
-    }
-    const catItems = seededShuffle(
-      filteredPool.filter((item) => item.category === cat),
-      state.shuffleSeed
-    );
-    const selected = [];
-    for (let i = 0; i < quota && catItems.length > 0; i++) {
-      selected.push(catItems[i % catItems.length]);
-    }
-    buckets[cat] = selected;
-  });
-
-  const interleaved = [];
-  const sortedCats = ['study', 'tech', 'culture', 'hobby'].sort(
-    (a, b) => state.weights[b] - state.weights[a]
-  );
-
-  let hasMore = true;
-  let idx = 0;
-  while (hasMore) {
-    hasMore = false;
-    for (const cat of sortedCats) {
-      if (buckets[cat] && idx < buckets[cat].length) {
-        interleaved.push(buckets[cat][idx]);
-        hasMore = true;
-      }
-    }
-    idx++;
+  const key = feedKey();
+  if (feedSession.key !== key) {
+    const result = allocation.totalWeight === 0
+      ? { cards: [] }
+      : recommendPage(CONTENT_DATA, state.weights, feedSelectionOptions());
+    feedSession.key = key;
+    feedSession.cards = result.cards;
+    rememberFeed(result.cards);
   }
-  return interleaved;
+  return feedSession.cards;
+}
+
+function remainingFeedCount() {
+  const shownIds = new Set(feedSession.cards.map(item => item.id));
+  const eligible = new Set();
+  for (const item of CONTENT_DATA) {
+    if (state.weights[item.category] <= 0 || (state.contentType !== 'all' && item.type !== state.contentType)) continue;
+    if (!shownIds.has(item.id)) eligible.add(item.id);
+  }
+  return eligible.size;
+}
+
+function updateFeedMoreButton() {
+  const wrapper = document.getElementById('feedMoreWrap');
+  const button = document.getElementById('btnFeedMore');
+  if (!wrapper || !button) return;
+  const remaining = remainingFeedCount();
+  wrapper.hidden = remaining === 0;
+  button.disabled = remaining === 0;
+  button.textContent = `새로운 추천 더 보기 · ${remaining}개 남음`;
+}
+
+function loadMoreFeed() {
+  const allocation = calculateAllocation();
+  buildFeedList(allocation);
+  const existing = feedSession.cards.map(item => item.id);
+  const next = recommendPage(CONTENT_DATA, state.weights, feedSelectionOptions({
+    excludeIds: existing
+  }));
+  if (!next.cards.length) {
+    updateFeedMoreButton();
+    return;
+  }
+  feedSession.cards = [...feedSession.cards, ...next.cards];
+  rememberFeed(next.cards);
+  renderFeedCards(allocation);
+  triggerHaptic('light');
+  showToast(`새로운 콘텐츠 ${next.cards.length}개를 추가했어요.`);
 }
 
 // ==========================================================================
@@ -361,6 +416,8 @@ function renderFeedCardsWithSkeleton(allocation, delay = 260, onComplete = null)
 
   // 1. 스켈레톤 즉시 표시 (일렁이는 쉬머 효과)
   renderSkeletonCards(container, 3);
+  const more = document.getElementById('feedMoreWrap');
+  if (more) more.hidden = true;
 
   // 2. 부드러운 딜레이 후 실제 카드 페이드인 렌더링
   feedTransitionTimer = setTimeout(() => {
@@ -401,7 +458,8 @@ function createCardMarkup(item) {
 
   return `
     <article
-      class="content-feed-card"
+      class="content-feed-card category-${item.category}"
+      style="--card-category-color: ${meta.color}; --card-category-light: ${meta.tagBg}; --card-category-text: ${meta.tagText};"
       data-id="${item.id}"
       data-type="${item.type}"
       data-url="${item.url}"
@@ -417,9 +475,11 @@ function createCardMarkup(item) {
           loading="lazy"
           onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80'"
         />
-        <div class="card-tag-overlay">
-          <span class="card-tag-indicator" style="background-color: ${meta.color}"></span>
-          <span>${meta.name} · ${typeText}</span>
+        <div class="card-tag-overlay" aria-label="분야: ${meta.name}, 콘텐츠 유형: ${typeText}">
+          <span class="card-tag-indicator" aria-hidden="true"></span>
+          <span class="card-tag-category">${meta.name}</span>
+          <span class="card-tag-divider" aria-hidden="true">·</span>
+          <span class="card-tag-type">${typeText}</span>
         </div>
         ${item.isNew ? '<span class="card-badge-new">NEW</span>' : ''}
         <span class="card-duration-overlay">${item.duration}</span>
@@ -458,6 +518,11 @@ function renderFeedCards(allocation) {
   if (!container) return;
 
   if (allocation.totalWeight === 0) {
+    const more = document.getElementById('feedMoreWrap');
+    if (more) more.hidden = true;
+    feedSession.key = feedKey();
+    feedSession.cards = [];
+    renderStatsView(allocation);
     container.innerHTML = `
       <div class="empty-feed-placeholder">
         <div class="empty-feed-title">관심 분야가 모두 꺼져 있습니다</div>
@@ -479,7 +544,11 @@ function renderFeedCards(allocation) {
   }
 
   const cards = buildFeedList(allocation);
-  container.innerHTML = cards.map(createCardMarkup).join('');
+  container.innerHTML = cards.length
+    ? cards.map(createCardMarkup).join('')
+    : '<div class="empty-feed-placeholder"><div class="empty-feed-title">이 조건에 맞는 콘텐츠가 아직 없습니다</div><p class="empty-feed-desc">다른 콘텐츠 유형을 선택하거나 관심도를 바꿔 보세요.</p></div>';
+  updateFeedMoreButton();
+  renderStatsView(allocation);
 }
 
 // ==========================================================================
@@ -653,7 +722,7 @@ function renderDockMixer(allocation) {
               type="range"
               min="0"
               max="100"
-              step="5"
+              step="1"
               value="${currentVal}"
               class="channel-range-input dock-range-input"
               data-cat="${cat}"
@@ -698,6 +767,10 @@ function closeDockMixer() {
 function renderStatsView(allocation) {
   const container = document.getElementById('statsTableContainer');
   if (!container) return;
+  const visibleCounts = { study: 0, tech: 0, culture: 0, hobby: 0 };
+  for (const item of feedSession.cards) {
+    if (Object.hasOwn(visibleCounts, item.category)) visibleCounts[item.category] += 1;
+  }
 
   const rows = ['study', 'tech', 'culture', 'hobby']
     .map((cat) => {
@@ -712,7 +785,7 @@ function renderStatsView(allocation) {
           </td>
           <td>${alloc.weight}% (${levelDesc.label})</td>
           <td><strong>${alloc.displayPct}%</strong></td>
-          <td>${alloc.cardCount}장</td>
+          <td>${visibleCounts[cat]}장</td>
         </tr>
       `;
     })
@@ -725,7 +798,7 @@ function renderStatsView(allocation) {
           <th>분야</th>
           <th>설정 가중치</th>
           <th>추천 비율</th>
-          <th>피드 카드 수</th>
+          <th>현재 표시 카드 수</th>
         </tr>
       </thead>
       <tbody>
@@ -848,7 +921,7 @@ function renderOnboardingView() {
               type="range"
               min="0"
               max="100"
-              step="5"
+              step="1"
               value="${currentVal}"
               class="channel-range-input onboarding-range-input"
               data-cat="${cat}"
@@ -898,6 +971,14 @@ function closeOnboarding() {
 // ==========================================================================
 // 이벤트 바인딩
 // ==========================================================================
+function returnHomeForReplay() {
+  // S10-02: 모든 다시보기는 메인 피드 화면을 기준으로 시작하고 여기로 복귀합니다.
+  closeVideoModal();
+  closeArticleModal();
+  dismissCoachmark();
+  switchTab('viewFeed');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
 function switchTab(targetTabId) {
   closeDockMixer();
   state.currentTab = targetTabId;
@@ -991,7 +1072,7 @@ function bindUIEvents() {
       const val = parseInt(input.value, 10);
       if (cat && !Number.isNaN(val)) {
         state.weights[cat] = Math.max(0, Math.min(100, val));
-        triggerHaptic('light');
+        triggerSliderHaptic('dock', cat, val);
         persistWeights();
 
         const meta = CATEGORY_META[cat];
@@ -1031,7 +1112,7 @@ function bindUIEvents() {
       const val = parseInt(input.value, 10);
       if (cat && !Number.isNaN(val)) {
         state.weights[cat] = Math.max(0, Math.min(100, val));
-        triggerHaptic('light');
+        triggerSliderHaptic('onboarding', cat, val);
 
         const meta = CATEGORY_META[cat];
         input.style.background = `linear-gradient(to right, ${meta.color} ${val}%, var(--bg-subtle) ${val}%)`;
@@ -1069,6 +1150,7 @@ function bindUIEvents() {
   document.getElementById('btnOnboardingStart')?.addEventListener('click', closeOnboarding);
 
   document.getElementById('btnReopenOnboarding')?.addEventListener('click', () => {
+    returnHomeForReplay();
     triggerHaptic('medium');
     openOnboarding();
   });
@@ -1112,6 +1194,8 @@ function bindUIEvents() {
       showToast('새로운 추천 콘텐츠 조합을 불러왔습니다.');
     });
   });
+
+  document.getElementById('btnFeedMore')?.addEventListener('click', loadMoreFeed);
 
   // 10) 카드 인터랙션: 영상은 인앱 바텀시트 플레이어, 기사는 원본 열기 & 북마크 토글
   const handleCardInteraction = (e) => {
@@ -1309,6 +1393,7 @@ function bindUIEvents() {
   });
 
   document.getElementById('btnReplayCoachmark')?.addEventListener('click', () => {
+    returnHomeForReplay();
     triggerHaptic('medium');
     startCoachmarkTour();
   });

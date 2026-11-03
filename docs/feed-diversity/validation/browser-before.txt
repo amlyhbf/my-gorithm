@@ -1,0 +1,19 @@
+
+> mamgorithm@1.0.0 test:feed:browser
+> node tests/feed.browser.cjs
+
+PASS: 12 → 24 → 32 distinct cards without duplicates
+AssertionError [ERR_ASSERTION]: revisit repeated the initial page despite available alternatives
+
+12 !== 0
+
+    at /workspace/my-gorithm/tests/feed.browser.cjs:61:12
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:502:9) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 12,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

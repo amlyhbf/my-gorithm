@@ -1,0 +1,28 @@
+{
+  "commit": "7e5e5ce6c1a187769c814545fed02474c952127c",
+  "weights": {
+    "study": 10,
+    "tech": 20,
+    "culture": 30,
+    "hobby": 40
+  },
+  "capacity": {
+    "study": 8,
+    "tech": 9,
+    "culture": 7,
+    "hobby": 8
+  },
+  "limit": 12,
+  "actual": {
+    "study": 1,
+    "tech": 2,
+    "culture": 3,
+    "hobby": 6
+  },
+  "expected": {
+    "study": 1,
+    "tech": 2,
+    "culture": 4,
+    "hobby": 5
+  }
+}

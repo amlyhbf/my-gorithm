@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "browser": "154.0.8037.57",
+  "video": {
+    "ended": true,
+    "duration": 16,
+    "time": 16,
+    "controls": false,
+    "muted": true
+  },
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4173/intro/poster-light.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/intro/intro-v4-4-light.mp4",
+      "status": 206,
+      "type": "video/mp4"
+    }
+  ],
+  "errors": []
+}

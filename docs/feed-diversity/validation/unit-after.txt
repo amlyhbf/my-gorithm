@@ -1,0 +1,29 @@
+
+> mamgorithm@1.0.0 test:feed
+> node --test tests/feed-engine.test.mjs
+
+✔ tests/feed-engine.test.mjs (392.54178ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 442.252201
+✔ unequal weights award residual slots to distinct largest remainders (12.654146ms)
+✔ initial balanced feed has 12 unique cards, three per category (3.031441ms)
+✔ load-more exposes 12, then 12, then 8 without repeats (4.030357ms)
+✔ a fresh visit prioritizes unshown cards over the previous feed (0.380925ms)
+✔ a single preferred category never duplicates its limited inventory (0.563464ms)
+✔ unavailable category quota goes to other enabled categories (0.234961ms)
+✔ all-off, type filters, duplicate IDs and recent ordering (0.745015ms)
+✔ availability limits are never exceeded (0.149895ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 57.242686
