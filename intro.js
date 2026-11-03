@@ -4,7 +4,7 @@ export function readIntroFlag(key) {
   try { return localStorage.getItem(key); } catch { return null; }
 }
 
-export function createIntro({ isDark, onFirstVisitFinished }) {
+export function createIntro({ isDark, onFirstVisitFinished, onReplayFinished }) {
   let active = false;
   return {
     hasSeen: () => Boolean(readIntroFlag(INTRO_SEEN_KEY)),
@@ -64,6 +64,12 @@ export function createIntro({ isDark, onFirstVisitFinished }) {
         clearInterval(watchdog);
         // The approved poster is already decoded underneath; never reset the video.
         video.pause();
+        // S10-02: 다시보기는 영상이 끝나는 즉시 홈 피드로 자동 복귀합니다.
+        // 최초 방문 인트로의 기존 CTA는 그대로 유지합니다.
+        if (replay) {
+          close();
+          return;
+        }
         dialog.classList.add('is-finished');
         start.hidden = false;
         skip.hidden = true;
@@ -84,8 +90,9 @@ export function createIntro({ isDark, onFirstVisitFinished }) {
         video.load();
         document.body.style.overflow = previousOverflow;
         window.scrollTo(scroll.x, scroll.y);
-        if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
-        if (!replay) onFirstVisitFinished();
+        if (!replay && previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
+        if (replay) onReplayFinished?.();
+        else onFirstVisitFinished();
       }
       poster.src = `${base}poster-${theme}.png`;
       listen(poster, 'error', () => { poster.hidden = true; });
