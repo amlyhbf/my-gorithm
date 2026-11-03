@@ -7,7 +7,8 @@ const BASE=process.env.TEST_BASE_URL||'http://127.0.0.1:5173';
 (async()=>{
  const browser=await chromium.launch({headless:true,args:['--no-sandbox'],
    ...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
- const context=await browser.newContext({viewport:{width:390,height:844}});
+ const desktop=process.env.TEST_VIEWPORT==='desktop';
+ const context=await browser.newContext({viewport:desktop?{width:1440,height:900}:{width:390,height:844}});
  const origin=new URL(BASE).origin;
  await context.route('**/*',route=>{
    const target=new URL(route.request().url());
@@ -45,6 +46,7 @@ const BASE=process.env.TEST_BASE_URL||'http://127.0.0.1:5173';
    await page.locator('.tab-btn[data-tab="viewStats"]').click();
    await page.locator('#btnReopenOnboarding').click();
    assert.equal(await isFeed(),true);
+   await page.locator('#onboardingOverlay').waitFor({state:'visible'});
    assert.equal(await page.locator('#onboardingOverlay').isVisible(),true);
    assert.equal(await page.locator('.onboarding-range-input').first().getAttribute('step'),'1');
    await setRange('.onboarding-range-input[data-cat="study"]',43);
@@ -55,6 +57,7 @@ const BASE=process.env.TEST_BASE_URL||'http://127.0.0.1:5173';
    await page.locator('.tab-btn[data-tab="viewStats"]').click();
    await page.locator('#btnReplayCoachmark').click();
    assert.equal(await isFeed(),true);
+   await page.locator('#coachmarkOverlay').waitFor({state:'visible'});
    assert.equal(await page.locator('#coachmarkOverlay').isVisible(),true);
    await page.locator('#btnCoachmarkSkip').click();
    console.log('PASS S10-02: replay tutorial starts on home');
@@ -89,6 +92,11 @@ const BASE=process.env.TEST_BASE_URL||'http://127.0.0.1:5173';
    assert(report.size>=13);
    assert(report.aria.includes('분야:'));
    console.log('PASS S10-03: prominent text badge plus established category color strip');
+   if(process.env.TEST_SCREENSHOT_DIR){
+     const fs=require('node:fs');
+     fs.mkdirSync(process.env.TEST_SCREENSHOT_DIR,{recursive:true});
+     await page.screenshot({path:`${process.env.TEST_SCREENSHOT_DIR}/${desktop?'desktop':'mobile'}-feed.png`,fullPage:true});
+   }
    assert.deepEqual(errors,[]);
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

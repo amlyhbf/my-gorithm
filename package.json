@@ -4,6 +4,8 @@
   "description": "내맘대로 알고리즘 (맘고리즘) - 반응형 웹 프로젝트",
   "type": "module",
   "scripts": {
+    "test": "npm run test:feed",
+    "test:session10": "npm run test:session10:browser",
     "dev": "vite --open",
     "start": "vite --open",
     "build": "vite build",
