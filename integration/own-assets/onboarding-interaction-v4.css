@@ -1,0 +1,83 @@
+/* The onboarding headline is the primary message of this screen. */
+.onboarding-title {
+  font-size: clamp(24px, 3.5vw, 30px);
+  font-weight: 850;
+  font-variation-settings: "wght" 850;
+  color: #4f46e5;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin-bottom: 0;
+  text-shadow: none;
+}
+body.dark-mode .onboarding-title {
+  color: #a5b4fc;
+}
+
+/* The title becomes a small, live expression of the user's mix. */
+.onboarding-title {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .onboarding-title.has-interest-ink {
+    background-image: var(--interest-ink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+}
+@media (forced-colors: active) {
+  .onboarding-title.has-interest-ink {
+    background: none;
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+  }
+}
+
+.onboarding-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.onboarding-header .onboarding-desc { margin: 0; }
+.onboarding-modal {
+  position: relative;
+  isolation: isolate;
+}
+.onboarding-modal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 440px 340px at var(--ambient-x, 50%) var(--ambient-y, 55%),
+      rgba(var(--ambient-rgb, 79,70,229), var(--ambient-alpha, .035)), transparent 75%),
+    radial-gradient(ellipse 300px 240px at calc(100% - var(--ambient-x, 50%)) 0%,
+      rgba(var(--ambient-secondary-rgb, 5,150,105), var(--ambient-secondary-alpha, .025)), transparent 80%);
+}
+#btnOnboardingStart {
+  background-image: var(--interest-button-ink);
+  color: #fff;
+  text-shadow: none;
+  box-shadow: 0 6px 18px rgba(var(--ambient-rgb, 79,70,229), .18);
+}
+#btnOnboardingStart:hover { filter: brightness(1.04); }
+#btnOnboardingStart:focus-visible { outline: 3px solid var(--color-study); outline-offset: 4px; }
+@media (forced-colors: active) {
+  .onboarding-modal::before { display: none; }
+  #btnOnboardingStart {
+    background: ButtonFace;
+    color: ButtonText;
+    border: 1px solid ButtonText;
+    box-shadow: none;
+  }
+}

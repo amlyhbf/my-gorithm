@@ -1,0 +1,38 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const{chromium}=require('playwright');
+const base=process.env.TEST_URL||'http://127.0.0.1:4177',root=require('node:path').resolve(__dirname,'../..');
+(async()=>{
+ const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']});const checks=[];const originalContext=browser.newContext.bind(browser);browser.newContext=async(...args)=>{const ctx=await originalContext(...args);await ctx.route('**/*',route=>/identitytoolkit|firestore|securetoken|firebaseinstallations|firebaseio/.test(new URL(route.request().url()).hostname)?route.abort():route.continue());return ctx;};
+ const ctx=await browser.newContext({locale:'ko-KR',viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ const page=await ctx.newPage();await page.goto(base);
+ await page.locator('#btnStartExperience').click();
+ await page.locator('#introVideo').waitFor({state:'visible'});
+ await page.waitForFunction(()=>document.getElementById('introVideo').duration>0);
+ assert(Math.abs(await page.locator('#introVideo').evaluate(v=>v.duration)-19)<.1);
+ await page.locator('#btnIntroSkip').click();await page.locator('#authOverlay:not(.hidden)').waitFor();
+ await page.locator('#btnGuestContinue').click();await page.locator('#onboardingOverlay:not(.hidden)').waitFor();
+ await page.locator('#btnOnboardingStart').click();await page.locator('#feedCardsList .content-feed-card').first().waitFor();
+ checks.push('First visit plays our 19-second intro and proceeds through guest login to onboarding and feed');
+ await page.evaluate(()=>navigator.serviceWorker.ready);
+ const manifest=await page.evaluate(async()=>await(await fetch('/manifest.json')).json());
+ assert.equal(manifest.scope,'/');assert.equal(manifest.display,'standalone');
+ for(const icon of manifest.icons){const response=await page.request.get(base+icon.src);assert.equal(response.status(),200);assert(response.headers()['content-type'].startsWith('image/'));}
+ checks.push('PWA manifest and all install icons resolve from the integrated origin');
+ await page.waitForTimeout(1000);await page.reload();await page.locator('#feedCardsList .content-feed-card').first().waitFor();
+ const assetPaths=await page.locator('script[src],link[rel="stylesheet"]').evaluateAll(es=>es.map(e=>e.src||e.href).filter(url=>url.startsWith(location.origin)));
+ await page.evaluate(async paths=>{const cache=await caches.open('mamgorithm-firebase-integrated-20261110-v1');for(const url of paths){const r=await fetch(url);if(r.ok)await cache.put(url,r);}},assetPaths);
+ await ctx.setOffline(true);await page.reload({waitUntil:'domcontentloaded'});
+ await page.locator('#feedCardsList .content-feed-card').first().waitFor();
+ assert.equal(await page.locator('title').innerText(),'맘고리즘 · 팀 통합본');
+ checks.push('Previously cached app shell can reopen offline; external videos and uncached images remain network dependent');
+ await ctx.setOffline(false);
+ const ios=await browser.newContext({locale:'ko-KR',viewport:{width:390,height:844},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1',serviceWorkers:'block'});
+ await ios.addInitScript(()=>{if(top!==window)return;for(const k of ['mamgorithm_intro_seen_v1','mamgorithm_onboarded_v2','mamgorithm_coachmark_seen'])localStorage.setItem(k,'true');});
+ const phone=await ios.newPage();await phone.goto(base);await phone.locator('#quickBrandSplash').waitFor({state:'hidden'});
+ await phone.locator('#appInstallBanner:not(.hidden)').waitFor();await phone.locator('#btnBannerInstall').click();
+ await phone.locator('#iosInstallSheet:not(.hidden)').waitFor();await phone.screenshot({path:root+'/docs/firebase-integration/merge-ios-install-guidance.png'});
+ await phone.locator('#btnIosInstallDone').click();await phone.locator('#btnBannerDismiss').click();await phone.reload();
+ await phone.locator('#quickBrandSplash').waitFor({state:'hidden'});assert(await phone.locator('#appInstallBanner').evaluate(e=>e.classList.contains('hidden')));
+ checks.push('iPhone user-agent shows home-screen installation guidance; dismissed banner stays dismissed for this session');
+ const result={passed:true,checks,physicalSafariVerified:false};fs.writeFileSync(root+'/docs/firebase-integration/merge-pwa-results.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,410 @@
+[
+  {
+    "path": "apple-touch-icon.png",
+    "sha256": "8c61b77f9e21b467869a4efcce8d8e4f9b1ba9fe6561fd858cb0e390eeef3cad",
+    "bytes": 4398,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/apple-touch-icon.png"
+  },
+  {
+    "path": "favicon-16x16.png",
+    "sha256": "25040e19cad70c5c2b3388ed66ba818f2098e25ad4f1f8e894fbd98d6db9d9e4",
+    "bytes": 717,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/favicon-16x16.png"
+  },
+  {
+    "path": "favicon-32x32.png",
+    "sha256": "f3fab07e54bc71b81445d313b6a0832429d3788522ba3fe8a91fd854ccafd942",
+    "bytes": 1168,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/favicon-32x32.png"
+  },
+  {
+    "path": "favicon.ico",
+    "sha256": "1eaa78d1c19c2afef05ab969aff75c66991cff56d60097a887240be350adc230",
+    "bytes": 1923,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/favicon.ico"
+  },
+  {
+    "path": "favicon.svg",
+    "sha256": "f8140285befa7b353fa6eb25a6ac1d81cff36bd96f4ee205bd7aacca1b594f51",
+    "bytes": 430,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/favicon.svg"
+  },
+  {
+    "path": "icon-192.png",
+    "sha256": "e7628a01807b749b83bb14c6c9c2d25dd4e195450105d3399506f6b6922df379",
+    "bytes": 2229,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/icon-192.png"
+  },
+  {
+    "path": "icon-512.png",
+    "sha256": "ad2d8ebe5e8decc0d96a5f8419331ee06686f6fb382e85f5602d494d08326a52",
+    "bytes": 21660,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/icon-512.png"
+  },
+  {
+    "path": "images/article-placeholder.svg",
+    "sha256": "a612dfbd65cbc6eb81795164b522973a1490e80005bf7efe8dadbccb0f9c262a",
+    "bytes": 339,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/article-placeholder.svg"
+  },
+  {
+    "path": "images/candidates/culture-11-5cd39cc5d9.webp",
+    "sha256": "5cd39cc5d965c6152cf6a8f9bea900b11178c80166aaeb5160d44340d6e134fb",
+    "bytes": 51450,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-11-5cd39cc5d9.webp"
+  },
+  {
+    "path": "images/candidates/culture-2-f78e2b91b5.webp",
+    "sha256": "f78e2b91b5e0c8c5e169379cf36b36999562e2c7234bc292aa2ec85b9f250ce3",
+    "bytes": 61220,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-2-f78e2b91b5.webp"
+  },
+  {
+    "path": "images/candidates/culture-20-741d3d9c05.webp",
+    "sha256": "741d3d9c055d2f14920889e7bcbcb96702fae630ed60609fc308d6f9959a7f5c",
+    "bytes": 151458,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-20-741d3d9c05.webp"
+  },
+  {
+    "path": "images/candidates/culture-21-517726f53f.webp",
+    "sha256": "517726f53f4db06aef89945ed80ce5e0b621c3b99967537c153c2e3e0451c72f",
+    "bytes": 39436,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-21-517726f53f.webp"
+  },
+  {
+    "path": "images/candidates/culture-8-b2e0c61cee.webp",
+    "sha256": "b2e0c61cee594c376b4e8fbb84803dac2b078e44d016114b23858d25a890451a",
+    "bytes": 124428,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-8-b2e0c61cee.webp"
+  },
+  {
+    "path": "images/candidates/culture-9-01ddbcd8a4.webp",
+    "sha256": "01ddbcd8a41e3cf10a41d3e0283ccb894bcb14a2b75a8f01a5eb67831779f75d",
+    "bytes": 72146,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/culture-9-01ddbcd8a4.webp"
+  },
+  {
+    "path": "images/candidates/hobby-4-2d22ba7899.webp",
+    "sha256": "2d22ba789941bce94f9631e764e50150749a960ef8a2deafa4fef4bc9505360f",
+    "bytes": 63538,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/hobby-4-2d22ba7899.webp"
+  },
+  {
+    "path": "images/candidates/study-11-749b797c43.webp",
+    "sha256": "749b797c43bd2328677621b02f9e6678f2ce088a9f030741881607ebf7898c49",
+    "bytes": 324260,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/study-11-749b797c43.webp"
+  },
+  {
+    "path": "images/candidates/study-12-0511004948.webp",
+    "sha256": "0511004948d62a3c92faab6e20e221fd4f1d3d1cc496befe92eaf9dc37f4601c",
+    "bytes": 68182,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/study-12-0511004948.webp"
+  },
+  {
+    "path": "images/candidates/study-14-ac67807b7d.webp",
+    "sha256": "ac67807b7d49b8fd9d607e8da32de4c1368db7d94c818967840b5e6e92dfc92b",
+    "bytes": 23244,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/study-14-ac67807b7d.webp"
+  },
+  {
+    "path": "images/candidates/study-15-538495a445.webp",
+    "sha256": "538495a44524b6b93e1b482715d6b924a8b5bef3c1f40547cd8f0bd00a4a819f",
+    "bytes": 126534,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/study-15-538495a445.webp"
+  },
+  {
+    "path": "images/candidates/study-4-d64c7f62f4.webp",
+    "sha256": "d64c7f62f4583325c16d53cdd9552404f5b7365d42cff203e0c0a2e66ec5d1de",
+    "bytes": 20822,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/study-4-d64c7f62f4.webp"
+  },
+  {
+    "path": "images/candidates/tech-11-acde845d46.webp",
+    "sha256": "acde845d463abbbd891b37866269a709578213ef69e4ac267f7aba7690b2ab32",
+    "bytes": 28282,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/tech-11-acde845d46.webp"
+  },
+  {
+    "path": "images/candidates/tech-14-4c98738fc1.webp",
+    "sha256": "4c98738fc1d5d622eaded7e6a31ee521e97913d23a9f238bcc5aba1937692773",
+    "bytes": 132100,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/candidates/tech-14-4c98738fc1.webp"
+  },
+  {
+    "path": "images/optimized/culture-10-4bd09dc8f834.webp",
+    "sha256": "4bd09dc8f83413f49d2f080587807f76ef409d2afdc2e5ce23d3f6f96be0830b",
+    "bytes": 122744,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-10-4bd09dc8f834.webp"
+  },
+  {
+    "path": "images/optimized/culture-12-0be92f408b21.webp",
+    "sha256": "0be92f408b21c7faa6db53114e3d6a2aa1697751e60740c4f8136346bd3dc0dd",
+    "bytes": 220748,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-12-0be92f408b21.webp"
+  },
+  {
+    "path": "images/optimized/culture-13-138467a812be.webp",
+    "sha256": "138467a812be3ab5bb4f081a2536da626ce50176fc1b1fa4a4283570396282fd",
+    "bytes": 57114,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-13-138467a812be.webp"
+  },
+  {
+    "path": "images/optimized/culture-14-d1cc2fdee980.webp",
+    "sha256": "d1cc2fdee9801371ad3bcb3d423ae5f2f02b58f158c9a0a9e374264cd39658e5",
+    "bytes": 52258,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-14-d1cc2fdee980.webp"
+  },
+  {
+    "path": "images/optimized/culture-15-b907db2f00b6.webp",
+    "sha256": "b907db2f00b6b156c3810806c15d4a4f769bbd2e4c42cb292f286054895b2de4",
+    "bytes": 14446,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-15-b907db2f00b6.webp"
+  },
+  {
+    "path": "images/optimized/culture-16-a03cd4e26c47.webp",
+    "sha256": "a03cd4e26c47fac550c44ce87d36b93e5d5883792ff39e0e7108f4b46e59e9a1",
+    "bytes": 82528,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-16-a03cd4e26c47.webp"
+  },
+  {
+    "path": "images/optimized/culture-17-03ef3a0f9f6b.webp",
+    "sha256": "03ef3a0f9f6b6fa4bdd586ae85a5a0526abcddbbd582e19c62e85e6717725554",
+    "bytes": 107086,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-17-03ef3a0f9f6b.webp"
+  },
+  {
+    "path": "images/optimized/culture-18-7e6375421241.webp",
+    "sha256": "7e6375421241e85577542f2f264714e2c6baf340a5a15f58daa3c9d5ac606f49",
+    "bytes": 181410,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-18-7e6375421241.webp"
+  },
+  {
+    "path": "images/optimized/culture-19-e2a025614c4c.webp",
+    "sha256": "e2a025614c4c496eeecb701a3da2412d7c0bc561eb2fc2d25ba3d01a8ace1888",
+    "bytes": 110986,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-19-e2a025614c4c.webp"
+  },
+  {
+    "path": "images/optimized/culture-22-af0bc72af78a.webp",
+    "sha256": "af0bc72af78a9ebacf2bb26c217fd28e37187f4aebeef069cc5d3406833302c3",
+    "bytes": 21932,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-22-af0bc72af78a.webp"
+  },
+  {
+    "path": "images/optimized/culture-23-c8fe95238648.webp",
+    "sha256": "c8fe952386485b8c261a646373cfa41f1a249612b6947c403aaa44691a4d07d7",
+    "bytes": 80086,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-23-c8fe95238648.webp"
+  },
+  {
+    "path": "images/optimized/culture-4-5a87419d493c.webp",
+    "sha256": "5a87419d493c9a4a69373e40d86bde2e3ae765597806c60ad5fc3c8ac31f23fa",
+    "bytes": 96254,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-4-5a87419d493c.webp"
+  },
+  {
+    "path": "images/optimized/culture-6-f92b3fdc952c.webp",
+    "sha256": "f92b3fdc952cd6b2aea045ed296ffadffb8f621e0741d30d3f59596ef5f2306c",
+    "bytes": 87126,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/culture-6-f92b3fdc952c.webp"
+  },
+  {
+    "path": "images/optimized/hobby-10-fe49be24f969.webp",
+    "sha256": "fe49be24f969ba4aae0e0ff8933e6c5513d9c97cfc95689db16cfe9712963db0",
+    "bytes": 40238,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-10-fe49be24f969.webp"
+  },
+  {
+    "path": "images/optimized/hobby-11-c2e33017d265.webp",
+    "sha256": "c2e33017d26580c88fabe13036404503312c7dc9d3877dd8cfcd87367d037ea8",
+    "bytes": 55198,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-11-c2e33017d265.webp"
+  },
+  {
+    "path": "images/optimized/hobby-2-efd18cd05aaa.webp",
+    "sha256": "efd18cd05aaa85b97f824db50ef571b601cd3ae76d9cd8ed12cefff267121383",
+    "bytes": 56888,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-2-efd18cd05aaa.webp"
+  },
+  {
+    "path": "images/optimized/hobby-6-7f4021f9c912.webp",
+    "sha256": "7f4021f9c912f64e8562341582582ccf9d624e3ebdeeb2b2d8e56f843ba18771",
+    "bytes": 45076,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-6-7f4021f9c912.webp"
+  },
+  {
+    "path": "images/optimized/hobby-8-e6e4202e4cff.webp",
+    "sha256": "e6e4202e4cff030eb9c7cf5c247e55332eded03c5d0b12d1398b4f20e0e24c90",
+    "bytes": 53990,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-8-e6e4202e4cff.webp"
+  },
+  {
+    "path": "images/optimized/hobby-9-26ab40f51f49.webp",
+    "sha256": "26ab40f51f4947e0cf65f38eb12ee28dac6bba1776bbf426d8db1b9017ee4414",
+    "bytes": 60494,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/hobby-9-26ab40f51f49.webp"
+  },
+  {
+    "path": "images/optimized/study-10-29b3c40ed1c7.webp",
+    "sha256": "29b3c40ed1c7efcb6c3f8e41fbb04ccdca4eb109c7fda665f587c03217dcced7",
+    "bytes": 27420,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-10-29b3c40ed1c7.webp"
+  },
+  {
+    "path": "images/optimized/study-13-95ea83a506fa.webp",
+    "sha256": "95ea83a506fab653444f52ea30c1965160bd88514c3c68a43a40e398823001ac",
+    "bytes": 207014,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-13-95ea83a506fa.webp"
+  },
+  {
+    "path": "images/optimized/study-16-dbf79162a421.webp",
+    "sha256": "dbf79162a4212e41c30418afbe4c4bfd27170e6de878cd5743640d2aefcd359a",
+    "bytes": 157472,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-16-dbf79162a421.webp"
+  },
+  {
+    "path": "images/optimized/study-2-ec95a1cf6c59.webp",
+    "sha256": "ec95a1cf6c5998d924542f7566f7187f551084d3981016d7206290e2730a8e8a",
+    "bytes": 46446,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-2-ec95a1cf6c59.webp"
+  },
+  {
+    "path": "images/optimized/study-6-23d030b20485.webp",
+    "sha256": "23d030b2048552fdb4eda46e92c1b9123da92d837d6e521cb79164f1a9999b35",
+    "bytes": 5222,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-6-23d030b20485.webp"
+  },
+  {
+    "path": "images/optimized/study-8-96f775c02fa6.webp",
+    "sha256": "96f775c02fa6134a2699cee1dbe7a0f00219ef365214e2225f8bcb0f1c4d6122",
+    "bytes": 73594,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-8-96f775c02fa6.webp"
+  },
+  {
+    "path": "images/optimized/study-9-34b4a6cabff3.webp",
+    "sha256": "34b4a6cabff30e205afb95731e48eb0fa64ff333c3ffdc8037b9cc883918b55f",
+    "bytes": 116006,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/study-9-34b4a6cabff3.webp"
+  },
+  {
+    "path": "images/optimized/tech-1-4977a2896533.webp",
+    "sha256": "4977a289653327b71c788c6b042389aa4e82edccc53ad340d0acff6a013f9486",
+    "bytes": 4298,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-1-4977a2896533.webp"
+  },
+  {
+    "path": "images/optimized/tech-12-f83934e13d10.webp",
+    "sha256": "f83934e13d10bc19c1573ed623a81b2650a9cb064eefced16fc2b58f48a37660",
+    "bytes": 18598,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-12-f83934e13d10.webp"
+  },
+  {
+    "path": "images/optimized/tech-13-0f7e863bc81b.webp",
+    "sha256": "0f7e863bc81b5c8bd280f0801b0140054a0204cdfc0bbd6f831869cfa9252b09",
+    "bytes": 78996,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-13-0f7e863bc81b.webp"
+  },
+  {
+    "path": "images/optimized/tech-15-aafa4f3cdb0c.webp",
+    "sha256": "aafa4f3cdb0ca5978568793c4371df5408de03a4da106dbcd25535a2eb3de97c",
+    "bytes": 36776,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-15-aafa4f3cdb0c.webp"
+  },
+  {
+    "path": "images/optimized/tech-16-3f7668e6d785.webp",
+    "sha256": "3f7668e6d78504b684a657bcd92cd574239ec1db41b923fda6bb98737f795b64",
+    "bytes": 29054,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-16-3f7668e6d785.webp"
+  },
+  {
+    "path": "images/optimized/tech-17-cb0de97d611f.webp",
+    "sha256": "cb0de97d611fa4ff9345420d160c3b1a1b01129ab0606cf444a81ac77420d192",
+    "bytes": 102724,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-17-cb0de97d611f.webp"
+  },
+  {
+    "path": "images/optimized/tech-18-f1a5f1f3ae48.webp",
+    "sha256": "f1a5f1f3ae482be9f33cf211326411e6eb12b7ade0380dd167b5845ef4af0282",
+    "bytes": 12338,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-18-f1a5f1f3ae48.webp"
+  },
+  {
+    "path": "images/optimized/tech-19-d3703306c949.webp",
+    "sha256": "d3703306c9491fab38f746be94911730da1857127fbd1457e3d4b006e842f085",
+    "bytes": 21880,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-19-d3703306c949.webp"
+  },
+  {
+    "path": "images/optimized/tech-20-3dedcc1cb295.webp",
+    "sha256": "3dedcc1cb295bbb6d1944030a7dab7046172dae696275c1fc8e3ae6811f20790",
+    "bytes": 72900,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-20-3dedcc1cb295.webp"
+  },
+  {
+    "path": "images/optimized/tech-21-a879fc01e079.webp",
+    "sha256": "a879fc01e079d87ee0b46fc21be024ae9302c58adf143f00923026b04d8e9812",
+    "bytes": 42884,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-21-a879fc01e079.webp"
+  },
+  {
+    "path": "images/optimized/tech-22-2a386720d8bc.webp",
+    "sha256": "2a386720d8bc35ba206511f15dcfd649efd6922b95b06895a7a76371e18bd843",
+    "bytes": 67810,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-22-2a386720d8bc.webp"
+  },
+  {
+    "path": "images/optimized/tech-3-2edd9a02eb5b.webp",
+    "sha256": "2edd9a02eb5b78a398265d966cb5f234b950de2226efbf4b1a3c2f5cb421b8ad",
+    "bytes": 11464,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-3-2edd9a02eb5b.webp"
+  },
+  {
+    "path": "images/optimized/tech-5-4033f9403502.webp",
+    "sha256": "4033f94035029c7a5b3807552c823db43b9360aa49116a1196a0105b20a5eaf9",
+    "bytes": 73434,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-5-4033f9403502.webp"
+  },
+  {
+    "path": "images/optimized/tech-7-fadf402fa690.webp",
+    "sha256": "fadf402fa6904dfaa95065dce4937fb91527f7a7458103fcd4db3a4e3385b4e5",
+    "bytes": 25596,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-7-fadf402fa690.webp"
+  },
+  {
+    "path": "images/optimized/tech-8-b9afa148784d.webp",
+    "sha256": "b9afa148784d9a16685b7ed7d828cee32a47303509f2af68b4728bb0e4047ea3",
+    "bytes": 64248,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-8-b9afa148784d.webp"
+  },
+  {
+    "path": "images/optimized/tech-9-2b365907dfbf.webp",
+    "sha256": "2b365907dfbfc5cbaef01af9b15449299c51019863d8b7c6b292cb637a0be184",
+    "bytes": 28114,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/images/optimized/tech-9-2b365907dfbf.webp"
+  },
+  {
+    "path": "logo.png",
+    "sha256": "725d504ca0fb5c14ecc38bfe3c8839dd870e8c3c319a5477fada7bea6eeeb84c",
+    "bytes": 3020,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/logo.png"
+  },
+  {
+    "path": "manifest.json",
+    "sha256": "5696c75566337453f19e3c058233535a89bd555c0dcf763bbdb07de0246e5cd7",
+    "bytes": 1379,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/manifest.json"
+  },
+  {
+    "path": "videos/intro_algo_dark.mp4",
+    "sha256": "9b467a680f46d53632364f9004478d0bc11d46851e30f9293faa476d0d9e1e56",
+    "bytes": 2835489,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/videos/intro_algo_dark.mp4"
+  },
+  {
+    "path": "videos/intro_algo_light.mp4",
+    "sha256": "44e66543ce94fff6b6fcbda90860bd03ddb33b5c711d1b5c8d6771a5754b4936",
+    "bytes": 2993461,
+    "url": "https://mamgorithm-intro-review-nov07.oliveduet1.chatgpt.site/videos/intro_algo_light.mp4"
+  }
+]

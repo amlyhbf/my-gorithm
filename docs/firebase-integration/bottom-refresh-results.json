@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "ordinary mid-feed scrolling does not refresh",
+    "short pull cancels",
+    "armed pull can be withdrawn before release",
+    "touch cancellation does not refresh",
+    "multi-touch cancels the gesture",
+    "one continuous scroll-to-bottom then pull/release refreshes exactly once, preserves weights and article filter, reveals fresh first cards",
+    "control hidden in Saved tab",
+    "open mixer blocks background refresh",
+    "bottom button is an accessible alternative",
+    "desktop keyboard access and reduced-motion behavior"
+  ]
+}

@@ -1,0 +1,12 @@
+.card-media-wrap { background: var(--subject-background, var(--bg-subtle)); }
+.article-hero-wrap[data-subject-image="true"] { background: var(--subject-background, var(--bg-subtle)); }
+.card-media-img.is-subject-image { object-fit: contain; padding: 8px; background: var(--subject-background, var(--bg-subtle)); }
+#articleHeroImg[data-fit="contain"] { object-fit: contain; padding: 10px; background: var(--subject-background, var(--bg-subtle)); }
+.article-image-credit { margin: -3px 0 20px; font-size: .73rem; color: var(--text-muted); line-height: 1.6; overflow-wrap: anywhere; }
+.article-image-credit p { margin: 0 0 4px; }
+.article-image-credit a, .article-reference-list a { color: var(--text-muted); text-underline-offset: 3px; }
+.article-reference-list { margin-top: 32px; border-top: 1px solid var(--border-color); padding-top: 20px; font-size: .86rem; line-height: 1.8; color: var(--text-muted); }
+.article-reference-list h3 { font-size: .95rem; color: var(--text-main); margin-bottom: 8px; }
+.article-reference-list ul { padding-left: 20px; margin-top: 8px; }
+.article-reference-list li { margin-bottom: 6px; overflow-wrap: anywhere; }
+.article-reference-list a:focus-visible, .article-image-credit a:focus-visible { outline: 2px solid var(--color-study); outline-offset: 3px; }

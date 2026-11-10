@@ -1,0 +1,19 @@
+{
+  "preparedFor": "my-gorithm.web.app",
+  "anonymousTelemetryRestored": true,
+  "browserAndSyncChecks": {
+    "anonymous-browser": 7,
+    "anonymous-sync": 7,
+    "merge": 12,
+    "bottom-refresh": 10,
+    "merge-pwa": 4
+  },
+  "feedUnitTests": 8,
+  "productionBuildVerified": true,
+  "emulatorDeploymentRejected": true,
+  "firebaseProductionDeployed": false,
+  "productionDatabaseWrites": 0,
+  "deploymentBlocker": "Firebase CLI has no authorized accounts",
+  "sourceMainPreserved": "003a7d3cd4da4d736de39eb586bfbcc8259071b9",
+  "classificationReviewApplied": false
+}

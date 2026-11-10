@@ -1,0 +1,1 @@
+window.handleCardImageError=(img,fallback)=>{if(fallback&&!img.dataset.triedYoutubeFallback){img.dataset.triedYoutubeFallback='true';img.src=fallback;return}img.onerror=null;img.src='/images/article-placeholder.svg';img.alt='썸네일을 불러오지 못했습니다';};
