@@ -1,0 +1,62 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+const root=path.resolve(__dirname,'../..'),origin='http://127.0.0.1:4177';
+const documentUrl=uid=>'http://127.0.0.1:8080/v1/projects/demo-mamgorithm-merge/databases/(default)/documents/users/'+uid;
+function decode(field){if(!field)return null;if(field.mapValue)return Object.fromEntries(Object.entries(field.mapValue.fields||{}).map(([k,v])=>[k,decode(v)]));if(field.arrayValue)return(field.arrayValue.values||[]).map(decode);return field.stringValue??(field.integerValue!==undefined?Number(field.integerValue):undefined)??field.doubleValue??field.booleanValue??field.timestampValue??null;}
+async function readDoc(uid){const response=await fetch(documentUrl(uid),{headers:{Authorization:'Bearer owner'}});if(!response.ok)return null;return Object.fromEntries(Object.entries((await response.json()).fields||{}).map(([k,v])=>[k,decode(v)]));}
+async function waitDoc(uid,predicate){for(let i=0;i<100;i++){const data=await readDoc(uid);if(data&&predicate(data))return data;await new Promise(r=>setTimeout(r,100));}throw Error('Firestore emulator did not receive expected document state');}
+(async()=>{
+ const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']});
+ const context=await browser.newContext({locale:'ko-KR',viewport:{width:390,height:844},isMobile:true,hasTouch:true,serviceWorkers:'block'});
+ const productionRequests=[],errors=[],checks=[];
+ await context.route('**/*',async route=>{const u=new URL(route.request().url());if(/firestore.googleapis.com|identitytoolkit.googleapis.com|securetoken.googleapis.com|firebaseinstallations.googleapis.com/.test(u.hostname)){productionRequests.push({host:u.hostname,path:u.pathname,method:route.request().method()});return route.abort();}return route.continue();});
+ await context.addInitScript(()=>{if(top!==window)return;localStorage.setItem('mamgorithm_intro_seen_v1','true');localStorage.setItem('mamgorithm_coachmark_seen','true');});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(origin,{waitUntil:'domcontentloaded'});
+ await page.waitForFunction(()=>window.__mamgorithmEmulatorAuth?.currentUser?.isAnonymous===true);
+ const uid=await page.evaluate(()=>window.__mamgorithmEmulatorAuth.currentUser.uid);
+ assert(uid);await waitDoc(uid,doc=>doc.personalInfo?.userId===uid&&doc.personalInfo?.email==='비회원 (익명 UID)');
+ checks.push('Real Firebase SDK signs in anonymously and writes the authenticated UID to Firestore emulator');
+ await page.locator('#quickBrandSplash').waitFor({state:'hidden'});
+ await page.locator('#authOverlay:not(.hidden)').waitFor();await page.locator('#btnGuestContinue').click();
+ await page.locator('#onboardingOverlay:not(.hidden)').waitFor();
+ for(const category of ['study','tech','culture','hobby'])await page.locator('#onboardingSlidersList input[data-cat="'+category+'"]').evaluate((input,value)=>{input.value=value;input.dispatchEvent(new Event('input',{bubbles:true}));},category==='study'?100:0);
+ await page.locator('#btnOnboardingStart').click();await page.locator('#feedCardsList .content-feed-card').first().waitFor();
+ await waitDoc(uid,doc=>doc.weights?.study===100&&doc.weights?.tech===0);
+ checks.push('Anonymous interest settings are saved to users/{uid}');
+ await page.locator('.type-pill[data-type="article"]').click();await page.waitForTimeout(250);
+ const card=page.locator('#feedCardsList .content-feed-card').first();const id=await card.getAttribute('data-id');
+ await card.locator('.card-bookmark-btn').click();await waitDoc(uid,doc=>doc.savedIds?.includes(id));
+ await page.locator('#feedCardsList [data-id="'+id+'"]').click();await page.locator('#articleSheetBackdrop:not(.hidden)').waitFor();
+ await page.waitForTimeout(1200);await page.locator('#btnArticleSheetClose').click();
+ const telemetry=await waitDoc(uid,doc=>doc.behavior?.cardClickCount>=1&&doc.behavior?.readerDwellSec>=1&&doc.bookmarks?.bookmarkCount>=1);
+ assert(telemetry.algorithmSettings.tuneCount>=1);assert(telemetry.accessPattern.visitCount>=1);assert(telemetry.environment.deviceType);
+ checks.push('Anonymous clicks, reader dwell, mixer settings, bookmarks, visits and device information reach Firestore');
+ await page.evaluate(()=>{localStorage.removeItem('mamgorithm_weights_v2');localStorage.removeItem('mamgorithm_saved_v2');});
+ await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.__mamgorithm_state?.weights.study===100&&window.__mamgorithm_state?.savedIds.size>0).catch(async error=>{console.log('Reload state',await page.evaluate(()=>({uid:window.__mamgorithmEmulatorAuth?.currentUser?.uid,weights:window.__mamgorithm_state?.weights,saved:[...(window.__mamgorithm_state?.savedIds||[])]})),errors);throw error});
+ assert.equal(await page.evaluate(()=>window.__mamgorithmEmulatorAuth.currentUser.uid),uid);
+ assert(await page.evaluate(id=>window.__mamgorithm_state.savedIds.has(id),id));
+ checks.push('Anonymous UID persists after reload and cloud preferences/bookmarks restore when local copies are absent');
+ await page.locator('#quickBrandSplash').waitFor({state:'hidden'});await page.locator('.tab-btn[data-tab="viewSaved"]').click();
+ await page.locator('#savedCardsList [data-id="'+id+'"] .card-bookmark-btn').click();await waitDoc(uid,doc=>doc.savedIds&&!doc.savedIds.includes(id));
+ checks.push('Removing an anonymous bookmark persists its deletion in Firestore');
+ const token=await page.evaluate(()=>window.__mamgorithmEmulatorAuth.currentUser.getIdToken());
+ assert.equal((await fetch(documentUrl(uid),{headers:{Authorization:'Bearer '+token}})).status,200);
+ const second=await(await fetch('http://127.0.0.1:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=demo-key',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({returnSecureToken:true})})).json();
+ assert.equal((await fetch(documentUrl(uid),{headers:{Authorization:'Bearer '+second.idToken}})).status,403);
+ checks.push('Emulator test rules allow the owner and reject a different anonymous UID');
+ await page.locator('.tab-btn[data-tab="viewFeed"]').click();await page.locator('#btnQuickTune').click();await page.waitForTimeout(420);
+ await context.setOffline(true);
+ await page.locator('.dock-range-input[data-cat="study"]').evaluate(input=>{input.value=75;input.dispatchEvent(new Event('input',{bubbles:true}));});
+ await page.waitForFunction(()=>JSON.parse(localStorage.getItem('mamgorithm_weights_v2')).study===75);
+ assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('mamgorithm_weights_v2')).study),75);
+ await context.setOffline(false);await waitDoc(uid,doc=>doc.weights?.study===75);
+ checks.push('Offline interest changes remain on the device and synchronize on reconnection');
+ // Public project-config GET is not a data write. It is intentionally blocked during emulator testing.
+ assert(productionRequests.every(r=>r.host==='identitytoolkit.googleapis.com'&&r.path==='/v1/projects'&&r.method==='GET'));
+ assert.deepEqual(errors,[]);
+ fs.mkdirSync(path.join(root,'docs/firebase-integration'),{recursive:true});
+ const result={passed:true,checks,backend:'Firebase Auth + Firestore emulators / demo-mamgorithm-merge',productionWrites:0,productionRulesVerified:false};
+ fs.writeFileSync(path.join(root,'docs/firebase-integration/anonymous-browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+ await browser.close();
+})().catch(error=>{console.error(error);process.exit(1)});

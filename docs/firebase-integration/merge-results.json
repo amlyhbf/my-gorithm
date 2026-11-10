@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "Guest sign-in dismissal opens our animated onboarding and preserves existing bookmark",
+    "73 unique cards, exact 64 approved records preserved, CSV/XLSX classifications excluded",
+    "No conflicting infinite append at the bottom",
+    "Eight YouTube cards have video-specific thumbnails, no duplicated slots, native video reader",
+    "Bottom refresh replaces the page and prioritizes less recently shown cards",
+    "AI, Galileo, omakase, Pokémon and a newly added article open through shareable deep links",
+    "English UI preserves expanded Korean articles with a clear language note",
+    "Guest bookmark removal persists across reload",
+    "Shared weight recipes apply correctly and excluded categories stay excluded",
+    "Usage records update locally while production authentication and database requests are blocked for UI-only QA",
+    "All 56 optimized article images load",
+    "Desktop dark theme persists; cards open with keyboard and no horizontal overflow"
+  ],
+  "productionWrites": 0,
+  "productionAuthRequestsBlocked": true,
+  "googleLiveLoginVerified": false,
+  "failedLocal": [],
+  "pageErrors": []
+}

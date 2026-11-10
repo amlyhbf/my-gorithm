@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "First visit plays our 19-second intro and proceeds through guest login to onboarding and feed",
+    "PWA manifest and all install icons resolve from the integrated origin",
+    "Previously cached app shell can reopen offline; external videos and uncached images remain network dependent",
+    "iPhone user-agent shows home-screen installation guidance; dismissed banner stays dismissed for this session"
+  ],
+  "physicalSafariVerified": false
+}

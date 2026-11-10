@@ -10,11 +10,15 @@
     "start": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && firebase deploy",
+    "deploy": "npm run build && node integration/verify-release.cjs && npx --yes firebase-tools deploy --only hosting --project my-gorithm",
     "test:intro": "node tests/intro.integration.cjs",
     "test:feed": "node --test tests/feed-engine.test.mjs",
     "test:feed:browser": "node tests/feed.browser.cjs",
-    "test:session10:browser": "node tests/session10.browser.cjs"
+    "test:session10:browser": "node tests/session10.browser.cjs",
+    "prebuild": "node integration/prepare-assets.cjs && node integration/prepare-source.cjs",
+    "predev": "node integration/prepare-assets.cjs && node integration/prepare-source.cjs",
+    "test:integration": "node tests/integration/anonymous-sync.cjs",
+    "build:emulator": "node integration/prepare-assets.cjs && node integration/prepare-source.cjs && vite build --mode emulator"
   },
   "devDependencies": {
     "playwright": "^1.62.1",

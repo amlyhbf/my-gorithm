@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "No invented local UID is used for a database write before Firebase authentication",
+    "Concurrent initialization creates only one anonymous sign-in request",
+    "Failed anonymous authentication can retry without blocking local use",
+    "Anonymous identities restore cloud state, collect telemetry and preserve bookmark deletions",
+    "A delayed response after logout cannot overwrite preferences or write to the previous UID",
+    "A failed settings read preserves local preferences and still attempts telemetry without overwriting cloud settings",
+    "Invalidated authentication blocks subsequent writes until a new authenticated UID is ready"
+  ],
+  "backend": "in-memory race/error tests",
+  "productionWrites": 0
+}

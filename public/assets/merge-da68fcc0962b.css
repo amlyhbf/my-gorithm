@@ -1,0 +1,5 @@
+.onboarding-haptic-hint { display:none !important; }
+.auth-connection-notice { margin:12px 0 0; padding:12px 14px; border-radius:12px; color:var(--text-muted); background:var(--bg-subtle); font-size:.8rem; line-height:1.6; }
+.auth-sync-status { color:var(--text-muted); font-size:.76rem; line-height:1.6; min-height:1.6em; }
+.article-language-note { color:var(--text-muted); font-size:.8rem; line-height:1.6; margin:0 0 16px; }
+.content-feed-card:focus-visible { outline:3px solid var(--color-tech,#0284c7); outline-offset:4px; border-radius:20px; }

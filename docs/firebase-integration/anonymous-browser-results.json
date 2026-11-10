@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "Real Firebase SDK signs in anonymously and writes the authenticated UID to Firestore emulator",
+    "Anonymous interest settings are saved to users/{uid}",
+    "Anonymous clicks, reader dwell, mixer settings, bookmarks, visits and device information reach Firestore",
+    "Anonymous UID persists after reload and cloud preferences/bookmarks restore when local copies are absent",
+    "Removing an anonymous bookmark persists its deletion in Firestore",
+    "Emulator test rules allow the owner and reject a different anonymous UID",
+    "Offline interest changes remain on the device and synchronize on reconnection"
+  ],
+  "backend": "Firebase Auth + Firestore emulators / demo-mamgorithm-merge",
+  "productionWrites": 0,
+  "productionRulesVerified": false
+}
